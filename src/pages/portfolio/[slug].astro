@@ -2,7 +2,7 @@
 import Layout from '../../layouts/Layout.astro';
 import Breadcrumb from '../../components/Breadcrumb.astro';
 import PhotoGallery from '../../components/PhotoGallery.astro';
-import { projects, type UXUIProject, type PhotoProject, type StandardProject } from '../../data/projects';
+import { projects } from '../../data/projects';
 
 export function getStaticPaths() {
   return projects.map(project => ({
@@ -13,23 +13,20 @@ export function getStaticPaths() {
 
 const { project } = Astro.props;
 
-function isUXUIProject(project: any): project is UXUIProject {
-  return project.category === 'ux-ui';
-}
-
-function isPhotoProject(project: any): project is PhotoProject {
-  return project.category === 'photography';
-}
-
 const crumbs = [
   { label: 'Portfolio', href: '/portfolio' },
   { label: project.title }
 ];
+
+// Type guard for photography projects
+function isPhotoProject(project: any): project is PhotoProject {
+  return project.category === 'photography' && Array.isArray(project.gallery);
+}
 ---
 
 <Layout 
   title={`${project.title} - Aiez Ahmed`} 
-  description={isUXUIProject(project) ? project.description.main : project.description}
+  description={project.description}
 >
   <div class="pt-24 pb-12">
     <div class="container mx-auto px-4">
@@ -46,147 +43,34 @@ const crumbs = [
         <!-- Project Overview -->
         <div class="mb-16">
           <h1 class="text-4xl font-bold mb-4">{project.title}</h1>
-          <p class="text-xl text-gray-600 mb-8">
-            {isUXUIProject(project) ? project.description.main : project.description}
-          </p>
+          <p class="text-xl text-gray-600 mb-8">{project.description}</p>
           
-          {isUXUIProject(project) && (
-            <!-- Project Details for UX/UI Projects -->
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 bg-gray-50 p-6 rounded-lg">
-              <div>
-                <h3 class="font-semibold text-gray-900 mb-2">Client</h3>
-                <p class="text-gray-600">{project.client}</p>
-              </div>
-              <div>
-                <h3 class="font-semibold text-gray-900 mb-2">Duration</h3>
-                <p class="text-gray-600">{project.projectDetails.duration}</p>
-              </div>
-              <div>
-                <h3 class="font-semibold text-gray-900 mb-2">Role</h3>
-                <p class="text-gray-600">{project.projectDetails.role}</p>
-              </div>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8 bg-gray-50 p-6 rounded-lg">
+            <div>
+              <h3 class="font-semibold text-gray-900 mb-2">Client</h3>
+              <p class="text-gray-600">{project.client}</p>
             </div>
-          )}
-        </div>
-
-        {isUXUIProject(project) ? (
-          <>
-            <!-- UX/UI Project Specific Sections -->
-            <!-- Challenge & Solution -->
-            <div class="mb-16">
-              <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div>
-                  <h2 class="text-2xl font-bold mb-4">The Challenge</h2>
-                  <p class="text-gray-600">{project.description.challenge}</p>
-                </div>
-                <div>
-                  <h2 class="text-2xl font-bold mb-4">The Solution</h2>
-                  <p class="text-gray-600">{project.description.solution}</p>
-                </div>
-              </div>
+            <div>
+              <h3 class="font-semibold text-gray-900 mb-2">Category</h3>
+              <p class="text-gray-600">{project.category}</p>
             </div>
-
-            <!-- Process -->
-            <div class="mb-1">
-              <h2 class="text-2xl font-bold mb-8">Design Process</h2>
-              <div class="space-y-2">
-                {project.process.map((phase) => (
-                  <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-                    <div>
-                      <h3 class="text-xl font-semibold mb-4">{phase.phase}</h3>
-                      <p class="text-gray-600">{phase.description}</p>
-                    </div>
-                    {phase.image && (
-                      <img
-                        src={phase.image}
-                        alt={`${phase.phase} phase`}
-                        class="rounded-lg shadow-md"
-                      />
-                    )}
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            <!-- UX & UI Focus -->
-            <div class="mb-16">
-              <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div class="bg-gray-50 p-6 rounded-lg">
-                  <h2 class="text-2xl font-bold mb-4">UX Focus</h2>
-                  <p class="text-gray-600">{project.description.uxFocus}</p>
-                </div>
-                <div class="bg-gray-50 p-6 rounded-lg">
-                  <h2 class="text-2xl font-bold mb-4">UI Focus</h2>
-                  <p class="text-gray-600">{project.description.uiFocus}</p>
-                </div>
-              </div>
-            </div>
-
-            <!-- Outcome -->
-            <div class="mb-16">
-              <h2 class="text-2xl font-bold mb-4">Outcome</h2>
-              <p class="text-gray-600">{project.description.outcome}</p>
-            </div>
-
-            <!-- Gallery -->
-            <div class="mb-16">
-              <h2 class="text-2xl font-bold mb-8">Project Gallery</h2>
-              <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                {project.gallery.map((item) => (
-                  <div>
-                    <img
-                      src={item.image}
-                      alt={item.caption}
-                      class="rounded-lg shadow-md mb-4"
-                    />
-                    <p class="text-sm text-gray-600 italic">{item.caption}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            <!-- Team -->
-            <div class="mb-16">
-              <h2 class="text-2xl font-bold mb-4">Team</h2>
-              <ul class="space-y-2">
-                {project.projectDetails.team.map(member => (
-                  <li class="text-gray-600">{member}</li>
+            <div>
+              <h3 class="font-semibold text-gray-900 mb-2">Tools</h3>
+              <ul class="space-y-1">
+                {project.tools.map(tool => (
+                  <li class="text-gray-600">{tool.name}</li>
                 ))}
               </ul>
             </div>
-          </>
-        ) : (
-          <>
-            {isPhotoProject(project) ? (
-              <div class="mb-16">
-                <h2 class="text-2xl font-bold mb-8">Photo Gallery</h2>
-                <PhotoGallery images={project.gallery} />
-              </div>
-            ) : (
-              <!-- Standard Project Layout -->
-              <div class="mb-16">
-                <div class="bg-gray-50 p-6 rounded-lg">
-                  <h2 class="text-2xl font-bold mb-4">Project Description</h2>
-                  <p class="text-gray-600">{project.description}</p>
-                </div>
-              </div>
-            )}
-          </>
-        )}
-
-        <!-- Common Sections for All Projects -->
-        <!-- Tools -->
-        <div class="mb-16">
-          <h2 class="text-2xl font-bold mb-4">Tools Used</h2>
-          <ul class="space-y-2">
-            {project.tools.map(tool => (
-              <li class="flex items-center gap-2">
-                <img src={tool.icon} alt={tool.name} class="w-[30px] h-[30px]" />
-                <span class="text-gray-600">{tool.name}</span>
-              </li>
-            ))}
-          </ul>
+          </div>
         </div>
+
+        {isPhotoProject(project) && project.gallery && (
+          <div class="mb-16">
+            <h2 class="text-2xl font-bold mb-8">Photo Gallery</h2>
+            <PhotoGallery images={project.gallery} />
+          </div>
+        )}
 
         <!-- Keywords -->
         <div class="border-t pt-8">

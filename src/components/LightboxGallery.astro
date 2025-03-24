@@ -1,0 +1,87 @@
+---
+import React, { useState } from 'react';
+
+interface Props {
+  images: { src: string; caption?: string }[];
+}
+
+const { images = [] } = Astro.props; // Images passed from parent component
+
+const [isOpen, setIsOpen] = useState(false);
+const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+// Navigation handlers
+const showNextImage = () => setCurrentImageIndex((prev) => (prev + 1) % images.length);
+const showPrevImage = () => setCurrentImageIndex((prev) => (prev - 1 + images.length) % images.length);
+const closeLightbox = () => setIsOpen(false);
+---
+
+<div class="grid grid-cols-2 md:grid-cols-3 gap-4 auto-rows-[300px]">
+  {images.map((image, index) => (
+    <div
+      key={index}
+      class="overflow-hidden rounded-lg shadow-lg cursor-pointer"
+      onClick={() => {
+        setIsOpen(true);
+        setCurrentImageIndex(index);
+      }}
+    >
+      <img
+        src={image.src}
+        alt={image.caption || 'Gallery image'}
+        class="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+      />
+    </div>
+  ))}
+</div>
+
+{isOpen && (
+  <div
+    class="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-15 backdrop-blur-md"
+    onClick={closeLightbox}
+  >
+    <div
+      class="relative bg-black max-w-4xl p-4 rounded-lg"
+      onClick={(e) => e.stopPropagation()} // Prevent click on background from closing
+    >
+      {/* Image */}
+      <img src={images[currentImageIndex].src} alt={images[currentImageIndex].caption} class="w-full rounded-md" />
+
+      {/* Close Button */}
+      <button
+        onClick={closeLightbox}
+        class="absolute top-2 right-2 text-white bg-black bg-opacity-75 rounded-full p-1 hover:bg-opacity-100"
+      >
+        ✕
+      </button>
+
+      {/* Navigation Chevrons */}
+      {images.length > 1 && (
+        <>
+          {/* Left Chevron */}
+          <button
+            onClick={showPrevImage}
+            disabled={images.length === 1}
+            class={`absolute top-1/2 left-2 transform -translate-y-1/2 p-2 ${
+              images.length === 1 ? 'text-gray-400' : 'text-white'
+            } hover:bg-opacity-75 bg-black bg-opacity-50 rounded-full`}
+          >
+            ◀
+          </button>
+
+          {/* Right Chevron */}
+          <button
+            onClick={showNextImage}
+            disabled={images.length === 1}
+            class={`absolute top-1/2 right-2 transform -translate-y-1/2 p-2 ${
+              images.length === 1 ? 'text-gray-400' : 'text-white'
+            } hover:bg-opacity-75 bg-black bg-opacity-50 rounded-full`}
+          >
+            ▶
+          </button>
+        </>
+      )}
+    </div>
+  </div>
+)}
+

@@ -10,6 +10,12 @@ export interface BaseProject {
   }[];
   keywords: string[];
   slug: string;
+    gallery: {
+    src: string;
+    alt: string;
+    width: 'full' | 'half';
+    height: 'tall' | 'normal';
+  }[];
 }
 
 export interface UXUIProject extends BaseProject {
@@ -33,10 +39,6 @@ export interface UXUIProject extends BaseProject {
     description: string;
     image?: string;
   }[];
-  gallery: {
-    image: string;
-    caption: string;
-  }[];
 }
 
 export interface PhotoProject extends BaseProject {
@@ -50,13 +52,13 @@ export interface PhotoProject extends BaseProject {
   }[];
 }
 
-
 export interface StandardProject extends BaseProject {
   category: 'videography' | 'graphic-design' | 'product-design';
   description: string;
+  
 }
 
-export type Project = UXUIProject | PhotoProject | StandardProject;
+export type Project = BaseProject;
 
 export const projects: Project[] = [
   {
@@ -1271,19 +1273,136 @@ export const projects: Project[] = [
   },
   {
     id: '31',
-    title: 'Petronas AMG F1 Team Photoshoot',
+    title: 'James Cameron Private Photoshoot',
     category: 'photography',
-    imageUrl: '../src/assets/Portfolio/img_portfolio_merc01.jpg',
-    client: 'Petronas AMG F1 Team Photoshoot',
+    imageUrl: '../src/assets/Portfolio/img_portfolio_jc01.jpg',
+    client: ['KBS Communications | ', 'ADMM | ', 'Yas Marina Circuit'],
     description: 'A comprehensive outdoor advertising campaign for Beyond Blue, featuring impactful billboard and print designs that raise awareness about mental health support services. The campaign utilized bold typography and compelling imagery to create an emotional connection with viewers.',
     tools: [
       { name: 'Adobe Illustrator', icon: '../src/assets/icons/illustrator.svg' },
       { name: 'Adobe InDesign', icon: '../src/assets/icons/indesign.svg' }
     ],
     keywords: ['outdoor advertising', 'print design', 'social impact', 'mental health', 'typography'],
-    slug: 'mercf1'
+    gallery: [
+      {
+        image: '../src/assets/Portfolio/kepler-dashboard.jpg',
+        caption: 'Main dashboard view showing key metrics and data visualizations'
+      },
+      {
+        image: '../src/assets/Portfolio/kepler-reports.jpg',
+        caption: 'Custom report builder interface'
+      },
+      {
+        image: '../src/assets/Portfolio/kepler-mobile.jpg',
+        caption: 'Mobile-responsive design for on-the-go access'
+      }
+    ],
+    slug: 'jcyas'
   },
-  
+  {
+    id: '32',
+    title: 'Petrona AMG F1 Team Private shoot',
+    category: 'photography',
+    imageUrl: '../src/assets/Portfolio/img_portfolio_merc01.jpg',
+    client: ['KBS Communications | ', 'ADMM | ', 'Yas Marina Circuit'],
+    description: 'A comprehensive outdoor advertising campaign for Beyond Blue, featuring impactful billboard and print designs that raise awareness about mental health support services. The campaign utilized bold typography and compelling imagery to create an emotional connection with viewers.',
+    tools: [
+      { name: 'Adobe Illustrator', icon: '../src/assets/icons/illustrator.svg' },
+      { name: 'Adobe InDesign', icon: '../src/assets/icons/indesign.svg' }
+    ],
+    keywords: ['outdoor advertising', 'print design', 'social impact', 'mental health', 'typography'],
+    gallery: [
+      {
+        image: '../src/assets/Portfolio/kepler-dashboard.jpg',
+        caption: 'Main dashboard view showing key metrics and data visualizations'
+      },
+      {
+        image: '../src/assets/Portfolio/kepler-reports.jpg',
+        caption: 'Custom report builder interface'
+      },
+      {
+        image: '../src/assets/Portfolio/kepler-mobile.jpg',
+        caption: 'Mobile-responsive design for on-the-go access'
+      }
+    ],
+    slug: 'amgf1'
+  },
+  {
+    id: '33',
+    title: 'FIA GT1',
+    category: 'photography',
+    imageUrl: '../src/assets/Portfolio/img_portfolio_fiagt1yas01.jpg',
+    client: 'Yas Marina Circuit',
+    description: 'A comprehensive outdoor advertising campaign for Beyond Blue, featuring impactful billboard and print designs that raise awareness about mental health support services. The campaign utilized bold typography and compelling imagery to create an emotional connection with viewers.',
+    tools: [
+      { name: 'Adobe Illustrator', icon: '../src/assets/icons/illustrator.svg' },
+      { name: 'Adobe InDesign', icon: '../src/assets/icons/indesign.svg' }
+    ],
+    keywords: ['outdoor advertising', 'print design', 'social impact', 'mental health', 'typography'],
+    gallery: [
+      {
+        image: '../src/assets/Portfolio/kepler-dashboard.jpg',
+        caption: 'Main dashboard view showing key metrics and data visualizations'
+      },
+      {
+        image: '../src/assets/Portfolio/kepler-reports.jpg',
+        caption: 'Custom report builder interface'
+      },
+      {
+        image: '../src/assets/Portfolio/kepler-mobile.jpg',
+        caption: 'Mobile-responsive design for on-the-go access'
+      }
+    ],
+    slug: 'fiayas'
+  },
+  {
+    id: '34',
+    title: 'Private Photoshoop for Hamad A.M.',
+    category: 'photography',
+    imageUrl: '../src/assets/Portfolio/img_portfolio_venturi02.jpg',
+    client: 'Yas Marina Circuit',
+    description: 'A comprehensive outdoor advertising campaign for Beyond Blue, featuring impactful billboard and print designs that raise awareness about mental health support services. The campaign utilized bold typography and compelling imagery to create an emotional connection with viewers.',
+    tools: [
+      { name: 'Adobe Illustrator', icon: '../src/assets/icons/illustrator.svg' },
+      { name: 'Adobe InDesign', icon: '../src/assets/icons/indesign.svg' }
+    ],
+    keywords: ['outdoor advertising', 'print design', 'social impact', 'mental health', 'typography'],
+    gallery: [
+      {
+        image: '../src/assets/Portfolio/kepler-dashboard.jpg',
+        caption: 'Main dashboard view showing key metrics and data visualizations'
+      },
+      {
+        image: '../src/assets/Portfolio/kepler-reports.jpg',
+        caption: 'Custom report builder interface'
+      },
+      {
+        image: '../src/assets/Portfolio/kepler-mobile.jpg',
+        caption: 'Mobile-responsive design for on-the-go access'
+      }
+    ],
+    slug: 'ventps'
+  },
+  {
+    id: '35',
+    title: 'Private Photoshoop for HH. Sheikh Nahyan bin Mubarak Al Nahyan',
+    category: 'photography',
+    imageUrl: '../src/assets/Portfolio/img_portfolio_hhsnahyan.jpg',
+    client: 'Yas Marina Circuit',
+    description: 'A comprehensive outdoor advertising campaign for Beyond Blue, featuring impactful billboard and print designs that raise awareness about mental health support services. The campaign utilized bold typography and compelling imagery to create an emotional connection with viewers.',
+    tools: [
+      { name: 'Adobe Illustrator', icon: '../src/assets/icons/illustrator.svg' },
+      { name: 'Adobe InDesign', icon: '../src/assets/icons/indesign.svg' }
+    ],
+    keywords: ['outdoor advertising', 'print design', 'social impact', 'mental health', 'typography'],
+    gallery: [
+      {
+        src: '../src/assets/Portfolio/img_portfolio_hhsnahyan01.jpg',
+        caption: 'Main dashboard view showing key metrics and data visualizations'
+      },
+    ],
+    slug: 'hhsn'
+  },
 ];
 
 
