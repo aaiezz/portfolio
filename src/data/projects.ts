@@ -1134,25 +1134,10 @@ export const projects: Project[] = [
     keywords: ['outdoor advertising', 'print design', 'social impact', 'mental health', 'typography'],
     gallery: [
       {
-        src: '../src/assets/Portfolio/img_portfolio_gcprod03.jpg',
+        src: '../src/assets/Portfolio/img_portfolio_gcprod01.jpg',
         caption: 'Main dashboard view showing key metrics and data visualizations'
       },
-      {
-        src: '../src/assets/Portfolio/img_portfolio_gcprod04.jpg',
-        caption: 'Custom report builder interface'
-      },
-      {
-        src: '../src/assets/Portfolio/img_portfolio_gcprod05.jpg',
-        caption: 'Mobile-responsive design for on-the-go access'
-      },
-      {
-        src: '../src/assets/Portfolio/img_portfolio_gcprod06.jpg',
-        caption: 'Mobile-responsive design for on-the-go access'
-      },
-      {
-        src: '../src/assets/Portfolio/img_portfolio_gcprod07.jpg',
-        caption: 'Mobile-responsive design for on-the-go access'
-      }
+      
     ],
     slug: 'gcprod'
   },
@@ -1179,6 +1164,14 @@ export const projects: Project[] = [
       },
       {
         src: '../src/assets/Portfolio/img_portfolio_gcprod05.jpg',
+        caption: 'Mobile-responsive design for on-the-go access'
+      },
+      {
+        src: '../src/assets/Portfolio/img_portfolio_gcprod06.jpg',
+        caption: 'Mobile-responsive design for on-the-go access'
+      },
+      {
+        src: '../src/assets/Portfolio/img_portfolio_gcprod07.jpg',
         caption: 'Mobile-responsive design for on-the-go access'
       }
     ],
@@ -1327,6 +1320,10 @@ export const projects: Project[] = [
       },
       {
         src: '../src/assets/Portfolio/img_portfolio_jc01.jpg',
+        caption: 'Main dashboard view showing key metrics and data visualizations'
+      },
+      {
+        src: '../src/assets/Portfolio/img_portfolio_jc06.jpg',
         caption: 'Main dashboard view showing key metrics and data visualizations'
       },
     ],
@@ -1544,8 +1541,182 @@ export const projects: Project[] = [
     ],
     slug: 'yasdrn'
   },
-];
+  {
+    id: '34',
+    title: 'H.M. Private Photoshoot',
+    category: 'photography',
+    imageUrl: '../src/assets/Portfolio/img_portfolio_hm01.jpg',
+    client: ['Private Commission'],
+    description: 'A comprehensive outdoor advertising campaign for Beyond Blue, featuring impactful billboard and print designs that raise awareness about mental health support services. The campaign utilized bold typography and compelling imagery to create an emotional connection with viewers.',
+    tools: [
+      { name: 'Adobe Illustrator', icon: '../src/assets/icons/illustrator.svg' },
+      { name: 'Adobe InDesign', icon: '../src/assets/icons/indesign.svg' }
+    ],
+    keywords: ['outdoor advertising', 'print design', 'social impact', 'mental health', 'typography'],
+    gallery: [
+      {
+        src: '../src/assets/Portfolio/img_portfolio_hm02.jpg',
+        caption: 'Main dashboard view showing key metrics and data visualizations'
+      },
+      {
+        src: '../src/assets/Portfolio/img_portfolio_hm03.jpg',
+        caption: 'Custom report builder interface'
+      },
+      {
+        src: '../src/assets/Portfolio/img_portfolio_hm04.jpg',
+        caption: 'Mobile-responsive design for on-the-go access'
+      },
+    ],
+    slug: 'hmpriv'
+  },
 
+  {
+    id: '35',
+    title: 'J.C. Private Photoshoot',
+    category: 'photography',
+    imageUrl: '../src/assets/Portfolio/img_portfolio_jac04.jpg',
+    client: ['Private Commission'],
+    description: 'A comprehensive outdoor advertising campaign for Beyond Blue, featuring impactful billboard and print designs that raise awareness about mental health support services. The campaign utilized bold typography and compelling imagery to create an emotional connection with viewers.',
+    tools: [
+      { name: 'Adobe Illustrator', icon: '../src/assets/icons/illustrator.svg' },
+      { name: 'Adobe InDesign', icon: '../src/assets/icons/indesign.svg' }
+    ],
+    keywords: ['outdoor advertising', 'print design', 'social impact', 'mental health', 'typography'],
+    gallery: [
+      {
+        src: '../src/assets/Portfolio/img_portfolio_jac01.jpg',
+        caption: 'Main dashboard view showing key metrics and data visualizations'
+      },
+      {
+        src: '../src/assets/Portfolio/img_portfolio_jac02.jpg',
+        caption: 'Custom report builder interface'
+      },
+      {
+        src: '../src/assets/Portfolio/img_portfolio_jac03.jpg',
+        caption: 'Mobile-responsive design for on-the-go access'
+      },
+      {
+        src: '../src/assets/Portfolio/img_portfolio_jac04.jpg',
+        caption: 'Mobile-responsive design for on-the-go access'
+      },
+      {
+        src: '../src/assets/Portfolio/img_portfolio_jac05.jpg',
+        caption: 'Mobile-responsive design for on-the-go access'
+      },
+    ],
+    slug: 'hmpriv'
+  },
+
+  {
+    id: '35',
+    title: 'S.P. Private Photoshoot',
+    category: 'photography',
+    imageUrl: '../src/assets/Portfolio/img_portfolio_sen01.jpg',
+    client: ['Private Commission'],
+    description: 'A comprehensive outdoor advertising campaign for Beyond Blue, featuring impactful billboard and print designs that raise awareness about mental health support services. The campaign utilized bold typography and compelling imagery to create an emotional connection with viewers.',
+    tools: [
+      { name: 'Adobe Illustrator', icon: '../src/assets/icons/illustrator.svg' },
+      { name: 'Adobe InDesign', icon: '../src/assets/icons/indesign.svg' }
+    ],
+    keywords: ['outdoor advertising', 'print design', 'social impact', 'mental health', 'typography'],
+    gallery: [
+      {
+        src: '../src/assets/Portfolio/img_portfolio_sen01.jpg',
+        caption: 'Main dashboard view showing key metrics and data visualizations'
+      },
+      {
+        src: '../src/assets/Portfolio/img_portfolio_sen02.jpg',
+        caption: 'Custom report builder interface'
+      },
+      {
+        src: '../src/assets/Portfolio/img_portfolio_sen03.jpg',
+        caption: 'Mobile-responsive design for on-the-go access'
+      },
+      {
+        src: '../src/assets/Portfolio/img_portfolio_sen04.jpg',
+        caption: 'Mobile-responsive design for on-the-go access'
+      },
+      {
+        src: '../src/assets/Portfolio/img_portfolio_sen05.jpg',
+        caption: 'Mobile-responsive design for on-the-go access'
+      },
+      {
+        src: '../src/assets/Portfolio/img_portfolio_sen06.jpg',
+        caption: 'Mobile-responsive design for on-the-go access'
+      },
+    ],
+    slug: 'sppriv'
+  },
+  {
+    id: '36',
+    title: 'J.C. Private Photoshoot',
+    category: 'photography',
+    imageUrl: '../src/assets/Portfolio/img_portfolio_jes01.jpg',
+    client: ['Private Commission'],
+    description: 'A comprehensive outdoor advertising campaign for Beyond Blue, featuring impactful billboard and print designs that raise awareness about mental health support services. The campaign utilized bold typography and compelling imagery to create an emotional connection with viewers.',
+    tools: [
+      { name: 'Adobe Illustrator', icon: '../src/assets/icons/illustrator.svg' },
+      { name: 'Adobe InDesign', icon: '../src/assets/icons/indesign.svg' }
+    ],
+    keywords: ['outdoor advertising', 'print design', 'social impact', 'mental health', 'typography'],
+    gallery: [
+      {
+        src: '../src/assets/Portfolio/img_portfolio_jes04.jpg',
+        caption: 'Main dashboard view showing key metrics and data visualizations'
+      },
+      {
+        src: '../src/assets/Portfolio/img_portfolio_jes05.jpg',
+        caption: 'Custom report builder interface'
+      },
+      {
+        src: '../src/assets/Portfolio/img_portfolio_jes02.jpg',
+        caption: 'Mobile-responsive design for on-the-go access'
+      },
+      {
+        src: '../src/assets/Portfolio/img_portfolio_jes03.jpg',
+        caption: 'Mobile-responsive design for on-the-go access'
+      },
+      {
+        src: '../src/assets/Portfolio/img_portfolio_jes01.jpg',
+        caption: 'Mobile-responsive design for on-the-go access'
+      }
+    ],
+    slug: 'jesspriv'
+  },
+  {
+    id: '37',
+    title: 'O.K. Private Photoshoot',
+    category: 'photography',
+    imageUrl: '../src/assets/Portfolio/img_portfolio_ok02.jpg',
+    client: ['Private Commission'],
+    description: 'A comprehensive outdoor advertising campaign for Beyond Blue, featuring impactful billboard and print designs that raise awareness about mental health support services. The campaign utilized bold typography and compelling imagery to create an emotional connection with viewers.',
+    tools: [
+      { name: 'Adobe Illustrator', icon: '../src/assets/icons/illustrator.svg' },
+      { name: 'Adobe InDesign', icon: '../src/assets/icons/indesign.svg' }
+    ],
+    keywords: ['outdoor advertising', 'print design', 'social impact', 'mental health', 'typography'],
+    gallery: [
+      {
+        src: '../src/assets/Portfolio/img_portfolio_ok01.jpg',
+        caption: 'Main dashboard view showing key metrics and data visualizations'
+      },
+      {
+        src: '../src/assets/Portfolio/img_portfolio_ok02.jpg',
+        caption: 'Custom report builder interface'
+      },
+      {
+        src: '../src/assets/Portfolio/img_portfolio_ok03.jpg',
+        caption: 'Mobile-responsive design for on-the-go access'
+      },
+      {
+        src: '../src/assets/Portfolio/img_portfolio_ok04.jpg',
+        caption: 'Mobile-responsive design for on-the-go access'
+      }
+    ],
+    slug: 'okpriv'
+  },
+
+];
 
 
 // lazy loader functionality

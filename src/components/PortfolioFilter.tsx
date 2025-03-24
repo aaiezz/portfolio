@@ -2,19 +2,20 @@ import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import clsx from 'clsx';
 
-type Category = 'all' | 'ux-ui' | 'photography' | 'videography' | 'graphic-design' | 'product-design';
+type Category = 'ux-ui' | 'photography' | 'videography' | 'graphic-design' | 'product-design' | 'all';
 
 const categories = [
-  { id: 'all', label: 'All Work' },
+
   { id: 'ux-ui', label: 'UX/UI Design' },
   { id: 'photography', label: 'Photography' },
   { id: 'videography', label: 'Videography' },
   { id: 'graphic-design', label: 'Graphic Design' },
   { id: 'product-design', label: 'Product Design' },
+  { id: 'all', label: 'All Work' },
 ] as const;
 
 export function PortfolioFilter() {
-  const [activeCategory, setActiveCategory] = useState<Category>('all');
+  const [activeCategory, setActiveCategory] = useState<Category>('ux-ui');
 
   return (
     <div className="flex flex-wrap justify-center gap-4 mb-12">
