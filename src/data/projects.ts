@@ -1302,23 +1302,31 @@ export const projects: Project[] = [
     keywords: ['outdoor advertising', 'print design', 'social impact', 'mental health', 'typography'],
     gallery: [
       {
-        image: '../src/assets/Portfolio/kepler-dashboard.jpg',
+        src: '../src/assets/Portfolio/img_portfolio_jc02.jpg',
         caption: 'Main dashboard view showing key metrics and data visualizations'
       },
       {
-        image: '../src/assets/Portfolio/kepler-reports.jpg',
+        src: '../src/assets/Portfolio/img_portfolio_jc03.jpg',
         caption: 'Custom report builder interface'
       },
       {
-        image: '../src/assets/Portfolio/kepler-mobile.jpg',
+        src: '../src/assets/Portfolio/img_portfolio_jc04.jpg',
         caption: 'Mobile-responsive design for on-the-go access'
-      }
+      },
+      {
+        src: '../src/assets/Portfolio/img_portfolio_jc05.jpg',
+        caption: 'Main dashboard view showing key metrics and data visualizations'
+      },
+      {
+        src: '../src/assets/Portfolio/img_portfolio_jc01.jpg',
+        caption: 'Main dashboard view showing key metrics and data visualizations'
+      },
     ],
     slug: 'jcyas'
   },
   {
     id: '32',
-    title: 'Petrona AMG F1 Team Private shoot',
+    title: 'Petronas AMG F1 Team Private shoot',
     category: 'photography',
     imageUrl: '../src/assets/Portfolio/img_portfolio_merc01.jpg',
     client: ['KBS Communications | ', 'ADMM | ', 'Yas Marina Circuit'],
@@ -1330,15 +1338,15 @@ export const projects: Project[] = [
     keywords: ['outdoor advertising', 'print design', 'social impact', 'mental health', 'typography'],
     gallery: [
       {
-        image: '../src/assets/Portfolio/kepler-dashboard.jpg',
+        src: '../src/assets/Portfolio/img_portfolio_merc02.jpg',
         caption: 'Main dashboard view showing key metrics and data visualizations'
       },
       {
-        image: '../src/assets/Portfolio/kepler-reports.jpg',
+        src: '../src/assets/Portfolio/img_portfolio_merc03.jpg',
         caption: 'Custom report builder interface'
       },
       {
-        image: '../src/assets/Portfolio/kepler-mobile.jpg',
+        src: '../src/assets/Portfolio/img_portfolio_merc04.jpg',
         caption: 'Mobile-responsive design for on-the-go access'
       }
     ],
@@ -1405,7 +1413,7 @@ export const projects: Project[] = [
     title: 'Private Photoshoop for Hamad A.M.',
     category: 'photography',
     imageUrl: '../src/assets/Portfolio/img_portfolio_venturi02.jpg',
-    client: 'Yas Marina Circuit',
+    client: 'Private Commission',
     description: 'A comprehensive outdoor advertising campaign for Beyond Blue, featuring impactful billboard and print designs that raise awareness about mental health support services. The campaign utilized bold typography and compelling imagery to create an emotional connection with viewers.',
     tools: [
       { name: 'Adobe Illustrator', icon: '../src/assets/icons/illustrator.svg' },
@@ -1414,15 +1422,19 @@ export const projects: Project[] = [
     keywords: ['outdoor advertising', 'print design', 'social impact', 'mental health', 'typography'],
     gallery: [
       {
-        image: '../src/assets/Portfolio/kepler-dashboard.jpg',
+        src: '../src/assets/Portfolio/img_portfolio_venturi03.jpg',
         caption: 'Main dashboard view showing key metrics and data visualizations'
       },
       {
-        image: '../src/assets/Portfolio/kepler-reports.jpg',
+        src: '../src/assets/Portfolio/img_portfolio_venturi01.jpg',
         caption: 'Custom report builder interface'
       },
       {
-        image: '../src/assets/Portfolio/kepler-mobile.jpg',
+        src: '../src/assets/Portfolio/img_portfolio_venturi04.jpg',
+        caption: 'Mobile-responsive design for on-the-go access'
+      },
+      {
+        src: '../src/assets/Portfolio/img_portfolio_venturi05.jpg',
         caption: 'Mobile-responsive design for on-the-go access'
       }
     ],
@@ -1433,7 +1445,7 @@ export const projects: Project[] = [
     title: 'Private Photoshoop for HH. Sheikh Nahyan bin Mubarak Al Nahyan',
     category: 'photography',
     imageUrl: '../src/assets/Portfolio/img_portfolio_hhsnahyan.jpg',
-    client: 'Yas Marina Circuit',
+    client: ['KBS Communications | ', 'ADMM'],
     description: 'A comprehensive outdoor advertising campaign for Beyond Blue, featuring impactful billboard and print designs that raise awareness about mental health support services. The campaign utilized bold typography and compelling imagery to create an emotional connection with viewers.',
     tools: [
       { name: 'Adobe Illustrator', icon: '../src/assets/icons/illustrator.svg' },
@@ -1447,6 +1459,66 @@ export const projects: Project[] = [
       },
     ],
     slug: 'hhsn'
+  },
+  {
+    id: '33',
+    title: 'Yas Drag Racing Nights',
+    category: 'photography',
+    imageUrl: '../src/assets/Portfolio/img_portfolio_yasdrag02.jpg',
+    client: 'Yas Marina Circuit',
+    description: 'A comprehensive outdoor advertising campaign for Beyond Blue, featuring impactful billboard and print designs that raise awareness about mental health support services. The campaign utilized bold typography and compelling imagery to create an emotional connection with viewers.',
+    tools: [
+      { name: 'Adobe Illustrator', icon: '../src/assets/icons/illustrator.svg' },
+      { name: 'Adobe InDesign', icon: '../src/assets/icons/indesign.svg' }
+    ],
+    keywords: ['outdoor advertising', 'print design', 'social impact', 'mental health', 'typography'],
+    gallery: [
+      {
+        src: '../src/assets/Portfolio/img_portfolio_yasdrag01.jpg',
+        caption: 'Main dashboard view showing key metrics and data visualizations'
+      },
+      {
+        src: '../src/assets/Portfolio/img_portfolio_yasdrag03.jpg',
+        caption: 'Custom report builder interface'
+      },
+      {
+        src: '../src/assets/Portfolio/img_portfolio_yasdrag04.jpg',
+        caption: 'Mobile-responsive design for on-the-go access'
+      },
+      {
+        src: '../src/assets/Portfolio/img_portfolio_yasdrag05.jpg',
+        caption: 'Main dashboard view showing key metrics and data visualizations'
+      },
+      {
+        src: '../src/assets/Portfolio/img_portfolio_yasdrag06.jpg',
+        caption: 'Custom report builder interface'
+      },
+      {
+        src: '../src/assets/Portfolio/img_portfolio_yasdrag07.jpg',
+        caption: 'Mobile-responsive design for on-the-go access'
+      },
+      {
+        src: '../src/assets/Portfolio/img_portfolio_yasdrag08.jpg',
+        caption: 'Main dashboard view showing key metrics and data visualizations'
+      },
+      {
+        src: '../src/assets/Portfolio/img_portfolio_yasdrag09.jpg',
+        caption: 'Custom report builder interface'
+      },
+      {
+        src: '../src/assets/Portfolio/img_portfolio_yasdrag10.jpg',
+        caption: 'Mobile-responsive design for on-the-go access'
+      },
+      {
+        src: '../src/assets/Portfolio/img_portfolio_yasdrag11.jpg',
+        caption: 'Mobile-responsive design for on-the-go access'
+      },
+      {
+        src: '../src/assets/Portfolio/img_portfolio_yasdrag12.jpg',
+        caption: 'Mobile-responsive design for on-the-go access'
+      }
+    ],
+    slug: 'yasdrn'
   },
 ];
 
