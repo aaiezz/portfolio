@@ -1144,6 +1144,14 @@ export const projects: Project[] = [
       {
         src: '../src/assets/Portfolio/img_portfolio_gcprod05.jpg',
         caption: 'Mobile-responsive design for on-the-go access'
+      },
+      {
+        src: '../src/assets/Portfolio/img_portfolio_gcprod06.jpg',
+        caption: 'Mobile-responsive design for on-the-go access'
+      },
+      {
+        src: '../src/assets/Portfolio/img_portfolio_gcprod07.jpg',
+        caption: 'Mobile-responsive design for on-the-go access'
       }
     ],
     slug: 'gcprod'
@@ -1404,6 +1412,10 @@ export const projects: Project[] = [
       {
         src: '../src/assets/Portfolio/img_portfolio_fiagt1yas11.jpg',
         caption: 'Mobile-responsive design for on-the-go access'
+      },
+      {
+        src: '../src/assets/Portfolio/img_portfolio_fiagt1yas12.jpg',
+        caption: 'Mobile-responsive design for on-the-go access'
       }
     ],
     slug: 'fiayas'
@@ -1515,6 +1527,18 @@ export const projects: Project[] = [
       },
       {
         src: '../src/assets/Portfolio/img_portfolio_yasdrag12.jpg',
+        caption: 'Mobile-responsive design for on-the-go access'
+      },
+      {
+        src: '../src/assets/Portfolio/img_portfolio_yasdrag13.jpg',
+        caption: 'Mobile-responsive design for on-the-go access'
+      },
+      {
+        src: '../src/assets/Portfolio/img_portfolio_yasdrag14.jpg',
+        caption: 'Mobile-responsive design for on-the-go access'
+      },
+      {
+        src: '../src/assets/Portfolio/img_portfolio_yasdrag15.jpg',
         caption: 'Mobile-responsive design for on-the-go access'
       }
     ],
