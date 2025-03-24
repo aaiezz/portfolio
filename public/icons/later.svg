@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 45 45">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #5d5cb0;
+      }
+
+      .cls-2 {
+        fill: #feb402;
+      }
+
+      .cls-3 {
+        fill: #fff;
+        fill-rule: evenodd;
+      }
+
+      .cls-4 {
+        fill: #70c889;
+      }
+
+      .cls-5 {
+        fill: #f98c64;
+      }
+
+      .cls-6 {
+        fill: #bddb6f;
+      }
+
+      .cls-7 {
+        fill: #92a3fd;
+      }
+
+      .cls-8 {
+        fill: #25c6fe;
+      }
+
+      .cls-9 {
+        fill: #263138;
+      }
+
+      .cls-10 {
+        fill: #00eea4;
+      }
+    </style>
+  </defs>
+  <rect class="cls-9" width="45" height="45"/>
+  <g>
+    <rect class="cls-2" x="11.54" y="9.3" width="4.37" height="4.37"/>
+    <rect class="cls-1" x="11.54" y="22.66" width="4.37" height="4.37"/>
+    <rect class="cls-8" x="7.17" y="18.29" width="4.37" height="4.37"/>
+    <rect class="cls-8" x="15.91" y="31.4" width="4.37" height="4.37"/>
+    <polygon class="cls-3" points="20.28 27.03 20.28 13.67 15.91 13.67 15.91 27.03 15.91 31.4 20.28 31.4 29.06 31.4 29.06 27.03 20.28 27.03"/>
+    <rect class="cls-10" x="29.06" y="31.4" width="4.37" height="4.37"/>
+    <rect class="cls-5" x="20.31" y="22.66" width="4.37" height="4.37"/>
+    <rect class="cls-4" x="24.69" y="18.29" width="4.37" height="4.37"/>
+    <rect class="cls-8" x="33.43" y="13.92" width="4.37" height="4.37"/>
+    <rect class="cls-6" x="33.43" y="9.55" width="4.37" height="4.37"/>
+    <rect class="cls-7" x="29.06" y="9.55" width="4.37" height="4.37"/>
+  </g>
+</svg>

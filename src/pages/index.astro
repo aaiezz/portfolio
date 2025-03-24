@@ -1,0 +1,306 @@
+---
+import Layout from '../layouts/Layout.astro';
+import LogoStrip from '../components/LogoStrip.astro';
+import bgImage from '../assets/Portfolio/img_bg-main.jpg';
+
+const valueCards = [
+  {
+    title: 'Work',
+    description: 'I create user-centered digital experiences that solve real problems and deliver measurable business value.',
+    icon: '🎯'
+  },
+  {
+    title: 'Strategy',
+    description: 'I develop comprehensive design strategies that align with business goals and user needs.',
+    icon: '💡'
+  },
+  {
+    title: 'Leadership',
+    description: 'I lead design teams, mentor junior designers, and foster a culture of innovation and collaboration.',
+    icon: '👥'
+  }
+];
+
+const experienceCards = [
+  {
+    role: 'Multimedia Designer',
+    company: 'Beyond Blue',
+    period: '2023 - Present',
+    description: 'Leading digital transformation initiatives for mental health support services.'
+  },
+  {
+    role: 'UX Designer',
+    company: 'Kepler Analytics',
+    period: '2022 - 2023',
+    description: 'Redesigned retail analytics platform improving user engagement by 60%.'
+  },
+  {
+    role: 'UX/UI Designer',
+    company: 'Click Creative',
+    period: '2021 - 2022',
+    description: 'Led multiple client projects across various industries.'
+  }
+];
+
+const domainCards = [
+  {
+    domain: 'Mental Health',
+    description: 'Digital solutions for mental health support and patient care.'
+  },
+  {
+    domain: 'Retail Analytics',
+    description: 'Data visualization and analytics platforms for retail businesses.'
+  },
+  {
+    domain: 'Digital Music Space',
+    description: 'Online shopping experiences and product platforms.'
+  }
+];
+---
+
+<Layout>
+  <!-- Hero Section -->
+  <section class="h-screen flex items-center justify-center relative overflow-hidden">
+    <div class="parallax-bg absolute inset-0 z-0">
+      <img 
+        src={bgImage.src} 
+        alt="Background" 
+        class="w-full h-full object-cover"
+        loading="lazy"
+      />
+      <div class="absolute inset-0 bg-white/30"></div>
+    </div>
+    
+    <div class="relative z-10 text-center text-white">
+      <img 
+        src="/logos/aiezlogo.svg" 
+        alt="Aiez A. Logo" 
+        class="mx-auto w-250 md:w-450 mb-4" 
+        loading="lazy"
+      />
+      <p class="text-xl md:text-2xl" style="color: #b8860b;">
+        <span class="font-extrabold">Aiez M. A.</span> | UX/UI Designer & Creative Professional
+      </p>
+    </div>
+  </section>
+
+  <!-- Client Logo Strip -->
+  <LogoStrip />
+
+  <!-- Value Section -->
+  <section class="py-20 bg-white lazy-load">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">
+        Creating Value in the Lives of Others
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        {valueCards.map(card => (
+          <div class="bg-gray-50 p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+            <h3 class="text-xl font-semibold mb-4">{card.title}</h3>
+            <p class="text-gray-600">{card.description}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section class="py-20 bg-gray-50 lazy-load">
+    <div class="container mx-auto px-4">
+      <h3 class="text-3xl md:text-4xl font-bold text-left mb-16">
+        I’ve worked as a 
+        <span class="text-[rgb(184_134_11_/_var(--tw-bg-opacity,1))]">UX designer</span>
+        <br />
+        and in <span class="text-[rgb(184_134_11_/_var(--tw-bg-opacity,1))]">design leadership</span> roles for:
+      </h3>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        {experienceCards.map(card => (
+          <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+            <h3 class="text-xl font-semibold mb-2">{card.role}</h3>
+            <p class="text-accent mb-2">{card.company}</p>
+            <p class="text-sm text-gray-500 mb-4">{card.period}</p>
+            <p class="text-gray-600">{card.description}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Domains Section -->
+  <section class="py-20 bg-white lazy-load">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl md:text-4xl font-bold text-left mb-16">
+        I’ve been in 
+        <span class="text-[rgb(184_134_11_/_var(--tw-bg-opacity,1))]">industries and domains</span> 
+        <br />
+        working with design:
+      </h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        {domainCards.map(card => (
+          <div class="bg-gray-50 p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+            <h3 class="text-xl font-semibold mb-4">{card.domain}</h3>
+            <p class="text-gray-600">{card.description}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Current Work Section -->
+  <section class="py-20 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <h2 class="text-5xl md:text-4xl font-bold text-left mb-16">
+        I’m currently working with 
+        <span class="text-[rgb(184_134_11_/_var(--tw-bg-opacity,1))]">Beyond Blue</span> 
+        <br />
+        to provide in-house creative services.
+      </h2>
+      <div class="max-w-10xl mx-auto">
+        <div class="rounded-lg">
+          <p class="text-lg text-gray-700 mb-6">
+            Leading multimedia design initiatives across digital and print, elevating brand identity 
+            and enhancing engagement through high-quality content, A/V production, and dynamic user experiences.
+          </p>
+
+          <!-- Tags Section -->
+        <div class="flex flex-wrap gap-2">
+          <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm transition-all duration-300 transform hover:scale-110 hover:bg-white hover:border-2 hover:border-[rgb(184_134_11_/_var(--tw-bg-opacity,1))] hover:text-black">
+            brand identity
+          </span>
+          <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm transition-all duration-300 transform hover:scale-110 hover:bg-white hover:border-2 hover:border-[rgb(184_134_11_/_var(--tw-bg-opacity,1))] hover:text-black">
+            visual storytelling
+          </span>
+          <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm transition-all duration-300 transform hover:scale-110 hover:bg-white hover:border-2 hover:border-[rgb(184_134_11_/_var(--tw-bg-opacity,1))] hover:text-black">
+            A/V production
+          </span>
+          <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm transition-all duration-300 transform hover:scale-110 hover:bg-white hover:border-2 hover:border-[rgb(184_134_11_/_var(--tw-bg-opacity,1))] hover:text-black">
+            motion graphics
+          </span>
+          <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm transition-all duration-300 transform hover:scale-110 hover:bg-white hover:border-2 hover:border-[rgb(184_134_11_/_var(--tw-bg-opacity,1))] hover:text-black">
+            UX/UI design
+          </span>
+          <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm transition-all duration-300 transform hover:scale-110 hover:bg-white hover:border-2 hover:border-[rgb(184_134_11_/_var(--tw-bg-opacity,1))] hover:text-black">
+            web design
+          </span>
+          <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm transition-all duration-300 transform hover:scale-110 hover:bg-white hover:border-2 hover:border-[rgb(184_134_11_/_var(--tw-bg-opacity,1))] hover:text-black">
+            social media design
+          </span>
+          <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm transition-all duration-300 transform hover:scale-110 hover:bg-white hover:border-2 hover:border-[rgb(184_134_11_/_var(--tw-bg-opacity,1))] hover:text-black">
+            marketing collateral
+          </span>
+          <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm transition-all duration-300 transform hover:scale-110 hover:bg-white hover:border-2 hover:border-[rgb(184_134_11_/_var(--tw-bg-opacity,1))] hover:text-black">
+            accessibility
+          </span>
+          <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm transition-all duration-300 transform hover:scale-110 hover:bg-white hover:border-2 hover:border-[rgb(184_134_11_/_var(--tw-bg-opacity,1))] hover:text-black">
+            user engagement
+          </span>
+          <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm transition-all duration-300 transform hover:scale-110 hover:bg-white hover:border-2 hover:border-[rgb(184_134_11_/_var(--tw-bg-opacity,1))] hover:text-black">
+            multimedia design
+          </span>
+          <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm transition-all duration-300 transform hover:scale-110 hover:bg-white hover:border-2 hover:border-[rgb(184_134_11_/_var(--tw-bg-opacity,1))] hover:text-black">
+            creative strategy
+          </span>
+          <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm transition-all duration-300 transform hover:scale-110 hover:bg-white hover:border-2 hover:border-[rgb(184_134_11_/_var(--tw-bg-opacity,1))] hover:text-black">
+            content creation
+          </span>
+          <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm transition-all duration-300 transform hover:scale-110 hover:bg-white hover:border-2 hover:border-[rgb(184_134_11_/_var(--tw-bg-opacity,1))] hover:text-black">
+            brand consistency
+          </span>
+          <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm transition-all duration-300 transform hover:scale-110 hover:bg-white hover:border-2 hover:border-[rgb(184_134_11_/_var(--tw-bg-opacity,1))] hover:text-black">
+            digital platforms
+          </span>
+          <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm transition-all duration-300 transform hover:scale-110 hover:bg-white hover:border-2 hover:border-[rgb(184_134_11_/_var(--tw-bg-opacity,1))] hover:text-black">
+            print design
+          </span>
+          <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm transition-all duration-300 transform hover:scale-110 hover:bg-white hover:border-2 hover:border-[rgb(184_134_11_/_var(--tw-bg-opacity,1))] hover:text-black">
+            creative direction
+          </span>
+          <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm transition-all duration-300 transform hover:scale-110 hover:bg-white hover:border-2 hover:border-[rgb(184_134_11_/_var(--tw-bg-opacity,1))] hover:text-black">
+            user experience
+          </span>
+          <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm transition-all duration-300 transform hover:scale-110 hover:bg-white hover:border-2 hover:border-[rgb(184_134_11_/_var(--tw-bg-opacity,1))] hover:text-black">
+            brand awareness
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- Resume Section -->
+  <section class="py-20 bg-white lazy-load">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-3xl md:text-4xl font-bold mb-8">Resume</h2>
+      <p class="text-xl text-gray-600 mb-8">
+        Read more about my experience.
+      </p>
+      <a 
+        href="/resume" 
+        class="inline-block bg-secondary text-white px-8 py-4 rounded-full hover:bg-accent transition-colors"
+      >
+        View Resume
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer Logo Strip -->
+  <LogoStrip />
+</Layout>
+
+<script>
+  // Lazy load sections below the fold using Intersection Observer API
+  document.addEventListener('DOMContentLoaded', () => {
+    const lazySections = document.querySelectorAll('.lazy-load');
+
+    const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('loaded');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.25 });
+
+    lazySections.forEach(section => {
+      observer.observe(section);
+    });
+  });
+</script>
+
+<script>
+ document.addEventListener('scroll', () => {
+  const parallaxBg = document.querySelector('.parallax-bg');
+  const scrollPosition = window.scrollY;
+  
+  // Adjust the speed of the parallax effect here
+  const parallaxSpeed = 0.1;
+
+  // Calculate the scale factor dynamically
+  const scaleAmount = 1 + (scrollPosition / 1000); // Scale starts from 1 and increases based on scroll
+  
+  // Set the new scale and the blur effect based on the scroll position
+  parallaxBg.style.transform = `translateY(-${scrollPosition * parallaxSpeed}px) scale(${scaleAmount})`;
+  parallaxBg.style.filter = `blur(${Math.min(scrollPosition * 0.050, 25)}px)`; // Max blur is 25px
+});
+
+</script>
+
+<style>
+/* Parallax effect with scaling */
+.parallax-bg {
+  will-change: transform;
+  transition: transform 0.1s ease-out;
+}
+
+  /* Class for lazy-loaded sections */
+  .lazy-load {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+
+  .lazy-load.loaded {
+    opacity: 1;
+  }
+</style>

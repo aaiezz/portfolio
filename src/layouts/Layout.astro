@@ -1,0 +1,74 @@
+---
+import '@fontsource/inter/400.css';
+import '@fontsource/inter/500.css';
+import '@fontsource/inter/600.css';
+import '@fontsource/inter/700.css';
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const { 
+  title = "Aiez A. – UX/UI Designer & Creative Professional",
+  description = "Portfolio of Aiez M. A., showcasing UX/UI design, photography, videography, and graphic design work."
+} = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+  </head>
+  <body class="bg-primary text-secondary">
+    <!-- Header with Gold Gradient Underline -->
+    <header class="fixed w-full bg-primary/80 backdrop-blur-sm z-50 border-b-[1.5px] gradient-underline">
+      <nav class="container mx-auto px-4 py-4">
+        <!-- Flexbox container, items will be aligned to the right -->
+        <div class="flex items-center justify-end space-x-8">
+          <!-- Each navigation link -->
+          <a href="/" class="hover:text-accent transition-colors">Home</a>
+          <a href="/resume" class="hover:text-accent transition-colors">Resume</a>
+          <a href="/portfolio" class="hover:text-accent transition-colors">Portfolio</a>
+          <a href="/about" class="hover:text-accent transition-colors">About</a>
+          <a href="/contact" class="hover:text-accent transition-colors">Contact</a>
+        </div>
+      </nav>
+    </header>
+    
+
+    <main>
+      <slot />
+    </main>
+
+    <footer class="bg-primary py-4">
+      <div class="container mx-auto px-4 text-center">
+        <p class="text-sm">
+          © {new Date().getFullYear()} Designed & Developed by Aiez M A.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
+
+<style is:global>
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    min-height: 100vh;
+  }
+
+  /* Gold Underline Effect */
+  .gradient-underline {
+    border-bottom: 1.5px solid transparent;
+    border-image-source: linear-gradient(to right, transparent 15%, #B8860B 50%, transparent 85%);
+    border-image-slice: 1;
+  }
+</style>

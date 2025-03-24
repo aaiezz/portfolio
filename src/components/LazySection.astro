@@ -1,0 +1,33 @@
+---
+const { threshold = 0.1 } = Astro.props;
+---
+
+<div 
+  class="opacity-0 transform translate-y-8 transition-all duration-700"
+  data-lazy-section
+  data-threshold={threshold}
+>
+  <slot />
+</div>
+
+<script>
+  const sections = document.querySelectorAll('[data-lazy-section]');
+  
+  const observerCallback = (entries: IntersectionObserverEntry[]) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.remove('opacity-0', 'translate-y-8');
+        observer.unobserve(entry.target);
+      }
+    });
+  };
+
+  const observer = new IntersectionObserver(observerCallback, {
+    threshold: 0.1,
+    rootMargin: '50px'
+  });
+
+  sections.forEach(section => {
+    observer.observe(section);
+  });
+</script>

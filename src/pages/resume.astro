@@ -1,0 +1,296 @@
+---
+import Layout from '../layouts/Layout.astro';
+import ExperienceAccordion from '../components/ExperienceAccordion.astro';
+import LazySection from '../components/LazySection.astro';
+import LogoStrip from '../components/LogoStrip.astro';
+import '@fontsource/space-grotesk';
+import '@fontsource/inter';
+
+const jobs = [
+  {
+    company: "Beyond Blue",
+    role: "Multimedia Designer",
+    period: "Nov 2023 - Present",
+    duties: [
+      "Lead UX/UI design for mental health support digital platforms",
+      "Create accessible and intuitive user interfaces for diverse audiences",
+      "Collaborate with mental health professionals to optimize user journeys"
+    ]
+  },
+  {
+    company: "Kepler Analytics",
+    role: "UX Designer",
+    period: "Sept 2022 - Oct 2023",
+    duties: [
+      "Designed data visualization interfaces for retail analytics platform",
+      "Improved dashboard usability through user research and testing",
+      "Implemented design system for consistent cross-platform experience"
+    ]
+  },
+  {
+    company: "Click Creative",
+    role: "UX/UI Designer",
+    period: "Apr 2021 - Sept 2022",
+    duties: [
+      "Led UX/UI design for various client projects across industries",
+      "Conducted user research and usability testing",
+      "Created wireframes, prototypes, and final designs"
+    ]
+  },
+  {
+    company: "Orange Design Group",
+    role: "Senior UX/UI Designer",
+    period: "Nov 2017 - Aug 2021",
+    duties: [
+      "Managed design team and client relationships",
+      "Established UX design processes and guidelines",
+      "Mentored junior designers and conducted design reviews"
+    ]
+  },
+  {
+    company: "Digital Generation",
+    role: "Design Manager",
+    period: "Mar 2017 - Sep 2017",
+    duties: [
+      "Facilitated collaboration between clients, account managers, copywriters, and graphic designers to streamline workflows",
+      "Introduced A/B testing methodologies to optimize landing pages, banners, and product images for clients",
+      "Led frontend design initiatives focused on user-centered principles, enhancing engagement and brand identity"
+    ]
+  },
+  {
+    company: "Vorsteiner, Middle East",
+    role: "Lead Designer",
+    period: "Apr 2015 - Feb 2017",
+    duties: [
+      "Established brand management and corporate identity standards",
+      "Developed and executed digital marketing strategies for the Middle East region",
+      "Produced marketing materials and promotional briefs to elevate brand presence"
+    ]
+  },
+  {
+    company: "Gold & Co. London",
+    role: "Marketing Manager",
+    period: "Jan 2015 - Jun 2016",
+    duties: [
+      "Directed global brand development and art direction to ensure a cohesive visual identity",
+      "Managed social media, Digital Music Space, and international television media efforts to expand the brand's global presence",
+      "Produced scripts and scenes for a UK Channel 4 documentary highlighting brand features",
+      "Directed high-profile photoshoots for GCC Royal Families and celebrity clients"
+    ]
+  },
+  {
+    company: "Gold & Co. London",
+    role: "Product Design Manager",
+    period: "Oct 2013 - Dec 2014",
+    duties: [
+      "Designed custom-made products for high-profile clients, including the Burj Al Arab",
+      "Oversaw brand development and online presence, enhancing visibility and engagement"
+    ]
+  },
+  {
+    company: "KBS Communication",
+    role: "Principal Photographer / Creative Consultant",
+    period: "Mar 2011 - Apr 2013",
+    duties: [
+      "Principal photographer for Formula 1 champions Michael Schumacher and Nico Rosberg for Mercedes-Benz UAE",
+      "Conducted private photoshoots for UAE royalty, ensuring discretion and creative excellence"
+    ]
+  }
+];
+---
+
+<Layout 
+  title="Resume - Aiez M.A. | UX/UI Designer"
+  description="Professional resume of Aiez A., a Melbourne-based UX Designer specializing in creating seamless web and app experiences."
+>
+  <div class="min-h-screen bg-[#F9F9F9]">
+    <div class="container mx-auto px-4 py-20 max-w-5xl">
+  <!-- Header Section -->
+<header class="mb-16 flex justify-between items-center">
+  <h2 class="font-grotesk text-4xl font-bold text-[#1A1A1A]">Resume</h2>
+  <a 
+    href="https://bit.ly/3Eg9d0K" 
+    target="_blank" 
+    rel="noopener noreferrer"
+    class="inline-flex items-center gap-2 px-6 py-3 bg-[#1A1A1A] text-white rounded-full hover:bg-[#333] transition-colors font-medium"
+  >
+    <span>Download Resume</span>
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+      <polyline points="7 10 12 15 17 10"/>
+      <line x1="12" y1="15" x2="12" y2="3"/>
+    </svg>
+  </a>
+</header>
+
+
+<!-- Profile Section -->
+<section class="mb-20">
+  <p class="text-lg text-gray-700 leading-relaxed max-w-5xl text-center">
+    I am a Melbourne-based UX Designer specializing in creating seamless web and app experiences. 
+    With over 8 years of experience in digital design, I bring a unique blend of UX/UI expertise 
+    and multimedia skills to create engaging, user-centered digital solutions.
+  </p>
+
+  <!-- Cards Section -->
+  <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+    <!-- Card 1: Behaviour -->
+    <div class="p-6 rounded-lg">
+      <h3 class="text-2xl font-semibold text-[#1A1A1A] mb-4">Behaviour</h3>
+      <p class="text-sm text-gray-700">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, 
+        dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam.
+      </p>
+    </div>
+
+    <!-- Card 2: Strengths -->
+    <div class="p-6 rounded-lg">
+      <h3 class="text-2xl font-semibold text-[#1A1A1A] mb-4">Strengths</h3>
+      <p class="text-sm text-gray-700">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, 
+        dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam.
+      </p>
+    </div>
+
+    <!-- Card 3: Mindset -->
+    <div class="p-6 rounded-lg">
+      <h3 class="text-2xl font-semibold text-[#1A1A1A] mb-4">Mindset</h3>
+      <p class="text-sm text-gray-700">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, 
+        dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam.
+      </p>
+    </div>
+  </div>
+</section>
+
+
+<!-- Experience Section -->
+<LazySection>
+  <section class="mb-20">
+    <h2 class="font-grotesk text-3xl font-bold mb-10 text-[#1A1A1A]">Experience</h2>
+    <div class="space-y-4">
+      {jobs.map((job) => (
+        <ExperienceAccordion job={job} />
+      ))}
+    </div>
+  </section>
+</LazySection>
+
+
+      <!-- Skills Section -->
+      <LazySection>
+        <section class="mb-20">
+          <h2 class="font-grotesk text-3xl font-bold mb-10 text-[#1A1A1A]">Skills</h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-7xl mx-auto">
+            <div class="bg-white shadow-lg p-8 rounded-lg w-full">
+              <h3 class="font-grotesk text-xl font-bold mb-6 text-[#1A1A1A]">Design</h3>
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-8 w-full">
+                <ul class="space-y-3">
+                  {[
+                    "UX/UI Design",
+                    "Prototyping",
+                    "Material Design"
+                  ].map((skill) => (
+                    <li class="flex items-center gap-2 text-gray-700">
+                      <span class="w-1.5 h-1.5 rounded-full bg-[#1A1A1A]"></span>
+                      <span>{skill}</span>
+                    </li>
+                  ))}
+                </ul>
+                <ul class="space-y-3">
+                  {[
+                    "Design Systems",
+                    "Accessibility",
+                    "Responsive Design"
+                  ].map((skill) => (
+                    <li class="flex items-center gap-2 text-gray-700">
+                      <span class="w-1.5 h-1.5 rounded-full bg-[#1A1A1A]"></span>
+                      <span>{skill}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+            <div class="bg-white shadow-lg p-8 rounded-lg w-full">
+              <h3 class="font-grotesk text-xl font-bold mb-6 text-[#1A1A1A]">Tools & Software</h3>
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-8 w-full">
+                <ul class="space-y-3">
+                  {[
+                    "Adobe Creative Suite",
+                    "Figma",
+                    "Sketch"
+                  ].map((tool) => (
+                    <li class="flex items-center gap-2 text-gray-700">
+                      <span class="w-1.5 h-1.5 rounded-full bg-[#1A1A1A]"></span>
+                      <span>{tool}</span>
+                    </li>
+                  ))}
+                </ul>
+                <ul class="space-y-3">
+                  {[
+                    "InVision",
+                    "Jira",
+                    "Rhino CAD"
+                  ].map((tool) => (
+                    <li class="flex items-center gap-2 text-gray-700">
+                      <span class="w-1.5 h-1.5 rounded-full bg-[#1A1A1A]"></span>
+                      <span>{tool}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+      </LazySection>
+
+      <!-- Education Section -->
+      <LazySection>
+        <section class="mb-20">
+          <h2 class="font-grotesk text-3xl font-bold mb-10 text-[#1A1A1A]">Education</h2>
+          <div class="space-y-8">
+            <div class="bg-white p-8 rounded-2xl">
+              <h3 class="font-grotesk text-xl font-bold mb-2 text-[#1A1A1A]">Curtin University</h3>
+              <p class="text-gray-700 mb-1">Bachelor of Arts (Digital Experience & Interaction Design)</p>
+              <p class="text-gray-500">Currently Enrolled</p>
+            </div>
+            <div class="bg-white p-8 rounded-2xl">
+              <h3 class="font-grotesk text-xl font-bold mb-2 text-[#1A1A1A]">UniSA</h3>
+              <p class="text-gray-700 mb-1">Bachelor of Management (HRM)</p>
+              <p class="text-gray-500">2010</p>
+            </div>
+          </div>
+        </section>
+      </LazySection>
+    </div>
+    <!-- Portfolio Banner Section (outside container) -->
+<LazySection>
+  <section class="bg-[#1A1A1A] text-white py-20 w-full">
+    <div class="max-w-7xl mx-auto text-center px-4">
+      <h2 class="font-grotesk text-4xl font-bold mb-6">Check Out My Portfolio</h2>
+      <p class="text-lg mb-8">Explore my past projects and the creative work I've done for various clients.</p>
+      <a href="#portfolio" class="bg-[#F1F1F1] text-[#1A1A1A] py-3 px-6 rounded-lg font-semibold text-lg hover:bg-gray-300 transition-all duration-300">View Portfolio</a>
+    </div>
+  </section>
+</LazySection>
+  </div>
+    <!-- Footer Logo Strip -->
+    <LogoStrip />
+</Layout>
+
+<style>
+  .font-grotesk {
+    font-family: 'Space Grotesk', sans-serif;
+  }
+
+  body {
+    font-family: 'Inter', sans-serif;
+  }
+</style>
+
+<script>
+  import Alpine from 'alpinejs'
+  
+  window.Alpine = Alpine
+  Alpine.start()
+</script>

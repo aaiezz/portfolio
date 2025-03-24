@@ -1,0 +1,92 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Contact - Aiez A.">
+  <div class="pt-24 pb-12">
+    <div class="container mx-auto px-4 max-w-lg">
+      <h1 class="text-4xl font-bold text-center mb-8">Contact Me</h1>
+      <p class="text-center text-gray-600 mb-8">
+        Feel free to reach out for collaborations or inquiries.
+      </p>
+
+      <!-- Contact Form -->
+      <form class="space-y-10"> <!-- 40px spacing -->
+        <!-- Name Fields -->
+        <div class="flex gap-4">
+          <div class="relative w-1/2">
+            <input
+              type="text"
+              name="firstName"
+              required
+              placeholder="First Name"
+              class="peer w-full h-[80px] max-w-[450px] bg-[#FAFAFA] border-b-[0.5px] border-black focus:outline-none focus:border-accent transition-all px-2"
+            />
+          </div>
+          <div class="relative w-1/2">
+            <input
+              type="text"
+              name="lastName"
+              required
+              placeholder="Last Name"
+              class="peer w-full h-[80px] max-w-[450px] bg-[#FAFAFA] border-b-[0.5px] border-black focus:outline-none focus:border-accent transition-all px-2"
+            />
+          </div>
+        </div>
+
+        <!-- Email Field -->
+        <div class="relative">
+          <input
+            type="email"
+            name="email"
+            required
+            placeholder="Email"
+            class="peer w-full h-[40px] max-w-[500px] bg-[#FAFAFA] border-b-[0.5px] border-black focus:outline-none focus:border-accent transition-all px-2"
+          />
+        </div>
+
+        <!-- Subject Field -->
+        <div class="relative">
+          <input
+            type="text"
+            name="subject"
+            required
+            placeholder="Subject"
+            class="peer w-full h-[40px] max-w-[500px] bg-[#FAFAFA] border-b-[0.5px] border-black focus:outline-none focus:border-accent transition-all px-2"
+          />
+        </div>
+
+        <!-- Message Field -->
+        <div class="relative">
+          <textarea
+            name="message"
+            rows="4"
+            required
+            placeholder="Message"
+            class="peer w-full h-[250
+            px] max-w-[500px] bg-[#FAFAFA] border-b-[0.5px] border-black focus:outline-none focus:border-accent transition-all px-2"
+          ></textarea>
+        </div>
+
+        <!-- CAPTCHA Field -->
+        <div class="relative">
+          <input
+            type="text"
+            name="captcha"
+            required
+            placeholder="Enter CAPTCHA: 5 + 3 = ?"
+            class="peer w-full h-[40px] max-w-[500px] bg-[#FAFAFA] border-b-[0.5px] border-black focus:outline-none focus:border-accent transition-all px-2"
+          />
+        </div>
+
+        <!-- Submit Button -->
+        <button
+          type="submit"
+          class="w-full bg-secondary text-white py-3 rounded-md hover:bg-accent transition-all"
+        >
+          Send Message
+        </button>
+      </form>
+    </div>
+  </div>
+</Layout>

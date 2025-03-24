@@ -1,0 +1,82 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { PortfolioFilter } from '../../components/PortfolioFilter';
+import { ProjectCard } from '../../components/ProjectCard';
+import { projects } from '../../data/projects';
+
+
+const crumbs = [{ label: 'Portfolio' }];
+---
+
+<Layout title="Portfolio - Aiez " description="Explore my work across UX/UI design, photography, videography, and graphic design.">
+  <div class="pt-24 pb-12">
+    <div class="container mx-auto px-4">
+      <header class="mb-16 flex justify-between items-center">
+        <h2 class="font-grotesk text-4xl font-bold text-[#1A1A1A]">Portfolio</h2>
+        <a 
+          href="https://bit.ly/3Eg9d0K" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          class="inline-flex items-center gap-2 px-6 py-3 bg-[#1A1A1A] text-white rounded-full hover:bg-[#333] transition-colors font-medium"
+        >
+          <span>Download Portfolio</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+            <polyline points="7 10 12 15 17 10"/>
+            <line x1="12" y1="15" x2="12" y2="3"/>
+          </svg>
+        </a>
+      </header>
+      
+      <div id="portfolio-container">
+        <PortfolioFilter client:load />
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {projects.map(project => (
+            <div data-project data-category={project.category}>
+              <ProjectCard
+                title={project.title}
+                category={project.category}
+                imageUrl={project.imageUrl}
+                client={project.client}
+                slug={project.slug}
+              />
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  </div>
+</Layout>
+
+<script>
+  function setupFilters() {
+    const portfolioContainer = document.getElementById('portfolio-container');
+    if (!portfolioContainer) return;
+
+    const filterButtons = portfolioContainer.querySelectorAll('button');
+    const projects = portfolioContainer.querySelectorAll('[data-project]');
+
+    filterButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        // Get the category ID from the button's data attribute
+        const categoryId = button.getAttribute('data-category-id');
+        
+        projects.forEach(project => {
+          const projectCategory = project.getAttribute('data-category');
+          if (categoryId === 'all' || projectCategory === categoryId) {
+            project.classList.remove('hidden');
+          } else {
+            project.classList.add('hidden');
+          }
+        });
+      });
+    });
+  }
+
+  // Setup filters when the page loads
+  setupFilters();
+
+  // Setup filters when navigating with View Transitions
+  document.addEventListener('astro:page-load', setupFilters);
+</script>

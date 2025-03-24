@@ -1,0 +1,63 @@
+---
+const { job } = Astro.props;
+---
+
+<div class="group" x-data="{ open: false }">
+  <!-- Container with dynamic padding on hover and when open -->
+  <div :class="open ? 'bg-white pl-8' : ''" class="w-full transition-all duration-300 rounded-2xl overflow-hidden hover:pl-8">
+    
+    <!-- Accordion Header -->
+    <button 
+      @click="open = !open"
+      class="w-full text-left p-8 -mx-8 rounded-2xl transition-all duration-300 hover:bg-white"
+    >
+      <div class="flex flex-col md:flex-row md:items-center gap-4 w-full">
+        
+        <!-- Company Name with Hover Effect -->
+        <h3 class="font-grotesk text-2xl font-bold text-[#1A1A1A] hover:text-[rgb(184_134_11_/_var(--tw-bg-opacity,1))] transition-colors">
+          {job.company}
+        </h3>
+
+        <!-- New Vertical Separator Line -->
+        <div class="h-6 md:h-full w-[0.75px] bg-gray-300 hidden md:block"></div>
+        
+        <p class="text-gray-600 font-medium flex-grow">{job.role}</p> <!-- Added flex-grow to make the role text flexible -->
+        
+        <!-- Period section: right aligned with ml-auto -->
+        <p class="text-gray-400 ml-auto text-right">{job.period}</p> <!-- Right-aligned period -->
+
+        <svg 
+          xmlns="http://www.w3.org/2000/svg" 
+          class="h-6 w-6 ml-auto transition-transform"
+          :class="open ? 'rotate-180' : ''"
+          fill="none" 
+          viewBox="0 0 24 24" 
+          stroke="currentColor"
+        >
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+        </svg>
+      </div>
+    </button>
+    
+    <!-- Accordion Content (Duties Section) -->
+    <div 
+      x-show="open" 
+      x-transition:enter="transition ease-out duration-200"
+      x-transition:enter-start="opacity-0 transform -translate-y-4"
+      x-transition:enter-end="opacity-100 transform translate-y-0"
+      x-transition:leave="transition ease-in duration-150"
+      x-transition:leave-start="opacity-100 transform translate-y-0"
+      x-transition:leave-end="opacity-0 transform -translate-y-4"
+      class="p-8 pt-4"
+    >
+      <ul class="space-y-2 text-gray-700">
+        {job.duties.map((duty) => (
+          <li class="flex items-start gap-2">
+            <span class="w-1.5 h-1.5 rounded-full bg-[#1A1A1A] mt-2"></span>
+            <span>{duty}</span>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </div>
+</div>

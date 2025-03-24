@@ -1,0 +1,157 @@
+ {
+    id: '7',
+    title: 'Suzuki Marine Web App',
+    category: 'ux-ui',
+    imageUrl: '../src/assets/Portfolio/img_portfolio_suzukimarinewa.jpg',
+    client: 'Suzuki Marine Australia',
+    description: {
+      main: 'Enhancing the Suzuki Marine Australia web app to streamline user experience and customization.',
+      challenge: 'Users needed an intuitive way to customize Suzuki Marine Outboard models and connect with nearby dealers.',
+      solution: 'Designed an efficient user journey with a seamless experience for customization and order inquiries.',
+      uxFocus: 'Streamlined the customization process and improved accessibility.',
+      uiFocus: 'Created a visually appealing and functionally coherent interface aligned with Suzuki Marine’s branding.',
+      outcome: 'Improved navigation, accessibility, and customization experience for users.'
+    },
+    projectDetails: {
+      duration: '5 months',
+      role: 'UX/UI Designer',
+      team: ['Frontend Developer', 'Product Manager']
+    },
+    tools: [
+      { name: 'Figma', icon: '/icons/figma.svg' },
+      { name: 'Sketch', icon: '/icons/sketch.svg' }
+    ],
+    keywords: ['web app', 'customization', 'marine industry'],
+    slug: 'smaport'
+  },
+  {
+    id: '8',
+    title: 'Suzuki Automotive Maintenance Portal',
+    category: 'ux-ui',
+    imageUrl: '../src/assets/Portfolio/img_portfolio_suzukiautoport.jpg',
+    client: 'Suzuki Automotive Australia',
+    description: {
+      main: 'Redesign of Suzuki Automotive Dealership web app for authorized dealerships.',
+      challenge: 'Needed a seamless platform for dealerships to access service and repair resources.',
+      solution: 'Optimized user journey for easy navigation through service manuals and technical bulletins.',
+      uxFocus: 'Enhanced usability and functionality with an intuitive structure.',
+      uiFocus: 'Maintained visual consistency with Suzuki’s brand for a professional dealership interface.',
+      outcome: 'Improved accessibility to essential resources for dealerships.'
+    },
+    projectDetails: {
+      duration: '6 months',
+      role: 'UX/UI Designer',
+      team: ['Frontend Developer', 'Backend Developer']
+    },
+    tools: [
+      { name: 'Figma', icon: '/icons/figma.svg' },
+      { name: 'Adobe XD', icon: '/icons/xd.svg' }
+    ],
+    keywords: ['dealership', 'automotive industry', 'service manuals'],
+    slug: 'smaport'
+  },
+  {
+    id: '9',
+    title: 'Click Creative Website',
+    category: 'ux-ui',
+    imageUrl: '../src/assets/Portfolio/img_portfolio_clickweb.jpg',
+    client: 'Click Creative',
+    description: {
+      main: 'Redesigning Click Creative’s website for improved user engagement and clarity.',
+      challenge: 'Needed a more structured and visually engaging website.',
+      solution: 'Enhanced information hierarchy, reducing clutter for a smooth user journey.',
+      uxFocus: 'Improved content readability and flow.',
+      uiFocus: 'Implemented vector art and icons to create a professional yet engaging interface.',
+      outcome: 'A cleaner and more user-friendly website experience.'
+    },
+    projectDetails: {
+      duration: '3 months',
+      role: 'UX/UI Designer',
+      team: ['Marketing Team', 'Frontend Developer']
+    },
+    tools: [
+      { name: 'Figma', icon: '/icons/figma.svg' },
+      { name: 'Sketch', icon: '/icons/sketch.svg' }
+    ],
+    keywords: ['website design', 'branding', 'information hierarchy'],
+    slug: 'ccweb'
+  },
+  // Continue the structure for Projects 10 to 15
+  {
+    id: '10',
+    title: 'Suzuki Marine Australia Website',
+    category: 'ux-ui',
+    imageUrl: '../src/assets/Portfolio/img_portfolio_suzukimarinemain.jpg',
+    client: 'Suzuki Marine Australia',
+    description: {
+      main: 'Enhancing the Suzuki Marine Australia web app to streamline user experience and customization.',
+      challenge: 'Users needed an intuitive way to customize Suzuki Marine Outboard models and connect with nearby dealers.',
+      solution: 'Designed an efficient user journey with a seamless experience for customization and order inquiries.',
+      uxFocus: 'Streamlined the customization process and improved accessibility.',
+      uiFocus: 'Created a visually appealing and functionally coherent interface aligned with Suzuki Marine’s branding.',
+      outcome: 'Improved navigation, accessibility, and customization experience for users.'
+    },
+    projectDetails: {
+      duration: '3 months',
+      role: 'UX/UI Designer',
+      team: ['Marketing Team', 'Frontend Developer']
+    },
+    tools: [
+      { name: 'Figma', icon: '/icons/figma.svg' },
+      { name: 'Sketch', icon: '/icons/sketch.svg' }
+    ],
+    keywords: ['website design', 'branding', 'information hierarchy'],
+    slug: 'smaweb'
+  },
+  {
+    id: '11',
+    title: 'APPA Website',
+    category: 'ux-ui',
+    imageUrl: '../src/assets/Portfolio/img_portfolio_appa.jpg',
+    client: 'APPA',
+    description: {
+      main: 'Redesign of APPA’s website for improved user engagement and clarity.',
+      challenge: 'Needed a more structured and visually engaging website.',
+      solution: 'Enhanced information hierarchy, reducing clutter for a smooth user journey.',
+      uxFocus: 'Improved content readability and flow.',
+      uiFocus: 'Implemented vector art and icons to create a professional yet engaging interface.',
+      outcome: 'A cleaner and more user-friendly website experience.'
+    },
+    projectDetails: {
+      duration: '3 months',
+      role: 'UX/UI Designer',
+      team: ['Marketing Team', 'Frontend Developer']
+    },
+    tools: [
+      { name: 'Figma', icon: '/icons/figma.svg' },
+      { name: 'Sketch', icon: '/icons/sketch.svg' }
+    ],
+    keywords: ['website design', 'branding', 'information hierarchy'],
+    slug: 'appa'
+  },
+  {
+    id: '12',
+    title: 'Darren Jones Website',
+    category: 'ux-ui',
+    imageUrl: '../src/assets/Portfolio/img_portfolio_darrenjones.jpg',
+    client: 'Darren Jones',
+    description: {
+      main: 'Redesign of Darren Jones’ website for improved engagement and usability.',
+      challenge: 'Needed a cleaner structure to reduce clutter.',
+      solution: 'Enhanced information hierarchy and applied modern design principles.',
+      uxFocus: 'Streamlined readability and information accessibility.',
+      uiFocus: 'Implemented vector graphics and clean layouts.',
+      outcome: 'Created a highly navigable and professional online presence.'
+    },
+    projectDetails: {
+      duration: '3 months',
+      role: 'UX/UI Designer',
+      team: ['Marketing Team', 'Frontend Developer']
+    },
+    tools: [
+      { name: 'Figma', icon: '/icons/figma.svg' },
+      { name: 'Sketch', icon: '/icons/sketch.svg' }
+    ],
+    keywords: ['website redesign', 'digital presence', 'branding'],
+    slug: 'darren-jones'
+  }

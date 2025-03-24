@@ -1,0 +1,33 @@
+---
+import Layout from '../layouts/Layout.astro';
+import bgImage from '../assets/Portfolio/img_bg-main.jpg';
+---
+
+<Layout>
+  <section class="h-screen flex items-center justify-center relative overflow-hidden">
+    <div class="absolute inset-0 z-0">
+      <img 
+        src={bgImage.src} 
+        alt="Background" 
+        class="w-full h-full object-cover"
+      />
+      <div class="absolute inset-0 bg-black/40"></div>
+    </div>
+    
+    <div class="relative z-10 text-center text-white">
+      <h1 class="text-5xl md:text-7xl font-bold mb-4">
+        Aiez A.
+      </h1>
+      <p class="text-xl md:text-2xl">
+        UX/UI Designer & Creative Professional
+      </p>
+    </div>
+  </section>
+
+  <section class="container mx-auto px-4 py-20">
+    <h2 class="text-3xl font-bold text-center mb-12">Featured Work</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Add your featured work cards here -->
+    </div>
+  </section>
+</Layout>

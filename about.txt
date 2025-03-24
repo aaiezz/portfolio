@@ -1,0 +1,415 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout 
+  title="About - Aiez A."
+  description="Learn more about Aiez A., a UX/UI Designer specializing in creating seamless digital experiences"
+>
+  <div class="pt-24 pb-12">
+    <div class="container mx-auto px-4">
+      <!-- About Me Section -->
+      <div class="bg-white rounded-lg shadow-lg p-8 mb-12">
+        <h2 class="text-2xl font-bold mb-6">About Me</h2>
+        <p class="text-gray-700 mb-8 leading-relaxed">
+          I am a Melbourne-based UX Designer with over 8 years of experience in digital design. 
+          My expertise spans across UX/UI design, photography, videography, and graphic design. 
+          I specialize in creating user-centered digital solutions that combine aesthetic excellence 
+          with functional simplicity. My approach to design is deeply rooted in understanding user 
+          needs and business objectives, ensuring that every project delivers meaningful results.
+        </p>
+
+<!-- Clients Section (Separate White Box) -->
+<h3 class="text-2xl font-semibold mb-6">Clients</h3>
+<div class="lazy-section clients-grid grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-8 items-center">
+  <a href="https://www.jumeirah.com/en/stay/dubai/burj-al-arab-jumeirah" target="_blank">
+    <img src="/logos/burjalarab.svg" alt="Client 1" class="w-100 max-w-[300px] h-auto mx-auto client-img" data-hover="/logos/burjalarab2.svg" loading="eager" />
+  </a>
+  <a href="https://www.mohamedbinzayed.ae/en/" target="_blank">
+    <img src="/logos/uae.svg" alt="Client 2" class="w-100 max-w-[300px] h-auto mx-auto client-img" data-hover="/logos/uae2.svg" loading="eager" />
+  </a>
+  <a href="https://www.wethebestmusicgroup.com/" target="_blank">
+    <img src="/logos/wtbmusic.svg" alt="Client 3" class="w-100 max-w-[300px] h-auto mx-auto client-img" data-hover="/logos/wtbmusic2.svg" loading="eager" />
+  </a>
+  <a href="https://5ivepillars.co/" target="_blank">
+    <img src="/logos/5ive.svg" alt="Client 4" class="w-100 max-w-[300px] h-auto mx-auto client-img" data-hover="/logos/5ive2.svg" loading="eager" />
+  </a>
+  <a href="https://themoneyteam.com/" target="_blank">
+    <img src="/logos/tmt.svg" alt="Client 5" class="w-100 max-w-[300px] h-auto mx-auto client-img" data-hover="/logos/tmt2.svg" loading="lazy" />
+  </a>
+  <a href="https://goldrushrally.com/" target="_blank">
+    <img src="/logos/grr.svg" alt="Client 6" class="w-100 max-w-[300px] h-auto mx-auto client-img" data-hover="/logos/grr2.svg" loading="lazy" />
+  </a>
+  <a href="https://takethat.com/" target="_blank">
+    <img src="/logos/tt.svg" alt="Client 7" class="w-100 max-w-[300px] h-auto mx-auto client-img" data-hover="/logos/tt2.svg" loading="lazy" />
+  </a>
+  <a href="https://seankingstonmusic.com/" target="_blank">
+    <img src="/logos/sean.svg" alt="Client 8" class="w-100 max-w-[300px] h-auto mx-auto client-img" data-hover="/logos/sean2.svg" loading="lazy" />
+  </a>
+  <a href="https://www.diwan.gov.qa/" target="_blank">
+    <img src="/logos/haya.svg" alt="Client 9" class="w-100 max-w-[300px] h-auto mx-auto client-img" data-hover="/logos/haya2.svg" loading="lazy" />
+  </a>
+  <a href="https://mallymall.com/" target="_blank">
+    <img src="/logos/mallymall.svg" alt="Client 10" class="w-100 max-w-[300px] h-auto mx-auto client-img" data-hover="/logos/mallymall2.svg" loading="lazy" />
+  </a>
+  <a href="https://www.frenchmontana.com/" target="_blank">
+    <img src="/logos/coke.svg" alt="Client 11" class="w-100 max-w-[300px] h-auto mx-auto client-img" data-hover="/logos/coke2.svg" loading="lazy" />
+  </a>
+  <a href="https://onyxconcept.ae/" target="_blank">
+    <img src="/logos/onyx.svg" alt="Client 12" class="w-100 max-w-[300px] h-auto mx-auto client-img" data-hover="/logos/onyx2.svg" loading="lazy" />
+  </a>
+  <a href="https://westcoastcustoms.com/" target="_blank">
+    <img src="/logos/wcc.svg" alt="Client 13" class="w-100 max-w-[300px] h-auto mx-auto client-img" data-hover="/logos/wcc2.svg" loading="lazy" />
+  </a>
+  <a href="https://www.justinbiebermusic.com/" target="_blank">
+    <img src="/logos/jb.svg" alt="Client 14" class="w-100 max-w-[300px] h-auto mx-auto client-img" data-hover="/logos/jb2.svg" loading="lazy" />
+  </a>
+  <a href="https://www.johnnydangandco.com/" target="_blank">
+    <img src="/logos/jd.svg" alt="Client 15" class="w-100 max-w-[300px] h-auto mx-auto client-img" data-hover="/logos/jd2.svg" loading="lazy" />
+  </a>
+  <a href="https://www.mansory.com/" target="_blank">
+    <img src="/logos/mansory.svg" alt="Client 16" class="w-100 max-w-[300px] h-auto mx-auto client-img" data-hover="/logos/mansory2.svg" loading="lazy" />
+  </a>
+  <a href="https://www.facebook.com/sourceLA.co/" target="_blank">
+    <img src="/logos/source.svg" alt="Client 17" class="w-100 max-w-[300px] h-auto mx-auto client-img" data-hover="/logos/source2.svg" loading="lazy" />
+  </a>  
+  <a href="https://projectkahn.com//" target="_blank">
+    <img src="/logos/kahn.svg" alt="Client 18" class="w-100 max-w-[300px] h-auto mx-auto client-img" data-hover="/logos/kahn2.svg" loading="lazy" />
+  </a>
+  <a href="https://www.mercedesamgf1.com/" target="_blank">
+    <img src="/logos/merc.svg" alt="Client 19" class="w-100 max-w-[300px] h-auto mx-auto client-img" data-hover="/logos/merc2.svg" loading="lazy" />
+  </a>
+  <a href="http://suzukimarine.com.au/" target="_blank">
+    <img src="/logos/suzuki.svg" alt="Client 20" class="w-100 max-w-[300px] h-auto mx-auto client-img" data-hover="/logos/suzuki2.svg" loading="lazy" />
+  </a>
+</div>
+
+<script>
+  // Client images hover effect
+  const clientImages = document.querySelectorAll('.client-img');
+
+  clientImages.forEach(image => {
+    const originalSrc = image.src;
+    const hoverSrc = image.getAttribute('data-hover');
+
+    image.addEventListener('mouseenter', () => {
+      image.src = hoverSrc;  // Change image source on hover
+    });
+
+    image.addEventListener('mouseleave', () => {
+      image.src = originalSrc;  // Revert back to original on mouse leave
+    });
+  });
+
+  // Lazy loading animation
+  const observerOptions = {
+    root: null,
+    rootMargin: '50px',
+    threshold: 0.1
+  };
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('loaded');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, observerOptions);
+
+  // Observe the clients grid
+  document.querySelectorAll('.lazy-section').forEach(section => {
+    observer.observe(section);
+  });
+</script>
+
+<style>
+  .client-img {
+    transition: all 0.75s ease;  /* Updated transition timing to 0.75s */
+  }
+
+  .lazy-section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.75s ease, transform 0.75s ease;
+  }
+
+  .lazy-section.loaded {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .clients-grid {
+    transition: opacity 0.75s ease;
+  }
+</style>
+
+<!-- Add this padding before the Software Skills section -->
+<div class="py-5"></div>
+
+<!-- Software Skills Section - Lazy Loaded -->
+<div class="lazy-section" data-astro-prefetch>
+  <h3 class="text-xl font-semibold mb-6">Software Skills</h3>
+
+  <!-- 4x2 Grid Layout for Software Skills -->
+  <div class="grid grid-cols-4 gap-10">
+    <!-- Jira -->
+    <div class="flex items-center gap-4">
+      <img src="/icons/jira.svg" alt="Jira" class="w-[45px] h-[45px]" loading="lazy" />
+      <span>Jira</span>
+      <div class="w-[50px] h-[10px] bg-gray-200 rounded">
+        <div class="w-[90%] h-full bg-accent rounded"></div>
+      </div>
+      <span class="text-sm text-gray-600">90%</span>
+    </div>
+
+    <!-- Rest of the software skills items... -->
+  <!-- Figma -->
+  <div class="flex items-center gap-2">
+    <img src="/icons/figma.svg" alt="Figma" class="w-[45px] h-[45px]" loading="lazy" />
+    <span>Figma</span>
+    <div class="w-[50px] h-[10px] bg-gray-200 rounded">
+      <div class="w-[80%] h-full bg-accent rounded"></div>
+    </div>
+    <span class="text-sm text-gray-600">80%</span>
+  </div>
+
+  <!-- Adobe Illustrator -->
+  <div class="flex items-center gap-2">
+    <img src="/icons/illustrator.svg" alt="Adobe Illustrator" class="w-[45px] h-[45px]" loading="lazy" />
+    <span>Illustrator</span>
+    <div class="w-[50px] h-[10px] bg-gray-200 rounded">
+      <div class="w-[90%] h-full bg-accent rounded"></div>
+    </div>
+    <span class="text-sm text-gray-600">90%</span>
+  </div>
+
+  <!-- Adobe Photoshop -->
+  <div class="flex items-center gap-2">
+    <img src="/icons/photoshop.svg" alt="Adobe Photoshop" class="w-[45px] h-[45px]" loading="lazy" />
+    <span>Photoshop</span>
+    <div class="w-[50px] h-[10px] bg-gray-200 rounded">
+      <div class="w-[70%] h-full bg-accent rounded"></div>
+    </div>
+    <span class="text-sm text-gray-600">70%</span>
+  </div>
+
+  <!-- InDesign -->
+  <div class="flex items-center gap-2">
+    <img src="/icons/id.svg" alt="InDesign" class="w-[45px] h-[45px]" loading="lazy" />
+    <span>InDesign</span>
+    <div class="w-[50px] h-[10px] bg-gray-200 rounded">
+      <div class="w-[70%] h-full bg-accent rounded"></div>
+    </div>
+    <span class="text-sm text-gray-600">70%</span>
+  </div>
+
+  <!-- Sketch -->
+  <div class="flex items-center gap-2">
+    <img src="/icons/sketch.svg" alt="Sketch" class="w-[45px] h-[45px]" loading="lazy" />
+    <span>Sketch</span>
+    <div class="w-[50px] h-[10px] bg-gray-200 rounded">
+      <div class="w-[75%] h-full bg-accent rounded"></div>
+    </div>
+    <span class="text-sm text-gray-600">75%</span>
+  </div>
+
+  <!-- Adobe XD -->
+  <div class="flex items-center gap-2">
+    <img src="/icons/xd.svg" alt="Adobe XD" class="w-[45px] h-[45px]" loading="lazy" />
+    <span>Adobe XD</span>
+    <div class="w-[50px] h-[10px] bg-gray-200 rounded">
+      <div class="w-[85%] h-full bg-accent rounded"></div>
+    </div>
+    <span class="text-sm text-gray-600">85%</span>
+  </div>
+
+  <!-- After Effects -->
+  <div class="flex items-center gap-2">
+    <img src="/icons/ae.svg" alt="After Effects" class="w-[45px] h-[45px]" loading="lazy" />
+    <span>After Effects</span>
+    <div class="w-[50px] h-[10px] bg-gray-200 rounded">
+      <div class="w-[75%] h-full bg-accent rounded"></div>
+    </div>
+    <span class="text-sm text-gray-600">75%</span>
+  </div>
+
+<!-- Premiere Pro -->
+ <div class="flex items-center gap-2">
+  <img src="/icons/pp.svg" alt="Premiere Pro" class="w-[45px] h-[45px]" loading="lazy" />
+  <span>Premiere Pro</span>
+  <div class="w-[50px] h-[10px] bg-gray-200 rounded">
+    <div class="w-[75%] h-full bg-accent rounded"></div>
+  </div>
+  <span class="text-sm text-gray-600">75%</span>
+</div>
+
+<!-- Character Animator -->
+<div class="flex items-center gap-2">
+  <img src="/icons/ch.svg" alt="Character Animator" class="w-[45px] h-[45px]" loading="lazy" />
+  <span>Char. Animator</span>
+  <div class="w-[50px] h-[10px] bg-gray-200 rounded">
+    <div class="w-[75%] h-full bg-accent rounded"></div>
+  </div>
+  <span class="text-sm text-gray-600">75%</span>
+</div>
+
+<!-- Audition -->
+<div class="flex items-center gap-2">
+  <img src="/icons/au.svg" alt="Audition" class="w-[45px] h-[45px]" loading="lazy" />
+  <span>Audition</span>
+  <div class="w-[50px] h-[10px] bg-gray-200 rounded">
+    <div class="w-[75%] h-full bg-accent rounded"></div>
+  </div>
+  <span class="text-sm text-gray-600">75%</span>
+</div>
+
+<!-- Capture -->
+<div class="flex items-center gap-2">
+  <img src="/icons/capture.svg" alt="Capture" class="w-[45px] h-[45px]" loading="lazy" />
+  <span>Capture</span>
+  <div class="w-[50px] h-[10px] bg-gray-200 rounded">
+    <div class="w-[75%] h-full bg-accent rounded"></div>
+  </div>
+  <span class="text-sm text-gray-600">75%</span>
+</div>
+
+<!-- Comp -->
+<div class="flex items-center gap-2">
+  <img src="/icons/comp.svg" alt="Comp" class="w-[45px] h-[45px]" loading="lazy" />
+  <span>Comp</span>
+  <div class="w-[50px] h-[10px] bg-gray-200 rounded">
+    <div class="w-[75%] h-full bg-accent rounded"></div>
+  </div>
+  <span class="text-sm text-gray-600">75%</span>
+</div>
+
+  <!-- Visual Studio Code -->
+  <div class="flex items-center gap-2">
+    <img src="/icons/vsc.svg" alt="Visual Studio Code" class="w-[45px] h-[45px]" loading="lazy" />
+    <span>VSC</span>
+    <div class="w-[50px] h-[10px] bg-gray-200 rounded">
+      <div class="w-[60%] h-full bg-accent rounded"></div>
+    </div>
+    <span class="text-sm text-gray-600">60%</span>
+  </div>
+
+  <!-- InVision -->
+  <div class="flex items-center gap-2">
+    <img src="/icons/invision.svg" alt="InVision" class="w-[45px] h-[45px]" loading="lazy" />
+    <span>InVision</span>
+    <div class="w-[50px] h-[10px] bg-gray-200 rounded">
+      <div class="w-[60%] h-full bg-accent rounded"></div>
+    </div>
+    <span class="text-sm text-gray-600">60%</span>
+  </div>
+
+  <!-- Mail Chimp -->
+    <div class="flex items-center gap-4">
+      <img src="/icons/mailchimp.svg" alt="Mail Chimp" class="w-[45px] h-[45px]" loading="lazy" />
+      <span>Mail Chimp</span>
+      <div class="w-[50px] h-[10px] bg-gray-200 rounded">
+        <div class="w-[60%] h-full bg-accent rounded"></div>
+      </div>
+      <span class="text-sm text-gray-600">15%</span>
+    </div>
+
+  <!-- Keyshot -->
+  <div class="flex items-center gap-2">
+    <img src="/icons/keyshot.svg" alt="Keyshot" class="w-[45px] h-[45px]" loading="lazy" />
+    <span>Keyshot</span>
+    <div class="w-[50px] h-[10px] bg-gray-200 rounded">
+      <div class="w-[65%] h-full bg-accent rounded"></div>
+    </div>
+    <span class="text-sm text-gray-600">15%</span>
+  </div>
+
+  <!-- Matrix -->
+  <div class="flex items-center gap-2">
+    <img src="/icons/matrix.svg" alt="Gem Vision, Matrix 9.0" class="w-[45px] h-[45px]" loading="lazy" />
+    <span>Gem Vision, Matrix</span>
+    <div class="w-[50px] h-[10px] bg-gray-200 rounded">
+      <div class="w-[65%] h-full bg-accent rounded"></div>
+    </div>
+    <span class="text-sm text-gray-600">65%</span>
+  </div>
+
+  <!-- Webflow -->
+  <div class="flex items-center gap-2">
+    <img src="/icons/webflow.svg" alt="Webflow" class="w-[45px] h-[45px]" loading="lazy" />
+    <span>Webflow</span>
+    <div class="w-[50px] h-[10px] bg-gray-200 rounded">
+      <div class="w-[70%] h-full bg-accent rounded"></div>
+    </div>
+    <span class="text-sm text-gray-600">70%</span>
+  </div>
+
+  <!-- Later -->
+  <div class="flex items-center gap-2">
+    <img src="/icons/later.svg" alt="Later" class="w-[45px] h-[45px]" loading="lazy" />
+    <span>Later</span>
+    <div class="w-[50px] h-[10px] bg-gray-200 rounded">
+      <div class="w-[70%] h-full bg-accent rounded"></div>
+    </div>
+    <span class="text-sm text-gray-600">70%</span>
+  </div>
+
+</div>
+</div>   </div>
+</div>
+
+        <!-- Mindmap Section - Lazy Loaded -->
+        <div class="lazy-section mt-12" data-astro-prefetch>
+          <h2 class="text-2xl font-bold mb-6">My UX Design Process</h2>
+          <div class="bg-white rounded-lg shadow-lg overflow-hidden" style="max-width: 80%; width: 80%; align:center;">
+            <div class="aspect-[16/9] relative">
+              <iframe 
+                src="https://www.mindmeister.com/maps/public_map_shell/2810277378" 
+                class="absolute inset-0 w-full h-full"
+                frameborder="0" 
+                allowfullscreen
+                loading="lazy"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</Layout>
+
+<script>
+  // Intersection Observer for lazy loading sections
+  const observerOptions = {
+    root: null,
+    rootMargin: '50px',
+    threshold: 0.1
+  };
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('loaded');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, observerOptions);
+
+  // Observe all lazy sections
+  document.querySelectorAll('.lazy-section').forEach(section => {
+    observer.observe(section);
+  });
+</script>
+
+<style>
+  .lazy-section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+
+  .lazy-section.loaded {
+    opacity: 1;
+    transform: translateY(0);
+  }
+</style>

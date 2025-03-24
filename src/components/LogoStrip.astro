@@ -1,0 +1,123 @@
+---
+const clients = [
+  { name: 'Mercedes F1', logo: '/logos/merc.svg', url: 'https://www.mercedesamgf1.com/' },  
+  { name: 'Burj al arab', logo: '/logos/burjalarab.svg', url: 'https://www.jumeirah.com/en/stay/dubai/burj-al-arab-jumeirah' },
+  { name: 'Suzuki Marine', logo: '/logos/suzuki.svg', url: 'http://suzukimarine.com.au/' },
+  { name: 'Kahn', logo: '/logos/kahn.svg', url: 'https://projectkahn.com/' },
+  { name: 'Mansory', logo: '/logos/mansory.svg', url: 'https://www.mansory.com/' },
+  { name: 'West Coast Customs', logo: '/logos/wcc.svg', url: 'https://westcoastcustoms.com/' },
+  { name: 'goldRush Rally', logo: '/logos/grr.svg', url: 'https://goldrushrally.com/' },
+  { name: 'Five Pillars', logo: '/logos/5ive.svg', url: 'https://5ivepillars.co/' },
+  { name: 'Sean Kingston', logo: '/logos/sean.svg', url: 'https://seankingstonmusic.com/' },
+  { name: 'Justin Beiber', logo: '/logos/jb.svg', url: 'https://www.justinbiebermusic.com/' },
+  { name: 'French Montana', logo: '/logos/coke.svg', url: 'https://www.frenchmontana.com/' },
+  { name: 'The Money Team', logo: '/logos/tmt.svg', url: 'https://themoneyteam.com/' }
+];
+
+// Double the array to create a seamless loop
+const scrollingClients = [...clients, ...clients];
+
+---
+
+<div class="py-12 bg-gray-50 overflow-hidden">
+  <div class="relative">
+    <!-- Fade overlay left -->
+    <div class="absolute left-0 top-0 bottom-0 w-32 bg-gradient-to-r from-gray-50 to-transparent z-10"></div>
+    
+    <!-- Scrolling container -->
+    <div class="logo-strip-container max-w-screen-xl mx-auto overflow-hidden">
+      <div class="logo-strip flex items-center space-x-16">
+        {scrollingClients.map((client, index) => (
+          <a href={client.url} target="_blank" class="flex-shrink-0 grayscale hover:grayscale-0 transition-all duration-300">
+            <img 
+              src={client.logo} 
+              alt={`${client.name} logo`} 
+              class="h-32 w-auto"
+            />
+          </a>
+        ))}
+      </div>
+    </div>
+    
+    <!-- Fade overlay right -->
+    <div class="absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-gray-50 to-transparent z-10"></div>
+  </div>
+</div>
+
+<style>
+  /* Container for logo strip */
+  .logo-strip-container {
+    mask-image: linear-gradient(
+      to left,
+      transparent,
+      black 10%,
+      black 90%,
+      transparent
+    );
+    position: relative;
+    overflow: hidden; /* Ensures logos don't overflow the container */
+  }
+
+  /* Scrolling animation */
+  .logo-strip {
+    display: flex;
+    animation: scroll 50s linear infinite; /* Slowed down by 50% (60s instead of 30s) */
+    width: max-content; /* This ensures the logos take as much space as they need */
+    transform: translateX(0); /* Ensure logos are visible on page load */
+  }
+
+  /* Start the scroll animation only after a short delay */
+  .logo-strip-container.loaded .logo-strip {
+    animation: scroll 60s linear infinite; /* Start animation once the page is loaded */
+  }
+
+  @keyframes scroll {
+    0% {
+      transform: translateX(0); /* Start from leftmost position */
+    }
+    100% {
+      transform: translateX(-100%); /* Move to the left */
+    }
+  }
+
+  /* Pause animation on hover */
+  .logo-strip-container:hover .logo-strip {
+    animation-play-state: paused;
+  }
+
+  /* Smooth animation */
+  .logo-strip {
+    will-change: transform;
+  }
+
+  /* Fade-in effect for logos */
+  .logo-strip img {
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in forwards;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  /* Stagger the fade-in animation for each logo */
+  .logo-strip div:nth-child(1) img { animation-delay: 0.1s; }
+  .logo-strip div:nth-child(2) img { animation-delay: 0.2s; }
+  .logo-strip div:nth-child(3) img { animation-delay: 0.3s; }
+  .logo-strip div:nth-child(4) img { animation-delay: 0.4s; }
+  .logo-strip div:nth-child(5) img { animation-delay: 0.5s; }
+  .logo-strip div:nth-child(6) img { animation-delay: 0.6s; }
+</style>
+
+<script>
+  // Wait for the page to fully load and then trigger the animation
+  window.addEventListener('load', () => {
+    const logoStripContainer = document.querySelector('.logo-strip-container');
+    logoStripContainer.classList.add('loaded');
+  });
+</script>
