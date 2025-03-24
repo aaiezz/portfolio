@@ -4,15 +4,6 @@ import Breadcrumb from '../../components/Breadcrumb.astro';
 import PhotoGallery from '../../components/PhotoGallery.astro';
 import { projects } from '../../data/projects';
 
-import LightboxGallery from '../../components/LightboxGallery.astro';
-
-{isPhotoProject(project) && project.gallery && (
-  <div class="mb-16">
-    <h2 class="text-2xl font-bold mb-8">Photo Gallery</h2>
-    <LightboxGallery images={project.gallery} />
-  </div>
-)}
-
 export function getStaticPaths() {
   return projects.map(project => ({
     params: { slug: project.slug },
@@ -81,9 +72,6 @@ function isPhotoProject(project: any): project is PhotoProject {
           </div>
         )}
 
-
-
-
         <!-- Keywords -->
         <div class="border-t pt-8">
           <h2 class="text-xl font-semibold mb-4">Keywords</h2>
@@ -99,4 +87,3 @@ function isPhotoProject(project: any): project is PhotoProject {
     </div>
   </div>
 </Layout>
-

@@ -43,7 +43,7 @@ function isPhotoProject(project: any): project is PhotoProject {
         <!-- Project Overview -->
         <div class="mb-16">
           <h1 class="text-4xl font-bold mb-4">{project.title}</h1>
-          <p class="text-xl text-gray-600 mb-8">{project.description}</p>
+          <!--<p class="text-xl text-gray-600 mb-8">{project.description}</p> -->
           
           <div class="grid grid-cols-1 md:grid-cols-3 gap-8 bg-gray-50 p-6 rounded-lg">
             <div>
@@ -65,9 +65,9 @@ function isPhotoProject(project: any): project is PhotoProject {
           </div>
         </div>
 
-        {isPhotoProject(project) && project.gallery && (
+        {project.gallery && project.gallery.length > 0 && (
           <div class="mb-16">
-            <h2 class="text-2xl font-bold mb-8">Photo Gallery</h2>
+            <h2 class="text-2xl font-bold mb-8">Gallery</h2>
             <PhotoGallery images={project.gallery} />
           </div>
         )}

@@ -25,7 +25,7 @@ export function ProjectCard({ title, category, imageUrl, client, slug }: Project
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
         <div className="absolute bottom-0 left-0 right-0 p-6 text-white transform translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300">
-          <h3 className="text-xl font-semibold mb-1">{title}</h3>
+          <h3 className="text-xl font-semibold mb-1 " >{title}</h3>
           <p className="text-sm text-white/80">{client}</p>
           <span className="inline-block mt-2 text-xs px-3 py-1 bg-white/20 rounded-full">
             {category}

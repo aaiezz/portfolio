@@ -10,12 +10,7 @@ export interface BaseProject {
   }[];
   keywords: string[];
   slug: string;
-    gallery: {
-    src: string;
-    alt: string;
-    width: 'full' | 'half';
-    height: 'tall' | 'normal';
-  }[];
+
 }
 
 export interface UXUIProject extends BaseProject {
@@ -42,7 +37,7 @@ export interface UXUIProject extends BaseProject {
 }
 
 export interface PhotoProject extends BaseProject {
-  category: 'photography';
+  category: 'photography' | 'videography' | 'graphic-design' | 'product-design';
   description: string;
   gallery: {
     src: string;
@@ -52,14 +47,7 @@ export interface PhotoProject extends BaseProject {
   }[];
 }
 
-export interface StandardProject extends BaseProject {
-  category: 'videography' | 'graphic-design' | 'product-design';
-  description: string;
-  
-}
-
 export type Project = BaseProject;
-
 export const projects: Project[] = [
   {
     id: '1',
@@ -1131,6 +1119,7 @@ export const projects: Project[] = [
     keywords: ['outdoor advertising', 'print design', 'social impact', 'mental health', 'typography'],
     slug: 'gcedm'
   },
+  
   {
     id: '24',
     title: 'Gold & Co. London Product Design',
@@ -1143,6 +1132,20 @@ export const projects: Project[] = [
       { name: 'Adobe InDesign', icon: '../src/assets/icons/indesign.svg' }
     ],
     keywords: ['outdoor advertising', 'print design', 'social impact', 'mental health', 'typography'],
+    gallery: [
+      {
+        src: '../src/assets/Portfolio/img_portfolio_gcprod03.jpg',
+        caption: 'Main dashboard view showing key metrics and data visualizations'
+      },
+      {
+        src: '../src/assets/Portfolio/img_portfolio_gcprod04.jpg',
+        caption: 'Custom report builder interface'
+      },
+      {
+        src: '../src/assets/Portfolio/img_portfolio_gcprod05.jpg',
+        caption: 'Mobile-responsive design for on-the-go access'
+      }
+    ],
     slug: 'gcprod'
   },
   {
@@ -1157,6 +1160,20 @@ export const projects: Project[] = [
       { name: 'Adobe InDesign', icon: '../src/assets/icons/indesign.svg' }
     ],
     keywords: ['outdoor advertising', 'print design', 'social impact', 'mental health', 'typography'],
+    gallery: [
+      {
+        src: '../src/assets/Portfolio/img_portfolio_gcprod03.jpg',
+        caption: 'Main dashboard view showing key metrics and data visualizations'
+      },
+      {
+        src: '../src/assets/Portfolio/img_portfolio_gcprod04.jpg',
+        caption: 'Custom report builder interface'
+      },
+      {
+        src: '../src/assets/Portfolio/img_portfolio_gcprod05.jpg',
+        caption: 'Mobile-responsive design for on-the-go access'
+      }
+    ],
     slug: 'gcprod'
   },
   {
@@ -1341,15 +1358,43 @@ export const projects: Project[] = [
     keywords: ['outdoor advertising', 'print design', 'social impact', 'mental health', 'typography'],
     gallery: [
       {
-        image: '../src/assets/Portfolio/kepler-dashboard.jpg',
+        src: '../src/assets/Portfolio/img_portfolio_fiagt1yas02.jpg',
         caption: 'Main dashboard view showing key metrics and data visualizations'
       },
       {
-        image: '../src/assets/Portfolio/kepler-reports.jpg',
+        src: '../src/assets/Portfolio/img_portfolio_fiagt1yas03.jpg',
         caption: 'Custom report builder interface'
       },
       {
-        image: '../src/assets/Portfolio/kepler-mobile.jpg',
+        src: '../src/assets/Portfolio/img_portfolio_fiagt1yas04.jpg',
+        caption: 'Mobile-responsive design for on-the-go access'
+      },
+      {
+        src: '../src/assets/Portfolio/img_portfolio_fiagt1yas05.jpg',
+        caption: 'Main dashboard view showing key metrics and data visualizations'
+      },
+      {
+        src: '../src/assets/Portfolio/img_portfolio_fiagt1yas06.jpg',
+        caption: 'Custom report builder interface'
+      },
+      {
+        src: '../src/assets/Portfolio/img_portfolio_fiagt1yas07.jpg',
+        caption: 'Mobile-responsive design for on-the-go access'
+      },
+      {
+        src: '../src/assets/Portfolio/img_portfolio_fiagt1yas08.jpg',
+        caption: 'Main dashboard view showing key metrics and data visualizations'
+      },
+      {
+        src: '../src/assets/Portfolio/img_portfolio_fiagt1yas09.jpg',
+        caption: 'Custom report builder interface'
+      },
+      {
+        src: '../src/assets/Portfolio/img_portfolio_fiagt1yas10.jpg',
+        caption: 'Mobile-responsive design for on-the-go access'
+      },
+      {
+        src: '../src/assets/Portfolio/img_portfolio_fiagt1yas11.jpg',
         caption: 'Mobile-responsive design for on-the-go access'
       }
     ],
