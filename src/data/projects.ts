@@ -51,9 +51,9 @@ export type Project = BaseProject;
 export const projects: Project[] = [
   {
     id: '1',
-    title: 'Beyond Blue Out of Home Campaign',
+    title: 'Beyond Blue Out of Home Campaigns',
     category: 'graphic-design',
-    imageUrl: '../src/assets/Portfolio/img_portfolio_bbooh-main.jpg',
+    imageUrl: '/portfolio/img_portfolio_bbooh-main.jpg',
     client: 'Beyond Blue',
     description: 'A comprehensive outdoor advertising campaign for Beyond Blue, featuring impactful billboard and print designs that raise awareness about mental health support services. The campaign utilized bold typography and compelling imagery to create an emotional connection with viewers.',
     tools: [
@@ -61,13 +61,42 @@ export const projects: Project[] = [
       { name: 'Adobe InDesign', icon: '../src/assets/icons/indesign.svg' }
     ],
     keywords: ['outdoor advertising', 'print design', 'social impact', 'mental health', 'typography'],
+    gallery: [
+      {
+        src: '/portfolio/img_portfolio_bbooh02.jpg',
+        caption: 'Main dashboard view showing key metrics and data visualizations'
+      },
+      {
+        src: '/portfolio/img_portfolio_bbooh-main.jpg',
+        caption: 'Main dashboard view showing key metrics and data visualizations'
+      }
+    ],
     slug: 'bbooh'
+  }, {
+    id: '38',
+    title: 'Julia Gillard Former Prime Minister of Australia Photoshoot',
+    category: 'photography',
+    imageUrl: '/portfolio/img_portfolio_jg01.jpg',
+    client: ['Beyond Blue'],
+    description: 'A comprehensive outdoor advertising campaign for Beyond Blue, featuring impactful billboard and print designs that raise awareness about mental health support services. The campaign utilized bold typography and compelling imagery to create an emotional connection with viewers.',
+    tools: [
+      { name: 'Adobe Illustrator', icon: '../src/assets/icons/illustrator.svg' },
+      { name: 'Adobe InDesign', icon: '../src/assets/icons/indesign.svg' }
+    ],
+    keywords: ['outdoor advertising', 'print design', 'social impact', 'mental health', 'typography'],
+    gallery: [
+      {
+        src: '/portfolio/img_portfolio_jg01.jpg',
+        caption: 'Main dashboard view showing key metrics and data visualizations'
+      }
+    ],
+    slug: 'jgbb'
   },
   {
     id: '2',
     title: 'Kepler Analytics Saas Platform',
     category: 'ux-ui',
-    imageUrl: '../src/assets/Portfolio/img_portfolio_kepler01.jpg',
+    imageUrl: '/portfolio/img_portfolio_kepler01.jpg',
     client: 'Kepler Analytics',
     description: {
       main: 'Complete redesign of Kepler Analytics data visualization platform',
@@ -86,17 +115,17 @@ export const projects: Project[] = [
       {
         phase: 'Research',
         description: 'Conducted user interviews with 20 retail managers, analyzed usage patterns, and identified key pain points in the existing system.',
-        image: '../src/assets/Portfolio/kepler-research.jpg'
+        image: '/portfolio/kepler-research.jpg'
       },
       {
         phase: 'Information Architecture',
         description: 'Restructured the data hierarchy and navigation system to align with users mental models and daily workflows.',
-        image: '../src/assets/Portfolio/kepler-ia.jpg'
+        image: '/portfolio/kepler-ia.jpg'
       },
       {
         phase: 'Design',
         description: 'Created wireframes and high-fidelity prototypes, iterating based on continuous user feedback and usability testing.',
-        image: '../src/assets/Portfolio/kepler-design.jpg'
+        image: '/portfolio/kepler-design.jpg'
       }
     ],
     tools: [
@@ -107,15 +136,15 @@ export const projects: Project[] = [
     keywords: ['SaaS', 'data visualization', 'analytics dashboard', 'user experience', 'enterprise software'],
     gallery: [
       {
-        image: '../src/assets/Portfolio/kepler-dashboard.jpg',
+        image: '/portfolio/kepler-dashboard.jpg',
         caption: 'Main dashboard view showing key metrics and data visualizations'
       },
       {
-        image: '../src/assets/Portfolio/kepler-reports.jpg',
+        image: '/portfolio/kepler-reports.jpg',
         caption: 'Custom report builder interface'
       },
       {
-        image: '../src/assets/Portfolio/kepler-mobile.jpg',
+        image: '/portfolio/kepler-mobile.jpg',
         caption: 'Mobile-responsive design for on-the-go access'
       }
     ],
@@ -123,10 +152,35 @@ export const projects: Project[] = [
   },
 
   {
+    id: '38',
+    title: 'The Honourable Linda Dessau AC CVO Photoshoot',
+    category: 'photography',
+    imageUrl: '/portfolio/img_portfolio_lin01.jpg',
+    client: ['Beyond Blue'],
+    description: 'A comprehensive outdoor advertising campaign for Beyond Blue, featuring impactful billboard and print designs that raise awareness about mental health support services. The campaign utilized bold typography and compelling imagery to create an emotional connection with viewers.',
+    tools: [
+      { name: 'Adobe Illustrator', icon: '../src/assets/icons/illustrator.svg' },
+      { name: 'Adobe InDesign', icon: '../src/assets/icons/indesign.svg' }
+    ],
+    keywords: ['outdoor advertising', 'print design', 'social impact', 'mental health', 'typography'],
+    gallery: [
+      {
+        src: '/portfolio/img_portfolio_lin01.jpg',
+        caption: 'Main dashboard view showing key metrics and data visualizations'
+      },
+      {
+        src: '/portfolio/img_portfolio_lin02.jpg',
+        caption: 'Custom report builder interface'
+      }
+    ],
+    slug: 'linbb'
+  },
+
+  {
     id: '3',
     title: 'Kepler Analytics Mobile App',
     category: 'ux-ui',
-    imageUrl: '../src/assets/Portfolio/img_portfolio_kepler02.jpg',
+    imageUrl: '/portfolio/img_portfolio_kepler02.jpg',
     client: 'Kepler Analytics',
     description: {
       main: 'Expansion of Kepler Analytics to a mobile platform for senior and store managers.',
@@ -154,7 +208,7 @@ export const projects: Project[] = [
     id: '4',
     title: 'Mixxlist App Redesign',
     category: 'ux-ui',
-    imageUrl: '../src/assets/Portfolio/img_portfolio_mixxlist.jpg',
+    imageUrl: '/portfolio/img_portfolio_mixxlist.jpg',
     client: 'Mixxlist',
     description: {
       main: 'Redesign of Mixxlist app to improve playlist creation experience across multiple streaming services.',
@@ -176,13 +230,13 @@ export const projects: Project[] = [
     keywords: ['music app', 'playlist creation', 'user flow'],
     slug: 'mixxlist-redesign',
     process: ['User Research', 'Wireframing', 'UI Design'],
-    gallery: ['../src/assets/Portfolio/mixxlist-1.jpg', '../src/assets/Portfolio/mixxlist-2.jpg']
+    gallery: ['/portfolio/mixxlist-1.jpg', '/portfolio/mixxlist-2.jpg']
   },
   {
     id: '5',
     title: 'Hey Ants File Sharing App',
     category: 'ux-ui',
-    imageUrl: '../src/assets/Portfolio/img_portfolio_antsapp.jpg',
+    imageUrl: '/portfolio/img_portfolio_antsapp.jpg',
     client: 'Hey Ants',
     description: {
       main: 'Designing an intuitive file-sharing app for effortless transfers of up to 2GB.',
@@ -204,13 +258,13 @@ export const projects: Project[] = [
     keywords: ['file sharing', 'user-friendly', 'intuitive UI'],
     slug: 'heyants-app',
     process: ['User Flow Mapping', 'Prototyping', 'Usability Testing'],
-    gallery: ['../src/assets/Portfolio/heyants-1.jpg', '../src/assets/Portfolio/heyants-2.jpg']
+    gallery: ['/portfolio/heyants-1.jpg', '/portfolio/heyants-2.jpg']
   },
   {
     id: '6',
     title: 'Vorsteiner AR App',
     category: 'ux-ui',
-    imageUrl: '../src/assets/Portfolio/img_portfolio_vorsteinerapp.jpg',
+    imageUrl: '/portfolio/img_portfolio_vorsteinerapp.jpg',
     client: 'Vorsteiner',
     description: {
       main: 'Concept design for an AR app allowing users to visualize Vorsteiner products on their cars.',
@@ -232,14 +286,14 @@ export const projects: Project[] = [
     keywords: ['augmented reality', 'car customization', 'AR visualization'],
     slug: 'vorsteiner-ar',
     process: ['Concept Development', '3D Modeling', 'AR Prototype Testing'],
-    gallery: ['../src/assets/Portfolio/vorsteiner-1.jpg', '../src/assets/Portfolio/vorsteiner-2.jpg']
+    gallery: ['/portfolio/vorsteiner-1.jpg', '/portfolio/vorsteiner-2.jpg']
   },
   
   {
     id: '7',
     title: 'Suzuki Marine Australia Website',
     category: 'ux-ui',
-    imageUrl: '../src/assets/Portfolio/img_portfolio_suzukimarinemain.jpg',
+    imageUrl: '/portfolio/img_portfolio_suzukimarinemain.jpg',
     client: 'Suzuki Marine Australia',
     description: {
       main: 'Complete redesign of Kepler Analytics data visualization platform',
@@ -258,17 +312,17 @@ export const projects: Project[] = [
       {
         phase: 'Research',
         description: 'Conducted user interviews with 20 retail managers, analyzed usage patterns, and identified key pain points in the existing system.',
-        image: '../src/assets/Portfolio/kepler-research.jpg'
+        image: '/portfolio/kepler-research.jpg'
       },
       {
         phase: 'Information Architecture',
         description: 'Restructured the data hierarchy and navigation system to align with users mental models and daily workflows.',
-        image: '../src/assets/Portfolio/kepler-ia.jpg'
+        image: '/portfolio/kepler-ia.jpg'
       },
       {
         phase: 'Design',
         description: 'Created wireframes and high-fidelity prototypes, iterating based on continuous user feedback and usability testing.',
-        image: '../src/assets/Portfolio/kepler-design.jpg'
+        image: '/portfolio/kepler-design.jpg'
       }
     ],
     tools: [
@@ -279,15 +333,15 @@ export const projects: Project[] = [
     keywords: ['SaaS', 'data visualization', 'analytics dashboard', 'user experience', 'enterprise software'],
     gallery: [
       {
-        image: '../src/assets/Portfolio/kepler-dashboard.jpg',
+        image: '/portfolio/kepler-dashboard.jpg',
         caption: 'Main dashboard view showing key metrics and data visualizations'
       },
       {
-        image: '../src/assets/Portfolio/kepler-reports.jpg',
+        image: '/portfolio/kepler-reports.jpg',
         caption: 'Custom report builder interface'
       },
       {
-        image: '../src/assets/Portfolio/kepler-mobile.jpg',
+        image: '/portfolio/kepler-mobile.jpg',
         caption: 'Mobile-responsive design for on-the-go access'
       }
     ],
@@ -297,7 +351,7 @@ export const projects: Project[] = [
     id: '8',
     title: 'Suzuki Marine Australia Web App',
     category: 'ux-ui',
-    imageUrl: '../src/assets/Portfolio/img_portfolio_suzukimarinewa.jpg',
+    imageUrl: '/portfolio/img_portfolio_suzukimarinewa.jpg',
     client: 'Suzuki Marine Australia',
     description: {
       main: 'Complete redesign of Kepler Analytics data visualization platform',
@@ -316,17 +370,17 @@ export const projects: Project[] = [
       {
         phase: 'Research',
         description: 'Conducted user interviews with 20 retail managers, analyzed usage patterns, and identified key pain points in the existing system.',
-        image: '../src/assets/Portfolio/kepler-research.jpg'
+        image: '/portfolio/kepler-research.jpg'
       },
       {
         phase: 'Information Architecture',
         description: 'Restructured the data hierarchy and navigation system to align with users mental models and daily workflows.',
-        image: '../src/assets/Portfolio/kepler-ia.jpg'
+        image: '/portfolio/kepler-ia.jpg'
       },
       {
         phase: 'Design',
         description: 'Created wireframes and high-fidelity prototypes, iterating based on continuous user feedback and usability testing.',
-        image: '../src/assets/Portfolio/kepler-design.jpg'
+        image: '/portfolio/kepler-design.jpg'
       }
     ],
     tools: [
@@ -337,15 +391,15 @@ export const projects: Project[] = [
     keywords: ['SaaS', 'data visualization', 'analytics dashboard', 'user experience', 'enterprise software'],
     gallery: [
       {
-        image: '../src/assets/Portfolio/kepler-dashboard.jpg',
+        image: '/portfolio/kepler-dashboard.jpg',
         caption: 'Main dashboard view showing key metrics and data visualizations'
       },
       {
-        image: '../src/assets/Portfolio/kepler-reports.jpg',
+        image: '/portfolio/kepler-reports.jpg',
         caption: 'Custom report builder interface'
       },
       {
-        image: '../src/assets/Portfolio/kepler-mobile.jpg',
+        image: '/portfolio/kepler-mobile.jpg',
         caption: 'Mobile-responsive design for on-the-go access'
       }
     ],
@@ -355,7 +409,7 @@ export const projects: Project[] = [
     id: '9',
     title: 'Suzuki Automotive Australia Service Portal',
     category: 'ux-ui',
-    imageUrl: '../src/assets/Portfolio/img_portfolio_suzukiautoport.jpg',
+    imageUrl: '/portfolio/img_portfolio_suzukiautoport.jpg',
     client: 'Suzuki Automotive Australia',
     description: {
       main: 'Complete redesign of Kepler Analytics data visualization platform',
@@ -374,17 +428,17 @@ export const projects: Project[] = [
       {
         phase: 'Research',
         description: 'Conducted user interviews with 20 retail managers, analyzed usage patterns, and identified key pain points in the existing system.',
-        image: '../src/assets/Portfolio/kepler-research.jpg'
+        image: '/portfolio/kepler-research.jpg'
       },
       {
         phase: 'Information Architecture',
         description: 'Restructured the data hierarchy and navigation system to align with users mental models and daily workflows.',
-        image: '../src/assets/Portfolio/kepler-ia.jpg'
+        image: '/portfolio/kepler-ia.jpg'
       },
       {
         phase: 'Design',
         description: 'Created wireframes and high-fidelity prototypes, iterating based on continuous user feedback and usability testing.',
-        image: '../src/assets/Portfolio/kepler-design.jpg'
+        image: '/portfolio/kepler-design.jpg'
       }
     ],
     tools: [
@@ -395,15 +449,15 @@ export const projects: Project[] = [
     keywords: ['SaaS', 'data visualization', 'analytics dashboard', 'user experience', 'enterprise software'],
     gallery: [
       {
-        image: '../src/assets/Portfolio/kepler-dashboard.jpg',
+        image: '/portfolio/kepler-dashboard.jpg',
         caption: 'Main dashboard view showing key metrics and data visualizations'
       },
       {
-        image: '../src/assets/Portfolio/kepler-reports.jpg',
+        image: '/portfolio/kepler-reports.jpg',
         caption: 'Custom report builder interface'
       },
       {
-        image: '../src/assets/Portfolio/kepler-mobile.jpg',
+        image: '/portfolio/kepler-mobile.jpg',
         caption: 'Mobile-responsive design for on-the-go access'
       }
     ],
@@ -413,7 +467,7 @@ export const projects: Project[] = [
     id: '10',
     title: 'Darren Jones Website',
     category: 'ux-ui',
-    imageUrl: '../src/assets/Portfolio/img_portfolio_darrenjones.jpg',
+    imageUrl: '/portfolio/img_portfolio_darrenjones.jpg',
     client: 'Darren Jones Real Estata',
     description: {
       main: 'Complete redesign of Kepler Analytics data visualization platform',
@@ -432,17 +486,17 @@ export const projects: Project[] = [
       {
         phase: 'Research',
         description: 'Conducted user interviews with 20 retail managers, analyzed usage patterns, and identified key pain points in the existing system.',
-        image: '../src/assets/Portfolio/kepler-research.jpg'
+        image: '/portfolio/kepler-research.jpg'
       },
       {
         phase: 'Information Architecture',
         description: 'Restructured the data hierarchy and navigation system to align with users mental models and daily workflows.',
-        image: '../src/assets/Portfolio/kepler-ia.jpg'
+        image: '/portfolio/kepler-ia.jpg'
       },
       {
         phase: 'Design',
         description: 'Created wireframes and high-fidelity prototypes, iterating based on continuous user feedback and usability testing.',
-        image: '../src/assets/Portfolio/kepler-design.jpg'
+        image: '/portfolio/kepler-design.jpg'
       }
     ],
     tools: [
@@ -453,15 +507,15 @@ export const projects: Project[] = [
     keywords: ['SaaS', 'data visualization', 'analytics dashboard', 'user experience', 'enterprise software'],
     gallery: [
       {
-        image: '../src/assets/Portfolio/kepler-dashboard.jpg',
+        image: '/portfolio/kepler-dashboard.jpg',
         caption: 'Main dashboard view showing key metrics and data visualizations'
       },
       {
-        image: '../src/assets/Portfolio/kepler-reports.jpg',
+        image: '/portfolio/kepler-reports.jpg',
         caption: 'Custom report builder interface'
       },
       {
-        image: '../src/assets/Portfolio/kepler-mobile.jpg',
+        image: '/portfolio/kepler-mobile.jpg',
         caption: 'Mobile-responsive design for on-the-go access'
       }
     ],
@@ -471,7 +525,7 @@ export const projects: Project[] = [
     id: '11',
     title: 'Eleven North Portfolio Website',
     category: 'ux-ui',
-    imageUrl: '../src/assets/Portfolio/img_portfolio_11north.jpg',
+    imageUrl: '/portfolio/img_portfolio_11north.jpg',
     client: 'Eleven North Property Development',
     description: {
       main: 'Complete redesign of Kepler Analytics data visualization platform',
@@ -490,17 +544,17 @@ export const projects: Project[] = [
       {
         phase: 'Research',
         description: 'Conducted user interviews with 20 retail managers, analyzed usage patterns, and identified key pain points in the existing system.',
-        image: '../src/assets/Portfolio/kepler-research.jpg'
+        image: '/portfolio/kepler-research.jpg'
       },
       {
         phase: 'Information Architecture',
         description: 'Restructured the data hierarchy and navigation system to align with users mental models and daily workflows.',
-        image: '../src/assets/Portfolio/kepler-ia.jpg'
+        image: '/portfolio/kepler-ia.jpg'
       },
       {
         phase: 'Design',
         description: 'Created wireframes and high-fidelity prototypes, iterating based on continuous user feedback and usability testing.',
-        image: '../src/assets/Portfolio/kepler-design.jpg'
+        image: '/portfolio/kepler-design.jpg'
       }
     ],
     tools: [
@@ -511,15 +565,15 @@ export const projects: Project[] = [
     keywords: ['SaaS', 'data visualization', 'analytics dashboard', 'user experience', 'enterprise software'],
     gallery: [
       {
-        image: '../src/assets/Portfolio/kepler-dashboard.jpg',
+        image: '/portfolio/kepler-dashboard.jpg',
         caption: 'Main dashboard view showing key metrics and data visualizations'
       },
       {
-        image: '../src/assets/Portfolio/kepler-reports.jpg',
+        image: '/portfolio/kepler-reports.jpg',
         caption: 'Custom report builder interface'
       },
       {
-        image: '../src/assets/Portfolio/kepler-mobile.jpg',
+        image: '/portfolio/kepler-mobile.jpg',
         caption: 'Mobile-responsive design for on-the-go access'
       }
     ],
@@ -529,7 +583,7 @@ export const projects: Project[] = [
     id: '12',
     title: 'Click Creative Agency Website',
     category: 'ux-ui',
-    imageUrl: '../src/assets/Portfolio/img_portfolio_clickweb.jpg',
+    imageUrl: '/portfolio/img_portfolio_clickweb.jpg',
     client: 'Suzuki Automotive Australia',
     description: {
       main: 'Complete redesign of Kepler Analytics data visualization platform',
@@ -548,17 +602,17 @@ export const projects: Project[] = [
       {
         phase: 'Research',
         description: 'Conducted user interviews with 20 retail managers, analyzed usage patterns, and identified key pain points in the existing system.',
-        image: '../src/assets/Portfolio/kepler-research.jpg'
+        image: '/portfolio/kepler-research.jpg'
       },
       {
         phase: 'Information Architecture',
         description: 'Restructured the data hierarchy and navigation system to align with users mental models and daily workflows.',
-        image: '../src/assets/Portfolio/kepler-ia.jpg'
+        image: '/portfolio/kepler-ia.jpg'
       },
       {
         phase: 'Design',
         description: 'Created wireframes and high-fidelity prototypes, iterating based on continuous user feedback and usability testing.',
-        image: '../src/assets/Portfolio/kepler-design.jpg'
+        image: '/portfolio/kepler-design.jpg'
       }
     ],
     tools: [
@@ -569,15 +623,15 @@ export const projects: Project[] = [
     keywords: ['SaaS', 'data visualization', 'analytics dashboard', 'user experience', 'enterprise software'],
     gallery: [
       {
-        image: '../src/assets/Portfolio/kepler-dashboard.jpg',
+        image: '/portfolio/kepler-dashboard.jpg',
         caption: 'Main dashboard view showing key metrics and data visualizations'
       },
       {
-        image: '../src/assets/Portfolio/kepler-reports.jpg',
+        image: '/portfolio/kepler-reports.jpg',
         caption: 'Custom report builder interface'
       },
       {
-        image: '../src/assets/Portfolio/kepler-mobile.jpg',
+        image: '/portfolio/kepler-mobile.jpg',
         caption: 'Mobile-responsive design for on-the-go access'
       }
     ],
@@ -587,7 +641,7 @@ export const projects: Project[] = [
     id: '13',
     title: 'App Website and Merchant Portal',
     category: 'ux-ui',
-    imageUrl: '../src/assets/Portfolio/img_portfolio_appa.jpg',
+    imageUrl: '/portfolio/img_portfolio_appa.jpg',
     client: 'Australia Propotional Products Association',
     description: {
       main: 'Complete redesign of Kepler Analytics data visualization platform',
@@ -606,17 +660,17 @@ export const projects: Project[] = [
       {
         phase: 'Research',
         description: 'Conducted user interviews with 20 retail managers, analyzed usage patterns, and identified key pain points in the existing system.',
-        image: '../src/assets/Portfolio/kepler-research.jpg'
+        image: '/portfolio/kepler-research.jpg'
       },
       {
         phase: 'Information Architecture',
         description: 'Restructured the data hierarchy and navigation system to align with users mental models and daily workflows.',
-        image: '../src/assets/Portfolio/kepler-ia.jpg'
+        image: '/portfolio/kepler-ia.jpg'
       },
       {
         phase: 'Design',
         description: 'Created wireframes and high-fidelity prototypes, iterating based on continuous user feedback and usability testing.',
-        image: '../src/assets/Portfolio/kepler-design.jpg'
+        image: '/portfolio/kepler-design.jpg'
       }
     ],
     tools: [
@@ -627,15 +681,15 @@ export const projects: Project[] = [
     keywords: ['SaaS', 'data visualization', 'analytics dashboard', 'user experience', 'enterprise software'],
     gallery: [
       {
-        image: '../src/assets/Portfolio/kepler-dashboard.jpg',
+        image: '/portfolio/kepler-dashboard.jpg',
         caption: 'Main dashboard view showing key metrics and data visualizations'
       },
       {
-        image: '../src/assets/Portfolio/kepler-reports.jpg',
+        image: '/portfolio/kepler-reports.jpg',
         caption: 'Custom report builder interface'
       },
       {
-        image: '../src/assets/Portfolio/kepler-mobile.jpg',
+        image: '/portfolio/kepler-mobile.jpg',
         caption: 'Mobile-responsive design for on-the-go access'
       }
     ],
@@ -645,7 +699,7 @@ export const projects: Project[] = [
     id: '14',
     title: 'Hey Music Website and Portal',
     category: 'ux-ui',
-    imageUrl: '../src/assets/Portfolio/img_portfolio_heymusichome.jpg',
+    imageUrl: '/portfolio/img_portfolio_heymusichome.jpg',
     client: 'Hey Music',
     description: {
       main: 'Complete redesign of Kepler Analytics data visualization platform',
@@ -664,17 +718,17 @@ export const projects: Project[] = [
       {
         phase: 'Research',
         description: 'Conducted user interviews with 20 retail managers, analyzed usage patterns, and identified key pain points in the existing system.',
-        image: '../src/assets/Portfolio/kepler-research.jpg'
+        image: '/portfolio/kepler-research.jpg'
       },
       {
         phase: 'Information Architecture',
         description: 'Restructured the data hierarchy and navigation system to align with users mental models and daily workflows.',
-        image: '../src/assets/Portfolio/kepler-ia.jpg'
+        image: '/portfolio/kepler-ia.jpg'
       },
       {
         phase: 'Design',
         description: 'Created wireframes and high-fidelity prototypes, iterating based on continuous user feedback and usability testing.',
-        image: '../src/assets/Portfolio/kepler-design.jpg'
+        image: '/portfolio/kepler-design.jpg'
       }
     ],
     tools: [
@@ -685,15 +739,15 @@ export const projects: Project[] = [
     keywords: ['SaaS', 'data visualization', 'analytics dashboard', 'user experience', 'enterprise software'],
     gallery: [
       {
-        image: '../src/assets/Portfolio/kepler-dashboard.jpg',
+        image: '/portfolio/kepler-dashboard.jpg',
         caption: 'Main dashboard view showing key metrics and data visualizations'
       },
       {
-        image: '../src/assets/Portfolio/kepler-reports.jpg',
+        image: '/portfolio/kepler-reports.jpg',
         caption: 'Custom report builder interface'
       },
       {
-        image: '../src/assets/Portfolio/kepler-mobile.jpg',
+        image: '/portfolio/kepler-mobile.jpg',
         caption: 'Mobile-responsive design for on-the-go access'
       }
     ],
@@ -703,7 +757,7 @@ export const projects: Project[] = [
     id: '15',
     title: 'Hey Ants Player Website and Dashboard',
     category: 'ux-ui',
-    imageUrl: '../src/assets/Portfolio/img_portfolio_heyplayer.jpg',
+    imageUrl: '/portfolio/img_portfolio_heyplayer.jpg',
     client: 'Hey Ants Player',
     description: {
       main: 'Complete redesign of Kepler Analytics data visualization platform',
@@ -722,17 +776,17 @@ export const projects: Project[] = [
       {
         phase: 'Research',
         description: 'Conducted user interviews with 20 retail managers, analyzed usage patterns, and identified key pain points in the existing system.',
-        image: '../src/assets/Portfolio/kepler-research.jpg'
+        image: '/portfolio/kepler-research.jpg'
       },
       {
         phase: 'Information Architecture',
         description: 'Restructured the data hierarchy and navigation system to align with users mental models and daily workflows.',
-        image: '../src/assets/Portfolio/kepler-ia.jpg'
+        image: '/portfolio/kepler-ia.jpg'
       },
       {
         phase: 'Design',
         description: 'Created wireframes and high-fidelity prototypes, iterating based on continuous user feedback and usability testing.',
-        image: '../src/assets/Portfolio/kepler-design.jpg'
+        image: '/portfolio/kepler-design.jpg'
       }
     ],
     tools: [
@@ -743,15 +797,15 @@ export const projects: Project[] = [
     keywords: ['SaaS', 'data visualization', 'analytics dashboard', 'user experience', 'enterprise software'],
     gallery: [
       {
-        image: '../src/assets/Portfolio/kepler-dashboard.jpg',
+        image: '/portfolio/kepler-dashboard.jpg',
         caption: 'Main dashboard view showing key metrics and data visualizations'
       },
       {
-        image: '../src/assets/Portfolio/kepler-reports.jpg',
+        image: '/portfolio/kepler-reports.jpg',
         caption: 'Custom report builder interface'
       },
       {
-        image: '../src/assets/Portfolio/kepler-mobile.jpg',
+        image: '/portfolio/kepler-mobile.jpg',
         caption: 'Mobile-responsive design for on-the-go access'
       }
     ],
@@ -761,7 +815,7 @@ export const projects: Project[] = [
     id: '16',
     title: 'Hey Ants Website and Dashboard',
     category: 'ux-ui',
-    imageUrl: '../src/assets/Portfolio/img_portfolio_heyants.jpg',
+    imageUrl: '/portfolio/img_portfolio_heyants.jpg',
     client: 'Hey Ants Player',
     description: {
       main: 'Complete redesign of Kepler Analytics data visualization platform',
@@ -780,17 +834,17 @@ export const projects: Project[] = [
       {
         phase: 'Research',
         description: 'Conducted user interviews with 20 retail managers, analyzed usage patterns, and identified key pain points in the existing system.',
-        image: '../src/assets/Portfolio/kepler-research.jpg'
+        image: '/portfolio/kepler-research.jpg'
       },
       {
         phase: 'Information Architecture',
         description: 'Restructured the data hierarchy and navigation system to align with users mental models and daily workflows.',
-        image: '../src/assets/Portfolio/kepler-ia.jpg'
+        image: '/portfolio/kepler-ia.jpg'
       },
       {
         phase: 'Design',
         description: 'Created wireframes and high-fidelity prototypes, iterating based on continuous user feedback and usability testing.',
-        image: '../src/assets/Portfolio/kepler-design.jpg'
+        image: '/portfolio/kepler-design.jpg'
       }
     ],
     tools: [
@@ -801,15 +855,15 @@ export const projects: Project[] = [
     keywords: ['SaaS', 'data visualization', 'analytics dashboard', 'user experience', 'enterprise software'],
     gallery: [
       {
-        image: '../src/assets/Portfolio/kepler-dashboard.jpg',
+        image: '/portfolio/kepler-dashboard.jpg',
         caption: 'Main dashboard view showing key metrics and data visualizations'
       },
       {
-        image: '../src/assets/Portfolio/kepler-reports.jpg',
+        image: '/portfolio/kepler-reports.jpg',
         caption: 'Custom report builder interface'
       },
       {
-        image: '../src/assets/Portfolio/kepler-mobile.jpg',
+        image: '/portfolio/kepler-mobile.jpg',
         caption: 'Mobile-responsive design for on-the-go access'
       }
     ],
@@ -819,7 +873,7 @@ export const projects: Project[] = [
     id: '17',
     title: 'Merchloft Website and e-commerce Dashboard',
     category: 'ux-ui',
-    imageUrl: '../src/assets/Portfolio/img_portfolio_merchloft01.jpg',
+    imageUrl: '/portfolio/img_portfolio_merchloft01.jpg',
     client: 'Merch Loft',
     description: {
       main: 'Complete redesign of Kepler Analytics data visualization platform',
@@ -838,17 +892,17 @@ export const projects: Project[] = [
       {
         phase: 'Research',
         description: 'Conducted user interviews with 20 retail managers, analyzed usage patterns, and identified key pain points in the existing system.',
-        image: '../src/assets/Portfolio/kepler-research.jpg'
+        image: '/portfolio/kepler-research.jpg'
       },
       {
         phase: 'Information Architecture',
         description: 'Restructured the data hierarchy and navigation system to align with users mental models and daily workflows.',
-        image: '../src/assets/Portfolio/kepler-ia.jpg'
+        image: '/portfolio/kepler-ia.jpg'
       },
       {
         phase: 'Design',
         description: 'Created wireframes and high-fidelity prototypes, iterating based on continuous user feedback and usability testing.',
-        image: '../src/assets/Portfolio/kepler-design.jpg'
+        image: '/portfolio/kepler-design.jpg'
       }
     ],
     tools: [
@@ -859,15 +913,15 @@ export const projects: Project[] = [
     keywords: ['SaaS', 'data visualization', 'analytics dashboard', 'user experience', 'enterprise software'],
     gallery: [
       {
-        image: '../src/assets/Portfolio/kepler-dashboard.jpg',
+        image: '/portfolio/kepler-dashboard.jpg',
         caption: 'Main dashboard view showing key metrics and data visualizations'
       },
       {
-        image: '../src/assets/Portfolio/kepler-reports.jpg',
+        image: '/portfolio/kepler-reports.jpg',
         caption: 'Custom report builder interface'
       },
       {
-        image: '../src/assets/Portfolio/kepler-mobile.jpg',
+        image: '/portfolio/kepler-mobile.jpg',
         caption: 'Mobile-responsive design for on-the-go access'
       }
     ],
@@ -877,7 +931,7 @@ export const projects: Project[] = [
     id: '18',
     title: 'Seven Merch Website and e-commerce Dashboard',
     category: 'ux-ui',
-    imageUrl: '../src/assets/Portfolio/img_portfolio_sevm01.jpg',
+    imageUrl: '/portfolio/img_portfolio_sevm01.jpg',
     client: 'Seven Merch',
     description: {
       main: 'Complete redesign of Kepler Analytics data visualization platform',
@@ -896,17 +950,17 @@ export const projects: Project[] = [
       {
         phase: 'Research',
         description: 'Conducted user interviews with 20 retail managers, analyzed usage patterns, and identified key pain points in the existing system.',
-        image: '../src/assets/Portfolio/kepler-research.jpg'
+        image: '/portfolio/kepler-research.jpg'
       },
       {
         phase: 'Information Architecture',
         description: 'Restructured the data hierarchy and navigation system to align with users mental models and daily workflows.',
-        image: '../src/assets/Portfolio/kepler-ia.jpg'
+        image: '/portfolio/kepler-ia.jpg'
       },
       {
         phase: 'Design',
         description: 'Created wireframes and high-fidelity prototypes, iterating based on continuous user feedback and usability testing.',
-        image: '../src/assets/Portfolio/kepler-design.jpg'
+        image: '/portfolio/kepler-design.jpg'
       }
     ],
     tools: [
@@ -917,15 +971,15 @@ export const projects: Project[] = [
     keywords: ['SaaS', 'data visualization', 'analytics dashboard', 'user experience', 'enterprise software'],
     gallery: [
       {
-        image: '../src/assets/Portfolio/kepler-dashboard.jpg',
+        image: '/portfolio/kepler-dashboard.jpg',
         caption: 'Main dashboard view showing key metrics and data visualizations'
       },
       {
-        image: '../src/assets/Portfolio/kepler-reports.jpg',
+        image: '/portfolio/kepler-reports.jpg',
         caption: 'Custom report builder interface'
       },
       {
-        image: '../src/assets/Portfolio/kepler-mobile.jpg',
+        image: '/portfolio/kepler-mobile.jpg',
         caption: 'Mobile-responsive design for on-the-go access'
       }
     ],
@@ -935,7 +989,7 @@ export const projects: Project[] = [
     id: '18',
     title: 'Mediterranean Kitchen Website',
     category: 'ux-ui',
-    imageUrl: '../src/assets/Portfolio/img_portfolio_mkweb01.jpg',
+    imageUrl: '/portfolio/img_portfolio_mkweb01.jpg',
     client: 'Mediterranean Kitchen',
     description: {
       main: 'Complete redesign of Kepler Analytics data visualization platform',
@@ -954,17 +1008,17 @@ export const projects: Project[] = [
       {
         phase: 'Research',
         description: 'Conducted user interviews with 20 retail managers, analyzed usage patterns, and identified key pain points in the existing system.',
-        image: '../src/assets/Portfolio/kepler-research.jpg'
+        image: '/portfolio/kepler-research.jpg'
       },
       {
         phase: 'Information Architecture',
         description: 'Restructured the data hierarchy and navigation system to align with users mental models and daily workflows.',
-        image: '../src/assets/Portfolio/kepler-ia.jpg'
+        image: '/portfolio/kepler-ia.jpg'
       },
       {
         phase: 'Design',
         description: 'Created wireframes and high-fidelity prototypes, iterating based on continuous user feedback and usability testing.',
-        image: '../src/assets/Portfolio/kepler-design.jpg'
+        image: '/portfolio/kepler-design.jpg'
       }
     ],
     tools: [
@@ -975,15 +1029,15 @@ export const projects: Project[] = [
     keywords: ['SaaS', 'data visualization', 'analytics dashboard', 'user experience', 'enterprise software'],
     gallery: [
       {
-        image: '../src/assets/Portfolio/kepler-dashboard.jpg',
+        image: '/portfolio/kepler-dashboard.jpg',
         caption: 'Main dashboard view showing key metrics and data visualizations'
       },
       {
-        image: '../src/assets/Portfolio/kepler-reports.jpg',
+        image: '/portfolio/kepler-reports.jpg',
         caption: 'Custom report builder interface'
       },
       {
-        image: '../src/assets/Portfolio/kepler-mobile.jpg',
+        image: '/portfolio/kepler-mobile.jpg',
         caption: 'Mobile-responsive design for on-the-go access'
       }
     ],
@@ -993,7 +1047,7 @@ export const projects: Project[] = [
     id: '20',
     title: 'Duffs Jewellers Portfolio Website',
     category: 'ux-ui',
-    imageUrl: '../src/assets/Portfolio/img_portfolio_djweb01.jpg',
+    imageUrl: '/portfolio/img_portfolio_djweb01.jpg',
     client: 'Seven Merch',
     description: {
       main: 'Complete redesign of Kepler Analytics data visualization platform',
@@ -1012,17 +1066,17 @@ export const projects: Project[] = [
       {
         phase: 'Research',
         description: 'Conducted user interviews with 20 retail managers, analyzed usage patterns, and identified key pain points in the existing system.',
-        image: '../src/assets/Portfolio/kepler-research.jpg'
+        image: '/portfolio/kepler-research.jpg'
       },
       {
         phase: 'Information Architecture',
         description: 'Restructured the data hierarchy and navigation system to align with users mental models and daily workflows.',
-        image: '../src/assets/Portfolio/kepler-ia.jpg'
+        image: '/portfolio/kepler-ia.jpg'
       },
       {
         phase: 'Design',
         description: 'Created wireframes and high-fidelity prototypes, iterating based on continuous user feedback and usability testing.',
-        image: '../src/assets/Portfolio/kepler-design.jpg'
+        image: '/portfolio/kepler-design.jpg'
       }
     ],
     tools: [
@@ -1033,15 +1087,15 @@ export const projects: Project[] = [
     keywords: ['SaaS', 'data visualization', 'analytics dashboard', 'user experience', 'enterprise software'],
     gallery: [
       {
-        image: '../src/assets/Portfolio/kepler-dashboard.jpg',
+        image: '/portfolio/kepler-dashboard.jpg',
         caption: 'Main dashboard view showing key metrics and data visualizations'
       },
       {
-        image: '../src/assets/Portfolio/kepler-reports.jpg',
+        image: '/portfolio/kepler-reports.jpg',
         caption: 'Custom report builder interface'
       },
       {
-        image: '../src/assets/Portfolio/kepler-mobile.jpg',
+        image: '/portfolio/kepler-mobile.jpg',
         caption: 'Mobile-responsive design for on-the-go access'
       }
     ],
@@ -1051,7 +1105,7 @@ export const projects: Project[] = [
     id: '21',
     title: 'Gold & Co. London Portfolio Website',
     category: 'ux-ui',
-    imageUrl: '../src/assets/Portfolio/img_portfolio_gcweb.jpg',
+    imageUrl: '/portfolio/img_portfolio_gcweb.jpg',
     client: 'Gold & Co. London',
     description: {
       main: 'Complete redesign of Kepler Analytics data visualization platform',
@@ -1070,17 +1124,17 @@ export const projects: Project[] = [
       {
         phase: 'Research',
         description: 'Conducted user interviews with 20 retail managers, analyzed usage patterns, and identified key pain points in the existing system.',
-        image: '../src/assets/Portfolio/kepler-research.jpg'
+        image: '/portfolio/kepler-research.jpg'
       },
       {
         phase: 'Information Architecture',
         description: 'Restructured the data hierarchy and navigation system to align with users mental models and daily workflows.',
-        image: '../src/assets/Portfolio/kepler-ia.jpg'
+        image: '/portfolio/kepler-ia.jpg'
       },
       {
         phase: 'Design',
         description: 'Created wireframes and high-fidelity prototypes, iterating based on continuous user feedback and usability testing.',
-        image: '../src/assets/Portfolio/kepler-design.jpg'
+        image: '/portfolio/kepler-design.jpg'
       }
     ],
     tools: [
@@ -1091,15 +1145,15 @@ export const projects: Project[] = [
     keywords: ['SaaS', 'data visualization', 'analytics dashboard', 'user experience', 'enterprise software'],
     gallery: [
       {
-        image: '../src/assets/Portfolio/kepler-dashboard.jpg',
+        image: '/portfolio/kepler-dashboard.jpg',
         caption: 'Main dashboard view showing key metrics and data visualizations'
       },
       {
-        image: '../src/assets/Portfolio/kepler-reports.jpg',
+        image: '/portfolio/kepler-reports.jpg',
         caption: 'Custom report builder interface'
       },
       {
-        image: '../src/assets/Portfolio/kepler-mobile.jpg',
+        image: '/portfolio/kepler-mobile.jpg',
         caption: 'Mobile-responsive design for on-the-go access'
       }
     ],
@@ -1109,7 +1163,7 @@ export const projects: Project[] = [
     id: '23',
     title: 'Gold & Co. London eDM Campaign',
     category: 'graphic-design',
-    imageUrl: '../src/assets/Portfolio/img_portfolio_gcedm.jpg',
+    imageUrl: '/portfolio/img_portfolio_gcedm.jpg',
     client: 'Gold & Co. London',
     description: 'A comprehensive outdoor advertising campaign for Beyond Blue, featuring impactful billboard and print designs that raise awareness about mental health support services. The campaign utilized bold typography and compelling imagery to create an emotional connection with viewers.',
     tools: [
@@ -1124,7 +1178,7 @@ export const projects: Project[] = [
     id: '24',
     title: 'Gold & Co. London Product Design',
     category: 'product-design',
-    imageUrl: '../src/assets/Portfolio/img_portfolio_gcprod01.jpg',
+    imageUrl: '/portfolio/img_portfolio_gcprod01.jpg',
     client: 'Gold & Co. London',
     description: 'A comprehensive outdoor advertising campaign for Beyond Blue, featuring impactful billboard and print designs that raise awareness about mental health support services. The campaign utilized bold typography and compelling imagery to create an emotional connection with viewers.',
     tools: [
@@ -1134,7 +1188,7 @@ export const projects: Project[] = [
     keywords: ['outdoor advertising', 'print design', 'social impact', 'mental health', 'typography'],
     gallery: [
       {
-        src: '../src/assets/Portfolio/img_portfolio_gcprod01.jpg',
+        src: '/portfolio/img_portfolio_gcprod01.jpg',
         caption: 'Main dashboard view showing key metrics and data visualizations'
       },
       
@@ -1145,7 +1199,7 @@ export const projects: Project[] = [
     id: '24',
     title: 'Gold & Co. London Bespoke Phone Design',
     category: 'product-design',
-    imageUrl: '../src/assets/Portfolio/img_portfolio_gcprod02.jpg',
+    imageUrl: '/portfolio/img_portfolio_gcprod02.jpg',
     client: 'Gold & Co. London',
     description: 'A comprehensive outdoor advertising campaign for Beyond Blue, featuring impactful billboard and print designs that raise awareness about mental health support services. The campaign utilized bold typography and compelling imagery to create an emotional connection with viewers.',
     tools: [
@@ -1155,23 +1209,23 @@ export const projects: Project[] = [
     keywords: ['outdoor advertising', 'print design', 'social impact', 'mental health', 'typography'],
     gallery: [
       {
-        src: '../src/assets/Portfolio/img_portfolio_gcprod03.jpg',
+        src: '/portfolio/img_portfolio_gcprod03.jpg',
         caption: 'Main dashboard view showing key metrics and data visualizations'
       },
       {
-        src: '../src/assets/Portfolio/img_portfolio_gcprod04.jpg',
+        src: '/portfolio/img_portfolio_gcprod04.jpg',
         caption: 'Custom report builder interface'
       },
       {
-        src: '../src/assets/Portfolio/img_portfolio_gcprod05.jpg',
+        src: '/portfolio/img_portfolio_gcprod05.jpg',
         caption: 'Mobile-responsive design for on-the-go access'
       },
       {
-        src: '../src/assets/Portfolio/img_portfolio_gcprod06.jpg',
+        src: '/portfolio/img_portfolio_gcprod06.jpg',
         caption: 'Mobile-responsive design for on-the-go access'
       },
       {
-        src: '../src/assets/Portfolio/img_portfolio_gcprod07.jpg',
+        src: '/portfolio/img_portfolio_gcprod07.jpg',
         caption: 'Mobile-responsive design for on-the-go access'
       }
     ],
@@ -1181,7 +1235,7 @@ export const projects: Project[] = [
     id: '25',
     title: 'Vorsteiner Technical Spec Sheets',
     category: 'graphic-design',
-    imageUrl: '../src/assets/Portfolio/img_portfolio_vorsteinerflyers.jpg',
+    imageUrl: '/portfolio/img_portfolio_vorsteinerflyers.jpg',
     client: 'Vorsteiner',
     description: 'A comprehensive outdoor advertising campaign for Beyond Blue, featuring impactful billboard and print designs that raise awareness about mental health support services. The campaign utilized bold typography and compelling imagery to create an emotional connection with viewers.',
     tools: [
@@ -1195,7 +1249,7 @@ export const projects: Project[] = [
     id: '26',
     title: 'Duffs Jewellers Print Ads',
     category: 'graphic-design',
-    imageUrl: '../src/assets/Portfolio/img_portfolio_duffprint01.jpg',
+    imageUrl: '/portfolio/img_portfolio_duffprint01.jpg',
     client: 'Duffs Jewellers',
     description: 'A comprehensive outdoor advertising campaign for Beyond Blue, featuring impactful billboard and print designs that raise awareness about mental health support services. The campaign utilized bold typography and compelling imagery to create an emotional connection with viewers.',
     tools: [
@@ -1209,7 +1263,7 @@ export const projects: Project[] = [
     id: '26',
     title: 'Hey Music OOH Promo Posters',
     category: 'graphic-design',
-    imageUrl: '../src/assets/Portfolio/img_portfolio_ttooh.jpg',
+    imageUrl: '/portfolio/img_portfolio_ttooh.jpg',
     client: 'Hey Music',
     description: 'A comprehensive outdoor advertising campaign for Beyond Blue, featuring impactful billboard and print designs that raise awareness about mental health support services. The campaign utilized bold typography and compelling imagery to create an emotional connection with viewers.',
     tools: [
@@ -1223,7 +1277,7 @@ export const projects: Project[] = [
     id: '27',
     title: 'Hey Mag Digital and Print Magazine',
     category: 'graphic-design',
-    imageUrl: '../src/assets/Portfolio/img_portfolio_heymag01.jpg',
+    imageUrl: '/portfolio/img_portfolio_heymag01.jpg',
     client: 'Hey Music',
     description: 'A comprehensive outdoor advertising campaign for Beyond Blue, featuring impactful billboard and print designs that raise awareness about mental health support services. The campaign utilized bold typography and compelling imagery to create an emotional connection with viewers.',
     tools: [
@@ -1237,7 +1291,7 @@ export const projects: Project[] = [
     id: '28',
     title: 'Seven Merch Social Media Posts',
     category: 'graphic-design',
-    imageUrl: '../src/assets/Portfolio/img_portfolio_sevm02.jpg',
+    imageUrl: '/portfolio/img_portfolio_sevm02.jpg',
     client: 'Seven Merch',
     description: 'A comprehensive outdoor advertising campaign for Beyond Blue, featuring impactful billboard and print designs that raise awareness about mental health support services. The campaign utilized bold typography and compelling imagery to create an emotional connection with viewers.',
     tools: [
@@ -1251,7 +1305,7 @@ export const projects: Project[] = [
     id: '28',
     title: 'Mediterranean Kitchen Social Media Posts',
     category: 'graphic-design',
-    imageUrl: '../src/assets/Portfolio/img_portfolio_mksoc01.jpg',
+    imageUrl: '/portfolio/img_portfolio_mksoc01.jpg',
     client: 'Mediterranean Kitchen',
     description: 'A comprehensive outdoor advertising campaign for Beyond Blue, featuring impactful billboard and print designs that raise awareness about mental health support services. The campaign utilized bold typography and compelling imagery to create an emotional connection with viewers.',
     tools: [
@@ -1265,7 +1319,7 @@ export const projects: Project[] = [
     id: '29',
     title: 'Hey Music Social Media Posts',
     category: 'graphic-design',
-    imageUrl: '../src/assets/Portfolio/img_portfolio_hmsoc01.jpg',
+    imageUrl: '/portfolio/img_portfolio_hmsoc01.jpg',
     client: 'Hey Music',
     description: 'A comprehensive outdoor advertising campaign for Beyond Blue, featuring impactful billboard and print designs that raise awareness about mental health support services. The campaign utilized bold typography and compelling imagery to create an emotional connection with viewers.',
     tools: [
@@ -1279,7 +1333,7 @@ export const projects: Project[] = [
     id: '30',
     title: 'Enterprise Fitness Social Media Posts',
     category: 'graphic-design',
-    imageUrl: '../src/assets/Portfolio/img_portfolio_efsoc01.jpg',
+    imageUrl: '/portfolio/img_portfolio_efsoc01.jpg',
     client: 'Enterprise Fitness',
     description: 'A comprehensive outdoor advertising campaign for Beyond Blue, featuring impactful billboard and print designs that raise awareness about mental health support services. The campaign utilized bold typography and compelling imagery to create an emotional connection with viewers.',
     tools: [
@@ -1293,7 +1347,7 @@ export const projects: Project[] = [
     id: '31',
     title: 'James Cameron Private Photoshoot',
     category: 'photography',
-    imageUrl: '../src/assets/Portfolio/img_portfolio_jc01.jpg',
+    imageUrl: '/portfolio/img_portfolio_jc01.jpg',
     client: ['KBS Communications | ', 'ADMM | ', 'Yas Marina Circuit'],
     description: 'A comprehensive outdoor advertising campaign for Beyond Blue, featuring impactful billboard and print designs that raise awareness about mental health support services. The campaign utilized bold typography and compelling imagery to create an emotional connection with viewers.',
     tools: [
@@ -1303,27 +1357,27 @@ export const projects: Project[] = [
     keywords: ['outdoor advertising', 'print design', 'social impact', 'mental health', 'typography'],
     gallery: [
       {
-        src: '../src/assets/Portfolio/img_portfolio_jc02.jpg',
+        src: '/portfolio/img_portfolio_jc02.jpg',
         caption: 'Main dashboard view showing key metrics and data visualizations'
       },
       {
-        src: '../src/assets/Portfolio/img_portfolio_jc03.jpg',
+        src: '/portfolio/img_portfolio_jc03.jpg',
         caption: 'Custom report builder interface'
       },
       {
-        src: '../src/assets/Portfolio/img_portfolio_jc04.jpg',
+        src: '/portfolio/img_portfolio_jc04.jpg',
         caption: 'Mobile-responsive design for on-the-go access'
       },
       {
-        src: '../src/assets/Portfolio/img_portfolio_jc05.jpg',
+        src: '/portfolio/img_portfolio_jc05.jpg',
         caption: 'Main dashboard view showing key metrics and data visualizations'
       },
       {
-        src: '../src/assets/Portfolio/img_portfolio_jc01.jpg',
+        src: '/portfolio/img_portfolio_jc01.jpg',
         caption: 'Main dashboard view showing key metrics and data visualizations'
       },
       {
-        src: '../src/assets/Portfolio/img_portfolio_jc06.jpg',
+        src: '/portfolio/img_portfolio_jc06.jpg',
         caption: 'Main dashboard view showing key metrics and data visualizations'
       },
     ],
@@ -1333,7 +1387,7 @@ export const projects: Project[] = [
     id: '32',
     title: 'Petronas AMG F1 Team Private shoot',
     category: 'photography',
-    imageUrl: '../src/assets/Portfolio/img_portfolio_merc01.jpg',
+    imageUrl: '/portfolio/img_portfolio_merc01.jpg',
     client: ['KBS Communications | ', 'ADMM | ', 'Yas Marina Circuit'],
     description: 'A comprehensive outdoor advertising campaign for Beyond Blue, featuring impactful billboard and print designs that raise awareness about mental health support services. The campaign utilized bold typography and compelling imagery to create an emotional connection with viewers.',
     tools: [
@@ -1343,117 +1397,25 @@ export const projects: Project[] = [
     keywords: ['outdoor advertising', 'print design', 'social impact', 'mental health', 'typography'],
     gallery: [
       {
-        src: '../src/assets/Portfolio/img_portfolio_merc02.jpg',
+        src: '/portfolio/img_portfolio_merc02.jpg',
         caption: 'Main dashboard view showing key metrics and data visualizations'
       },
       {
-        src: '../src/assets/Portfolio/img_portfolio_merc03.jpg',
+        src: '/portfolio/img_portfolio_merc03.jpg',
         caption: 'Custom report builder interface'
       },
       {
-        src: '../src/assets/Portfolio/img_portfolio_merc04.jpg',
+        src: '/portfolio/img_portfolio_merc04.jpg',
         caption: 'Mobile-responsive design for on-the-go access'
       }
     ],
     slug: 'amgf1'
   },
   {
-    id: '33',
-    title: 'FIA GT1',
-    category: 'photography',
-    imageUrl: '../src/assets/Portfolio/img_portfolio_fiagt1yas01.jpg',
-    client: 'Yas Marina Circuit',
-    description: 'A comprehensive outdoor advertising campaign for Beyond Blue, featuring impactful billboard and print designs that raise awareness about mental health support services. The campaign utilized bold typography and compelling imagery to create an emotional connection with viewers.',
-    tools: [
-      { name: 'Adobe Illustrator', icon: '../src/assets/icons/illustrator.svg' },
-      { name: 'Adobe InDesign', icon: '../src/assets/icons/indesign.svg' }
-    ],
-    keywords: ['outdoor advertising', 'print design', 'social impact', 'mental health', 'typography'],
-    gallery: [
-      {
-        src: '../src/assets/Portfolio/img_portfolio_fiagt1yas02.jpg',
-        caption: 'Main dashboard view showing key metrics and data visualizations'
-      },
-      {
-        src: '../src/assets/Portfolio/img_portfolio_fiagt1yas03.jpg',
-        caption: 'Custom report builder interface'
-      },
-      {
-        src: '../src/assets/Portfolio/img_portfolio_fiagt1yas04.jpg',
-        caption: 'Mobile-responsive design for on-the-go access'
-      },
-      {
-        src: '../src/assets/Portfolio/img_portfolio_fiagt1yas05.jpg',
-        caption: 'Main dashboard view showing key metrics and data visualizations'
-      },
-      {
-        src: '../src/assets/Portfolio/img_portfolio_fiagt1yas06.jpg',
-        caption: 'Custom report builder interface'
-      },
-      {
-        src: '../src/assets/Portfolio/img_portfolio_fiagt1yas07.jpg',
-        caption: 'Mobile-responsive design for on-the-go access'
-      },
-      {
-        src: '../src/assets/Portfolio/img_portfolio_fiagt1yas08.jpg',
-        caption: 'Main dashboard view showing key metrics and data visualizations'
-      },
-      {
-        src: '../src/assets/Portfolio/img_portfolio_fiagt1yas09.jpg',
-        caption: 'Custom report builder interface'
-      },
-      {
-        src: '../src/assets/Portfolio/img_portfolio_fiagt1yas10.jpg',
-        caption: 'Mobile-responsive design for on-the-go access'
-      },
-      {
-        src: '../src/assets/Portfolio/img_portfolio_fiagt1yas11.jpg',
-        caption: 'Mobile-responsive design for on-the-go access'
-      },
-      {
-        src: '../src/assets/Portfolio/img_portfolio_fiagt1yas12.jpg',
-        caption: 'Mobile-responsive design for on-the-go access'
-      }
-    ],
-    slug: 'fiayas'
-  },
-  {
-    id: '34',
-    title: 'Private Photoshoop for Hamad A.M.',
-    category: 'photography',
-    imageUrl: '../src/assets/Portfolio/img_portfolio_venturi02.jpg',
-    client: 'Private Commission',
-    description: 'A comprehensive outdoor advertising campaign for Beyond Blue, featuring impactful billboard and print designs that raise awareness about mental health support services. The campaign utilized bold typography and compelling imagery to create an emotional connection with viewers.',
-    tools: [
-      { name: 'Adobe Illustrator', icon: '../src/assets/icons/illustrator.svg' },
-      { name: 'Adobe InDesign', icon: '../src/assets/icons/indesign.svg' }
-    ],
-    keywords: ['outdoor advertising', 'print design', 'social impact', 'mental health', 'typography'],
-    gallery: [
-      {
-        src: '../src/assets/Portfolio/img_portfolio_venturi03.jpg',
-        caption: 'Main dashboard view showing key metrics and data visualizations'
-      },
-      {
-        src: '../src/assets/Portfolio/img_portfolio_venturi01.jpg',
-        caption: 'Custom report builder interface'
-      },
-      {
-        src: '../src/assets/Portfolio/img_portfolio_venturi04.jpg',
-        caption: 'Mobile-responsive design for on-the-go access'
-      },
-      {
-        src: '../src/assets/Portfolio/img_portfolio_venturi05.jpg',
-        caption: 'Mobile-responsive design for on-the-go access'
-      }
-    ],
-    slug: 'ventps'
-  },
-  {
     id: '35',
     title: 'Private Photoshoop for HH. Sheikh Nahyan bin Mubarak Al Nahyan',
     category: 'photography',
-    imageUrl: '../src/assets/Portfolio/img_portfolio_hhsnahyan.jpg',
+    imageUrl: '/portfolio/img_portfolio_hhsnahyan.jpg',
     client: ['KBS Communications | ', 'ADMM'],
     description: 'A comprehensive outdoor advertising campaign for Beyond Blue, featuring impactful billboard and print designs that raise awareness about mental health support services. The campaign utilized bold typography and compelling imagery to create an emotional connection with viewers.',
     tools: [
@@ -1463,17 +1425,48 @@ export const projects: Project[] = [
     keywords: ['outdoor advertising', 'print design', 'social impact', 'mental health', 'typography'],
     gallery: [
       {
-        src: '../src/assets/Portfolio/img_portfolio_hhsnahyan01.jpg',
+        src: '/portfolio/img_portfolio_hhsnahyan01.jpg',
         caption: 'Main dashboard view showing key metrics and data visualizations'
       },
     ],
     slug: 'hhsn'
   },
+
+  {
+    id: '34',
+    title: 'H.M. Private Photoshoot',
+    category: 'photography',
+    imageUrl: '/portfolio/img_portfolio_hm01.jpg',
+    client: ['Private Commission'],
+    description: 'A comprehensive outdoor advertising campaign for Beyond Blue, featuring impactful billboard and print designs that raise awareness about mental health support services. The campaign utilized bold typography and compelling imagery to create an emotional connection with viewers.',
+    tools: [
+      { name: 'Adobe Illustrator', icon: '../src/assets/icons/illustrator.svg' },
+      { name: 'Adobe InDesign', icon: '../src/assets/icons/indesign.svg' }
+    ],
+    keywords: ['outdoor advertising', 'print design', 'social impact', 'mental health', 'typography'],
+    gallery: [
+      {
+        src: '/portfolio/img_portfolio_hm02.jpg',
+        caption: 'Main dashboard view showing key metrics and data visualizations'
+      },
+      {
+        src: '/portfolio/img_portfolio_hm03.jpg',
+        caption: 'Custom report builder interface'
+      },
+      {
+        src: '/portfolio/img_portfolio_hm04.jpg',
+        caption: 'Mobile-responsive design for on-the-go access'
+      },
+    ],
+    slug: 'hmpriv'
+  },
+
+
   {
     id: '33',
-    title: 'Yas Drag Racing Nights',
+    title: 'FIA GT1',
     category: 'photography',
-    imageUrl: '../src/assets/Portfolio/img_portfolio_yasdrag02.jpg',
+    imageUrl: '/portfolio/img_portfolio_fiagt1yas01.jpg',
     client: 'Yas Marina Circuit',
     description: 'A comprehensive outdoor advertising campaign for Beyond Blue, featuring impactful billboard and print designs that raise awareness about mental health support services. The campaign utilized bold typography and compelling imagery to create an emotional connection with viewers.',
     tools: [
@@ -1483,98 +1476,163 @@ export const projects: Project[] = [
     keywords: ['outdoor advertising', 'print design', 'social impact', 'mental health', 'typography'],
     gallery: [
       {
-        src: '../src/assets/Portfolio/img_portfolio_yasdrag01.jpg',
+        src: '/portfolio/img_portfolio_fiagt1yas02.jpg',
         caption: 'Main dashboard view showing key metrics and data visualizations'
       },
       {
-        src: '../src/assets/Portfolio/img_portfolio_yasdrag03.jpg',
+        src: '/portfolio/img_portfolio_fiagt1yas03.jpg',
         caption: 'Custom report builder interface'
       },
       {
-        src: '../src/assets/Portfolio/img_portfolio_yasdrag04.jpg',
+        src: '/portfolio/img_portfolio_fiagt1yas04.jpg',
         caption: 'Mobile-responsive design for on-the-go access'
       },
       {
-        src: '../src/assets/Portfolio/img_portfolio_yasdrag05.jpg',
+        src: '/portfolio/img_portfolio_fiagt1yas05.jpg',
         caption: 'Main dashboard view showing key metrics and data visualizations'
       },
       {
-        src: '../src/assets/Portfolio/img_portfolio_yasdrag06.jpg',
+        src: '/portfolio/img_portfolio_fiagt1yas06.jpg',
         caption: 'Custom report builder interface'
       },
       {
-        src: '../src/assets/Portfolio/img_portfolio_yasdrag07.jpg',
+        src: '/portfolio/img_portfolio_fiagt1yas07.jpg',
         caption: 'Mobile-responsive design for on-the-go access'
       },
       {
-        src: '../src/assets/Portfolio/img_portfolio_yasdrag08.jpg',
+        src: '/portfolio/img_portfolio_fiagt1yas08.jpg',
         caption: 'Main dashboard view showing key metrics and data visualizations'
       },
       {
-        src: '../src/assets/Portfolio/img_portfolio_yasdrag09.jpg',
+        src: '/portfolio/img_portfolio_fiagt1yas09.jpg',
         caption: 'Custom report builder interface'
       },
       {
-        src: '../src/assets/Portfolio/img_portfolio_yasdrag10.jpg',
+        src: '/portfolio/img_portfolio_fiagt1yas10.jpg',
         caption: 'Mobile-responsive design for on-the-go access'
       },
       {
-        src: '../src/assets/Portfolio/img_portfolio_yasdrag11.jpg',
+        src: '/portfolio/img_portfolio_fiagt1yas11.jpg',
         caption: 'Mobile-responsive design for on-the-go access'
       },
       {
-        src: '../src/assets/Portfolio/img_portfolio_yasdrag12.jpg',
+        src: '/portfolio/img_portfolio_fiagt1yas12.jpg',
+        caption: 'Mobile-responsive design for on-the-go access'
+      }
+    ],
+    slug: 'fiayas'
+  },
+  {
+    id: '34',
+    title: 'Private Photoshoop for Hamad A.M.',
+    category: 'photography',
+    imageUrl: '/portfolio/img_portfolio_venturi02.jpg',
+    client: 'Private Commission',
+    description: 'A comprehensive outdoor advertising campaign for Beyond Blue, featuring impactful billboard and print designs that raise awareness about mental health support services. The campaign utilized bold typography and compelling imagery to create an emotional connection with viewers.',
+    tools: [
+      { name: 'Adobe Illustrator', icon: '../src/assets/icons/illustrator.svg' },
+      { name: 'Adobe InDesign', icon: '../src/assets/icons/indesign.svg' }
+    ],
+    keywords: ['outdoor advertising', 'print design', 'social impact', 'mental health', 'typography'],
+    gallery: [
+      {
+        src: '/portfolio/img_portfolio_venturi03.jpg',
+        caption: 'Main dashboard view showing key metrics and data visualizations'
+      },
+      {
+        src: '/portfolio/img_portfolio_venturi01.jpg',
+        caption: 'Custom report builder interface'
+      },
+      {
+        src: '/portfolio/img_portfolio_venturi04.jpg',
         caption: 'Mobile-responsive design for on-the-go access'
       },
       {
-        src: '../src/assets/Portfolio/img_portfolio_yasdrag13.jpg',
+        src: '/portfolio/img_portfolio_venturi05.jpg',
+        caption: 'Mobile-responsive design for on-the-go access'
+      }
+    ],
+    slug: 'ventps'
+  },
+  
+  {
+    id: '33',
+    title: 'Yas Drag Racing Nights',
+    category: 'photography',
+    imageUrl: '/portfolio/img_portfolio_yasdrag02.jpg',
+    client: 'Yas Marina Circuit',
+    description: 'A comprehensive outdoor advertising campaign for Beyond Blue, featuring impactful billboard and print designs that raise awareness about mental health support services. The campaign utilized bold typography and compelling imagery to create an emotional connection with viewers.',
+    tools: [
+      { name: 'Adobe Illustrator', icon: '../src/assets/icons/illustrator.svg' },
+      { name: 'Adobe InDesign', icon: '../src/assets/icons/indesign.svg' }
+    ],
+    keywords: ['outdoor advertising', 'print design', 'social impact', 'mental health', 'typography'],
+    gallery: [
+      {
+        src: '/portfolio/img_portfolio_yasdrag01.jpg',
+        caption: 'Main dashboard view showing key metrics and data visualizations'
+      },
+      {
+        src: '/portfolio/img_portfolio_yasdrag03.jpg',
+        caption: 'Custom report builder interface'
+      },
+      {
+        src: '/portfolio/img_portfolio_yasdrag04.jpg',
         caption: 'Mobile-responsive design for on-the-go access'
       },
       {
-        src: '../src/assets/Portfolio/img_portfolio_yasdrag14.jpg',
+        src: '/portfolio/img_portfolio_yasdrag05.jpg',
+        caption: 'Main dashboard view showing key metrics and data visualizations'
+      },
+      {
+        src: '/portfolio/img_portfolio_yasdrag06.jpg',
+        caption: 'Custom report builder interface'
+      },
+      {
+        src: '/portfolio/img_portfolio_yasdrag07.jpg',
         caption: 'Mobile-responsive design for on-the-go access'
       },
       {
-        src: '../src/assets/Portfolio/img_portfolio_yasdrag15.jpg',
+        src: '/portfolio/img_portfolio_yasdrag08.jpg',
+        caption: 'Main dashboard view showing key metrics and data visualizations'
+      },
+      {
+        src: '/portfolio/img_portfolio_yasdrag09.jpg',
+        caption: 'Custom report builder interface'
+      },
+      {
+        src: '/portfolio/img_portfolio_yasdrag10.jpg',
+        caption: 'Mobile-responsive design for on-the-go access'
+      },
+      {
+        src: '/portfolio/img_portfolio_yasdrag11.jpg',
+        caption: 'Mobile-responsive design for on-the-go access'
+      },
+      {
+        src: '/portfolio/img_portfolio_yasdrag12.jpg',
+        caption: 'Mobile-responsive design for on-the-go access'
+      },
+      {
+        src: '/portfolio/img_portfolio_yasdrag13.jpg',
+        caption: 'Mobile-responsive design for on-the-go access'
+      },
+      {
+        src: '/portfolio/img_portfolio_yasdrag14.jpg',
+        caption: 'Mobile-responsive design for on-the-go access'
+      },
+      {
+        src: '/portfolio/img_portfolio_yasdrag15.jpg',
         caption: 'Mobile-responsive design for on-the-go access'
       }
     ],
     slug: 'yasdrn'
   },
-  {
-    id: '34',
-    title: 'H.M. Private Photoshoot',
-    category: 'photography',
-    imageUrl: '../src/assets/Portfolio/img_portfolio_hm01.jpg',
-    client: ['Private Commission'],
-    description: 'A comprehensive outdoor advertising campaign for Beyond Blue, featuring impactful billboard and print designs that raise awareness about mental health support services. The campaign utilized bold typography and compelling imagery to create an emotional connection with viewers.',
-    tools: [
-      { name: 'Adobe Illustrator', icon: '../src/assets/icons/illustrator.svg' },
-      { name: 'Adobe InDesign', icon: '../src/assets/icons/indesign.svg' }
-    ],
-    keywords: ['outdoor advertising', 'print design', 'social impact', 'mental health', 'typography'],
-    gallery: [
-      {
-        src: '../src/assets/Portfolio/img_portfolio_hm02.jpg',
-        caption: 'Main dashboard view showing key metrics and data visualizations'
-      },
-      {
-        src: '../src/assets/Portfolio/img_portfolio_hm03.jpg',
-        caption: 'Custom report builder interface'
-      },
-      {
-        src: '../src/assets/Portfolio/img_portfolio_hm04.jpg',
-        caption: 'Mobile-responsive design for on-the-go access'
-      },
-    ],
-    slug: 'hmpriv'
-  },
-
+  
   {
     id: '35',
     title: 'J.C. Private Photoshoot',
     category: 'photography',
-    imageUrl: '../src/assets/Portfolio/img_portfolio_jac04.jpg',
+    imageUrl: '/portfolio/img_portfolio_jac04.jpg',
     client: ['Private Commission'],
     description: 'A comprehensive outdoor advertising campaign for Beyond Blue, featuring impactful billboard and print designs that raise awareness about mental health support services. The campaign utilized bold typography and compelling imagery to create an emotional connection with viewers.',
     tools: [
@@ -1584,23 +1642,23 @@ export const projects: Project[] = [
     keywords: ['outdoor advertising', 'print design', 'social impact', 'mental health', 'typography'],
     gallery: [
       {
-        src: '../src/assets/Portfolio/img_portfolio_jac01.jpg',
+        src: '/portfolio/img_portfolio_jac01.jpg',
         caption: 'Main dashboard view showing key metrics and data visualizations'
       },
       {
-        src: '../src/assets/Portfolio/img_portfolio_jac02.jpg',
+        src: '/portfolio/img_portfolio_jac02.jpg',
         caption: 'Custom report builder interface'
       },
       {
-        src: '../src/assets/Portfolio/img_portfolio_jac03.jpg',
+        src: '/portfolio/img_portfolio_jac03.jpg',
         caption: 'Mobile-responsive design for on-the-go access'
       },
       {
-        src: '../src/assets/Portfolio/img_portfolio_jac04.jpg',
+        src: '/portfolio/img_portfolio_jac04.jpg',
         caption: 'Mobile-responsive design for on-the-go access'
       },
       {
-        src: '../src/assets/Portfolio/img_portfolio_jac05.jpg',
+        src: '/portfolio/img_portfolio_jac05.jpg',
         caption: 'Mobile-responsive design for on-the-go access'
       },
     ],
@@ -1611,7 +1669,7 @@ export const projects: Project[] = [
     id: '35',
     title: 'S.P. Private Photoshoot',
     category: 'photography',
-    imageUrl: '../src/assets/Portfolio/img_portfolio_sen01.jpg',
+    imageUrl: '/portfolio/img_portfolio_sen01.jpg',
     client: ['Private Commission'],
     description: 'A comprehensive outdoor advertising campaign for Beyond Blue, featuring impactful billboard and print designs that raise awareness about mental health support services. The campaign utilized bold typography and compelling imagery to create an emotional connection with viewers.',
     tools: [
@@ -1621,27 +1679,27 @@ export const projects: Project[] = [
     keywords: ['outdoor advertising', 'print design', 'social impact', 'mental health', 'typography'],
     gallery: [
       {
-        src: '../src/assets/Portfolio/img_portfolio_sen01.jpg',
+        src: '/portfolio/img_portfolio_sen01.jpg',
         caption: 'Main dashboard view showing key metrics and data visualizations'
       },
       {
-        src: '../src/assets/Portfolio/img_portfolio_sen02.jpg',
+        src: '/portfolio/img_portfolio_sen02.jpg',
         caption: 'Custom report builder interface'
       },
       {
-        src: '../src/assets/Portfolio/img_portfolio_sen03.jpg',
+        src: '/portfolio/img_portfolio_sen03.jpg',
         caption: 'Mobile-responsive design for on-the-go access'
       },
       {
-        src: '../src/assets/Portfolio/img_portfolio_sen04.jpg',
+        src: '/portfolio/img_portfolio_sen04.jpg',
         caption: 'Mobile-responsive design for on-the-go access'
       },
       {
-        src: '../src/assets/Portfolio/img_portfolio_sen05.jpg',
+        src: '/portfolio/img_portfolio_sen05.jpg',
         caption: 'Mobile-responsive design for on-the-go access'
       },
       {
-        src: '../src/assets/Portfolio/img_portfolio_sen06.jpg',
+        src: '/portfolio/img_portfolio_sen06.jpg',
         caption: 'Mobile-responsive design for on-the-go access'
       },
     ],
@@ -1651,7 +1709,7 @@ export const projects: Project[] = [
     id: '36',
     title: 'J.C. Private Photoshoot',
     category: 'photography',
-    imageUrl: '../src/assets/Portfolio/img_portfolio_jes01.jpg',
+    imageUrl: '/portfolio/img_portfolio_jes01.jpg',
     client: ['Private Commission'],
     description: 'A comprehensive outdoor advertising campaign for Beyond Blue, featuring impactful billboard and print designs that raise awareness about mental health support services. The campaign utilized bold typography and compelling imagery to create an emotional connection with viewers.',
     tools: [
@@ -1661,23 +1719,23 @@ export const projects: Project[] = [
     keywords: ['outdoor advertising', 'print design', 'social impact', 'mental health', 'typography'],
     gallery: [
       {
-        src: '../src/assets/Portfolio/img_portfolio_jes04.jpg',
+        src: '/portfolio/img_portfolio_jes04.jpg',
         caption: 'Main dashboard view showing key metrics and data visualizations'
       },
       {
-        src: '../src/assets/Portfolio/img_portfolio_jes05.jpg',
+        src: '/portfolio/img_portfolio_jes05.jpg',
         caption: 'Custom report builder interface'
       },
       {
-        src: '../src/assets/Portfolio/img_portfolio_jes02.jpg',
+        src: '/portfolio/img_portfolio_jes02.jpg',
         caption: 'Mobile-responsive design for on-the-go access'
       },
       {
-        src: '../src/assets/Portfolio/img_portfolio_jes03.jpg',
+        src: '/portfolio/img_portfolio_jes03.jpg',
         caption: 'Mobile-responsive design for on-the-go access'
       },
       {
-        src: '../src/assets/Portfolio/img_portfolio_jes01.jpg',
+        src: '/portfolio/img_portfolio_jes01.jpg',
         caption: 'Mobile-responsive design for on-the-go access'
       }
     ],
@@ -1687,7 +1745,7 @@ export const projects: Project[] = [
     id: '37',
     title: 'O.K. Private Photoshoot',
     category: 'photography',
-    imageUrl: '../src/assets/Portfolio/img_portfolio_ok02.jpg',
+    imageUrl: '/portfolio/img_portfolio_ok02.jpg',
     client: ['Private Commission'],
     description: 'A comprehensive outdoor advertising campaign for Beyond Blue, featuring impactful billboard and print designs that raise awareness about mental health support services. The campaign utilized bold typography and compelling imagery to create an emotional connection with viewers.',
     tools: [
@@ -1697,25 +1755,27 @@ export const projects: Project[] = [
     keywords: ['outdoor advertising', 'print design', 'social impact', 'mental health', 'typography'],
     gallery: [
       {
-        src: '../src/assets/Portfolio/img_portfolio_ok01.jpg',
+        src: '/portfolio/img_portfolio_ok01.jpg',
         caption: 'Main dashboard view showing key metrics and data visualizations'
       },
       {
-        src: '../src/assets/Portfolio/img_portfolio_ok02.jpg',
+        src: '/portfolio/img_portfolio_ok02.jpg',
         caption: 'Custom report builder interface'
       },
       {
-        src: '../src/assets/Portfolio/img_portfolio_ok03.jpg',
+        src: '/portfolio/img_portfolio_ok03.jpg',
         caption: 'Mobile-responsive design for on-the-go access'
       },
       {
-        src: '../src/assets/Portfolio/img_portfolio_ok04.jpg',
+        src: '/portfolio/img_portfolio_ok04.jpg',
         caption: 'Mobile-responsive design for on-the-go access'
       }
     ],
     slug: 'okpriv'
   },
 
+  
+ 
 ];
 
 

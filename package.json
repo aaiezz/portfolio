@@ -26,7 +26,6 @@
     "sharp": "^0.33.2",
     "swiper": "^11.0.5",
     "tailwindcss": "^3.4.1",
-    "vite": "^6.2.2",
-    "yet-another-react-lightbox": "^3.21.8"
+    "vite": "^6.2.2"
   }
 }

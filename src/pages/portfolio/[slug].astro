@@ -1,7 +1,7 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import Breadcrumb from '../../components/Breadcrumb.astro';
-import PhotoGallery from '../../components/PhotoGallery.astro';
+import { LightboxGallery } from '../../components/LightboxGallery';
 import { projects } from '../../data/projects';
 
 export function getStaticPaths() {
@@ -17,11 +17,6 @@ const crumbs = [
   { label: 'Portfolio', href: '/portfolio' },
   { label: project.title }
 ];
-
-// Type guard for photography projects
-function isPhotoProject(project: any): project is PhotoProject {
-  return project.category === 'photography' && Array.isArray(project.gallery);
-}
 ---
 
 <Layout 
@@ -43,7 +38,7 @@ function isPhotoProject(project: any): project is PhotoProject {
         <!-- Project Overview -->
         <div class="mb-16">
           <h1 class="text-4xl font-bold mb-4">{project.title}</h1>
-          <!--<p class="text-xl text-gray-600 mb-8">{project.description}</p> -->
+          <p class="text-xl text-gray-600 mb-8">{project.description}</p>
           
           <div class="grid grid-cols-1 md:grid-cols-3 gap-8 bg-gray-50 p-6 rounded-lg">
             <div>
@@ -58,7 +53,7 @@ function isPhotoProject(project: any): project is PhotoProject {
               <h3 class="font-semibold text-gray-900 mb-2">Tools</h3>
               <ul class="space-y-1">
                 {project.tools.map(tool => (
-                  <li class="text-gray-600">{tool.name}</li>
+                  <li class="text-gray-600">{tool}</li>
                 ))}
               </ul>
             </div>
@@ -68,21 +63,22 @@ function isPhotoProject(project: any): project is PhotoProject {
         {project.gallery && project.gallery.length > 0 && (
           <div class="mb-16">
             <h2 class="text-2xl font-bold mb-8">Gallery</h2>
-            <PhotoGallery images={project.gallery} />
+            <LightboxGallery images={project.gallery} client:load />
           </div>
         )}
 
-        <!-- Keywords -->
-        <div class="border-t pt-8">
-          <h2 class="text-xl font-semibold mb-4">Keywords</h2>
-          <div class="flex flex-wrap gap-2">
-            {project.keywords.map(keyword => (
-              <span class="px-3 py-1 bg-gray-100 rounded-full text-sm text-gray-600">
-                {keyword}
-              </span>
-            ))}
+        {project.keywords && (
+          <div class="border-t pt-8">
+            <h2 class="text-xl font-semibold mb-4">Keywords</h2>
+            <div class="flex flex-wrap gap-2">
+              {project.keywords.map(keyword => (
+                <span class="px-3 py-1 bg-gray-100 rounded-full text-sm text-gray-600">
+                  {keyword}
+                </span>
+              ))}
+            </div>
           </div>
-        </div>
+        )}
       </div>
     </div>
   </div>
