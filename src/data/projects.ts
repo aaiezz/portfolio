@@ -513,7 +513,7 @@ export const projects: Project[] = [
     title: 'Suzuki Marine Australia Brand Awareness Campaign',
     category: 'graphic-design',
     imageUrl: '/portfolio/img_portfolio_smaprint08.jpg',
-    client: 'Beyond Blue',
+    client: 'Suzuki Marine Australia',
     description: 'A comprehensive outdoor advertising campaign for Beyond Blue, featuring impactful billboard and print designs that raise awareness about mental health support services. The campaign utilized bold typography and compelling imagery to create an emotional connection with viewers.',
     tools: [
       { name: 'Adobe Illustrator', icon: '../src/assets/icons/illustrator.svg' },
@@ -1302,6 +1302,62 @@ export const projects: Project[] = [
     slug: '5puf'
   },
 
+  {
+    id: '24',
+    title: 'Al Jannah Brand T-Shirts',
+    category: 'product-design',
+    imageUrl: '/portfolio/img_portfolio_aljannah05.jpg',
+    client: ['Al Jannah Brand | ', 'Mally Mall Music'],
+    description: 'A comprehensive outdoor advertising campaign for Beyond Blue, featuring impactful billboard and print designs that raise awareness about mental health support services. The campaign utilized bold typography and compelling imagery to create an emotional connection with viewers.',
+    tools: [
+      { name: 'Adobe Illustrator', icon: '../src/assets/icons/illustrator.svg' },
+      { name: 'Adobe InDesign', icon: '../src/assets/icons/indesign.svg' }
+    ],
+    keywords: ['outdoor advertising', 'print design', 'social impact', 'mental health', 'typography'],
+    gallery: [
+      {
+        src: '/portfolio/img_portfolio_aljannah01.jpg',
+        caption: 'Main dashboard view showing key metrics and data visualizations'
+      },
+      {
+        src: '/portfolio/img_portfolio_aljannah02.jpg',
+        caption: 'Main dashboard view showing key metrics and data visualizations'
+      },
+      {
+        src: '/portfolio/img_portfolio_aljannah03.jpg',
+        caption: 'Main dashboard view showing key metrics and data visualizations'
+      },
+      {
+        src: '/portfolio/img_portfolio_aljannah04.jpg',
+        caption: 'Main dashboard view showing key metrics and data visualizations'
+      },
+      {
+        src: '/portfolio/img_portfolio_aljannah06.jpg',
+        caption: 'Main dashboard view showing key metrics and data visualizations'
+      },
+      {
+        src: '/portfolio/img_portfolio_aljannah07.jpg',
+        caption: 'Main dashboard view showing key metrics and data visualizations'
+      },
+      {
+        src: '/portfolio/img_portfolio_aljannah05.jpg',
+        caption: 'Main dashboard view showing key metrics and data visualizations'
+      },
+      {
+        src: '/portfolio/img_portfolio_aljannah08.jpg',
+        caption: 'Main dashboard view showing key metrics and data visualizations'
+      },
+      {
+        src: '/portfolio/img_portfolio_aljannah09.jpg',
+        caption: 'Main dashboard view showing key metrics and data visualizations'
+      },
+      {
+        src: '/portfolio/img_portfolio_aljannah10.jpg',
+        caption: 'Main dashboard view showing key metrics and data visualizations'
+      },
+    ],
+    slug: 'jannah'
+  },
 
   {
     id: '21',
@@ -1432,6 +1488,14 @@ export const projects: Project[] = [
       },
       {
         src: '/portfolio/img_portfolio_gcprod08.jpg',
+        caption: 'Mobile-responsive design for on-the-go access'
+      },
+      {
+        src: '/portfolio/img_portfolio_gcprod09.jpg',
+        caption: 'Mobile-responsive design for on-the-go access'
+      },
+      {
+        src: '/portfolio/img_portfolio_gcprod10.jpg',
         caption: 'Mobile-responsive design for on-the-go access'
       }
     ],
