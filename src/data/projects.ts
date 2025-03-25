@@ -1389,7 +1389,30 @@ export const projects: Project[] = [
       { name: 'Adobe Illustrator', icon: '../src/assets/icons/illustrator.svg' },
       { name: 'Adobe InDesign', icon: '../src/assets/icons/indesign.svg' }
     ],
+    gallery: [
+      {
+        src: '/portfolio/img_portfolio_vor02.jpg',
+        caption: 'Main dashboard view showing key metrics and data visualizations'
+      },
+      {
+        src: '/portfolio/img_portfolio_vor03.jpg',
+        caption: 'Custom report builder interface'
+      },
+      {
+        src: '/portfolio/img_portfolio_vor04.jpg',
+        caption: 'Mobile-responsive design for on-the-go access'
+      },
+      {
+        src: '/portfolio/img_portfolio_vor05.jpg',
+        caption: 'Main dashboard view showing key metrics and data visualizations'
+      },
+      {
+        src: '/portfolio/img_portfolio_vor01.jpg',
+        caption: 'Main dashboard view showing key metrics and data visualizations'
+      }
+    ],
     keywords: ['outdoor advertising', 'print design', 'social impact', 'mental health', 'typography'],
+    
     slug: 'vorts'
   },
   {
@@ -1404,6 +1427,28 @@ export const projects: Project[] = [
       { name: 'Adobe InDesign', icon: '../src/assets/icons/indesign.svg' }
     ],
     keywords: ['outdoor advertising', 'print design', 'social impact', 'mental health', 'typography'],
+    gallery: [
+      {
+        src: '/portfolio/img_portfolio_duffprint02.jpg',
+        caption: 'Main dashboard view showing key metrics and data visualizations'
+      },
+      {
+        src: '/portfolio/img_portfolio_duffprint03.jpg',
+        caption: 'Custom report builder interface'
+      },
+      {
+        src: '/portfolio/img_portfolio_duffprint04.jpg',
+        caption: 'Mobile-responsive design for on-the-go access'
+      },
+      {
+        src: '/portfolio/img_portfolio_duffprint05.jpg',
+        caption: 'Main dashboard view showing key metrics and data visualizations'
+      },
+      {
+        src: '/portfolio/img_portfolio_duffprint06.jpg',
+        caption: 'Main dashboard view showing key metrics and data visualizations'
+      }
+    ],
     slug: 'duffprint'
   },
   {
