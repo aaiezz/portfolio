@@ -405,6 +405,49 @@ export const projects: Project[] = [
     ],
     slug: 'smaapp'
   },
+
+  {
+    id: '24',
+    title: 'Suzuki Marine Australia Fishing Shirts',
+    category: 'product-design',
+    imageUrl: '/portfolio/img_portfolio_smatee03.jpg',
+    client: 'Suzuki Marine Australia',
+    description: 'A comprehensive outdoor advertising campaign for Beyond Blue, featuring impactful billboard and print designs that raise awareness about mental health support services. The campaign utilized bold typography and compelling imagery to create an emotional connection with viewers.',
+    tools: [
+      { name: 'Adobe Illustrator', icon: '../src/assets/icons/illustrator.svg' },
+      { name: 'Adobe InDesign', icon: '../src/assets/icons/indesign.svg' }
+    ],
+    keywords: ['outdoor advertising', 'print design', 'social impact', 'mental health', 'typography'],
+    gallery: [
+      {
+        src: '/portfolio/img_portfolio_smatee01.jpg',
+        caption: 'Main dashboard view showing key metrics and data visualizations'
+      },
+      {
+        src: '/portfolio/img_portfolio_smatee02.jpg',
+        caption: 'Custom report builder interface'
+      },
+      {
+        src: '/portfolio/img_portfolio_smatee03.jpg',
+        caption: 'Mobile-responsive design for on-the-go access'
+      },
+      {
+        src: '/portfolio/img_portfolio_smatee04.jpg',
+        caption: 'Mobile-responsive design for on-the-go access'
+      },
+      {
+        src: '/portfolio/img_portfolio_smatee05.jpg',
+        caption: 'Mobile-responsive design for on-the-go access'
+      }
+      ,
+      {
+        src: '/portfolio/img_portfolio_smatee06.jpg',
+        caption: 'Mobile-responsive design for on-the-go access'
+      }
+    ],
+    slug: 'smatee'
+  },
+
   {
     id: '9',
     title: 'Suzuki Automotive Australia Service Portal',
@@ -1101,6 +1144,94 @@ export const projects: Project[] = [
     ],
     slug: 'djweb'
   },
+
+  {
+    id: '24',
+    title: '5ive Pillars Water Bottles',
+    category: 'product-design',
+    imageUrl: '/portfolio/img_portfolio_5pwb01.jpg',
+    client: '5ive Pillars',
+    description: 'A comprehensive outdoor advertising campaign for Beyond Blue, featuring impactful billboard and print designs that raise awareness about mental health support services. The campaign utilized bold typography and compelling imagery to create an emotional connection with viewers.',
+    tools: [
+      { name: 'Adobe Illustrator', icon: '../src/assets/icons/illustrator.svg' },
+      { name: 'Adobe InDesign', icon: '../src/assets/icons/indesign.svg' }
+    ],
+    keywords: ['outdoor advertising', 'print design', 'social impact', 'mental health', 'typography'],
+    gallery: [
+      {
+        src: '/portfolio/img_portfolio_5pwb01.jpg',
+        caption: 'Main dashboard view showing key metrics and data visualizations'
+      },
+      {
+        src: '/portfolio/img_portfolio_5pwb02.jpg',
+        caption: 'Main dashboard view showing key metrics and data visualizations'
+      },
+      {
+        src: '/portfolio/img_portfolio_5pwb03.jpg',
+        caption: 'Main dashboard view showing key metrics and data visualizations'
+      },
+      {
+        src: '/portfolio/img_portfolio_5pwb04.jpg',
+        caption: 'Main dashboard view showing key metrics and data visualizations'
+      },
+      {
+        src: '/portfolio/img_portfolio_5pwb05.jpg',
+        caption: 'Main dashboard view showing key metrics and data visualizations'
+      },
+      {
+        src: '/portfolio/img_portfolio_5pwb06.jpg',
+        caption: 'Main dashboard view showing key metrics and data visualizations'
+      },
+      {
+        src: '/portfolio/img_portfolio_5pwb07.jpg',
+        caption: 'Main dashboard view showing key metrics and data visualizations'
+      },
+    ],
+    slug: '5bot'
+  },
+
+  {
+    id: '24',
+    title: '5ive Pillars Puffer Jacket',
+    category: 'product-design',
+    imageUrl: '/portfolio/img_portfolio_5ppj_main.jpg',
+    client: '5ive Pillars',
+    description: 'A comprehensive outdoor advertising campaign for Beyond Blue, featuring impactful billboard and print designs that raise awareness about mental health support services. The campaign utilized bold typography and compelling imagery to create an emotional connection with viewers.',
+    tools: [
+      { name: 'Adobe Illustrator', icon: '../src/assets/icons/illustrator.svg' },
+      { name: 'Adobe InDesign', icon: '../src/assets/icons/indesign.svg' }
+    ],
+    keywords: ['outdoor advertising', 'print design', 'social impact', 'mental health', 'typography'],
+    gallery: [
+      {
+        src: '/portfolio/img_portfolio_5ppj01.jpg',
+        caption: 'Main dashboard view showing key metrics and data visualizations'
+      },
+      {
+        src: '/portfolio/img_portfolio_5ppj02.jpg',
+        caption: 'Main dashboard view showing key metrics and data visualizations'
+      },
+      {
+        src: '/portfolio/img_portfolio_5ppj03.jpg',
+        caption: 'Main dashboard view showing key metrics and data visualizations'
+      },
+      {
+        src: '/portfolio/img_portfolio_5ppj04.jpg',
+        caption: 'Main dashboard view showing key metrics and data visualizations'
+      },
+      {
+        src: '/portfolio/img_portfolio_5ppj05.jpg',
+        caption: 'Main dashboard view showing key metrics and data visualizations'
+      },
+      {
+        src: '/portfolio/img_portfolio_5ppj06.jpg',
+        caption: 'Main dashboard view showing key metrics and data visualizations'
+      },
+    ],
+    slug: '5puf'
+  },
+
+
   {
     id: '21',
     title: 'Gold & Co. London Portfolio Website',
