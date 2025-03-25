@@ -1282,20 +1282,13 @@ export const projects: Project[] = [
         src: '/portfolio/img_portfolio_5ppj08.jpg',
         caption: 'Main dashboard view showing key metrics and data visualizations'
       },
-      {
-        src: '/portfolio/img_portfolio_5ppj04.jpg',
-        caption: 'Main dashboard view showing key metrics and data visualizations'
-      },
-      {
-        src: '/portfolio/img_portfolio_5ppj05.jpg',
-        caption: 'Main dashboard view showing key metrics and data visualizations'
-      },
+
       {
         src: '/portfolio/img_portfolio_5ppj06.jpg',
         caption: 'Main dashboard view showing key metrics and data visualizations'
       },
       {
-        src: '/portfolio/img_portfolio_5ppj06.jpg',
+        src: '/portfolio/img_portfolio_5ppj09.jpg',
         caption: 'Main dashboard view showing key metrics and data visualizations'
       },
     ],
