@@ -72,7 +72,8 @@ export const projects: Project[] = [
       }
     ],
     slug: 'bbooh'
-  }, {
+  }, 
+  {
     id: '38',
     title: 'Julia Gillard Former Prime Minister of Australia Photoshoot',
     category: 'photography',
@@ -506,6 +507,64 @@ export const projects: Project[] = [
     ],
     slug: 'saaport'
   },
+
+  {
+    id: '1',
+    title: 'Suzuki Marine Australia Brand Awareness Campaign',
+    category: 'graphic-design',
+    imageUrl: '/portfolio/img_portfolio_smaprint08.jpg',
+    client: 'Beyond Blue',
+    description: 'A comprehensive outdoor advertising campaign for Beyond Blue, featuring impactful billboard and print designs that raise awareness about mental health support services. The campaign utilized bold typography and compelling imagery to create an emotional connection with viewers.',
+    tools: [
+      { name: 'Adobe Illustrator', icon: '../src/assets/icons/illustrator.svg' },
+      { name: 'Adobe InDesign', icon: '../src/assets/icons/indesign.svg' }
+    ],
+    keywords: ['outdoor advertising', 'print design', 'social impact', 'mental health', 'typography'],
+    gallery: [
+      {
+        src: '/portfolio/img_portfolio_smaprint01.jpg',
+        caption: 'Main dashboard view showing key metrics and data visualizations'
+      },
+      {
+        src: '/portfolio/img_portfolio_smaprint02.jpg',
+        caption: 'Main dashboard view showing key metrics and data visualizations'
+      },
+      {
+        src: '/portfolio/img_portfolio_smaprint03.jpg',
+        caption: 'Main dashboard view showing key metrics and data visualizations'
+      },
+      {
+        src: '/portfolio/img_portfolio_smaprint04.jpg',
+        caption: 'Main dashboard view showing key metrics and data visualizations'
+      },
+      {
+        src: '/portfolio/img_portfolio_smaprint05.jpg',
+        caption: 'Main dashboard view showing key metrics and data visualizations'
+      },
+      {
+        src: '/portfolio/img_portfolio_smaprint06.jpg',
+        caption: 'Main dashboard view showing key metrics and data visualizations'
+      },
+      {
+        src: '/portfolio/img_portfolio_smaprint07.jpg',
+        caption: 'Main dashboard view showing key metrics and data visualizations'
+      },
+      {
+        src: '/portfolio/img_portfolio_smaprint08.jpg',
+        caption: 'Main dashboard view showing key metrics and data visualizations'
+      },
+      {
+        src: '/portfolio/img_portfolio_smaprint09.jpg',
+        caption: 'Main dashboard view showing key metrics and data visualizations'
+      },
+      {
+        src: '/portfolio/img_portfolio_smaprint10.jpg',
+        caption: 'Main dashboard view showing key metrics and data visualizations'
+      }
+    ],
+    slug: 'smabac'
+  },
+
   {
     id: '10',
     title: 'Darren Jones Website',
@@ -1649,7 +1708,7 @@ export const projects: Project[] = [
         caption: 'Main dashboard view showing key metrics and data visualizations'
       },
     ],
-    slug: 'hhsn'
+    slug: 'branpromo'
   },
 
   {
@@ -1882,7 +1941,7 @@ export const projects: Project[] = [
         caption: 'Mobile-responsive design for on-the-go access'
       },
     ],
-    slug: 'hmpriv'
+    slug: 'jacpriv'
   },
 
   {
