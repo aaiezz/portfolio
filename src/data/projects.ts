@@ -1580,7 +1580,7 @@ export const projects: Project[] = [
     title: 'Petronas AMG F1 Team Private shoot',
     category: 'photography',
     imageUrl: '/portfolio/img_portfolio_merc01.jpg',
-    client: ['KBS Communications | ', 'ADMM | ', 'Yas Marina Circuit'],
+    client: ['KBS Communications | ', 'Emirates Motor Company'],
     description: 'A comprehensive outdoor advertising campaign for Beyond Blue, featuring impactful billboard and print designs that raise awareness about mental health support services. The campaign utilized bold typography and compelling imagery to create an emotional connection with viewers.',
     tools: [
       { name: 'Adobe Illustrator', icon: '../src/assets/icons/illustrator.svg' },
@@ -1598,6 +1598,14 @@ export const projects: Project[] = [
       },
       {
         src: '/portfolio/img_portfolio_merc04.jpg',
+        caption: 'Mobile-responsive design for on-the-go access'
+      },
+      {
+        src: '/portfolio/img_portfolio_merc05.jpg',
+        caption: 'Mobile-responsive design for on-the-go access'
+      },
+      {
+        src: '/portfolio/img_portfolio_merc06.jpg',
         caption: 'Mobile-responsive design for on-the-go access'
       }
     ],
@@ -1618,6 +1626,26 @@ export const projects: Project[] = [
     gallery: [
       {
         src: '/portfolio/img_portfolio_hhsnahyan01.jpg',
+        caption: 'Main dashboard view showing key metrics and data visualizations'
+      },
+    ],
+    slug: 'hhsn'
+  },
+  {
+    id: '35',
+    title: 'Richard Branson Virgin Airlines Promotional Photoshoot',
+    category: 'photography',
+    imageUrl: '/portfolio/img_portfolio_bransoni01.jpg',
+    client: ['Tito Media'],
+    description: 'A comprehensive outdoor advertising campaign for Beyond Blue, featuring impactful billboard and print designs that raise awareness about mental health support services. The campaign utilized bold typography and compelling imagery to create an emotional connection with viewers.',
+    tools: [
+      { name: 'Adobe Illustrator', icon: '../src/assets/icons/illustrator.svg' },
+      { name: 'Adobe InDesign', icon: '../src/assets/icons/indesign.svg' }
+    ],
+    keywords: ['outdoor advertising', 'print design', 'social impact', 'mental health', 'typography'],
+    gallery: [
+      {
+        src: '/portfolio/img_portfolio_bransoni01.jpg',
         caption: 'Main dashboard view showing key metrics and data visualizations'
       },
     ],
