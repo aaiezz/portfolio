@@ -1370,6 +1370,10 @@ export const projects: Project[] = [
       {
         src: '/portfolio/img_portfolio_gcprod07.jpg',
         caption: 'Mobile-responsive design for on-the-go access'
+      },
+      {
+        src: '/portfolio/img_portfolio_gcprod08.jpg',
+        caption: 'Mobile-responsive design for on-the-go access'
       }
     ],
     slug: 'gcprod'
